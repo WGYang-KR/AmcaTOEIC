@@ -659,7 +659,7 @@
 				DEVELOPMENT_TEAM = WRMZ68J9BN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AmcaTOEIC/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "암카 토익VC";
+				INFOPLIST_KEY_CFBundleDisplayName = "암카 토익단어";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -693,7 +693,7 @@
 				DEVELOPMENT_TEAM = WRMZ68J9BN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AmcaTOEIC/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "암카 토익VC";
+				INFOPLIST_KEY_CFBundleDisplayName = "암카 토익단어";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
