@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SwipeCardCompletionPopUpVC" customModule="SwipeHanja" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomButton" destination="7iH-o2-7FQ" id="3FK-gO-JSH"/>
+                <outlet property="containerCenterYConstraint" destination="A7F-IO-dVP" id="Ub7-r1-FZY"/>
+                <outlet property="containerHidingBottomConstraint" destination="QaJ-kr-GWm" id="vGJ-Bj-MZk"/>
+                <outlet property="containerView" destination="vzq-Hs-9FW" id="7lD-kI-snv"/>
+                <outlet property="imageView" destination="UVG-4X-XF6" id="cOU-Vk-Voe"/>
+                <outlet property="messageLabel" destination="HXv-Jh-TgD" id="8mC-jO-lab"/>
+                <outlet property="titleLabel" destination="x8I-4y-WlQ" id="5sD-sv-QGC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9c-Nk-JKw">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzq-Hs-9FW">
+                            <rect key="frame" x="16" y="759" width="361" height="276.33333333333326"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Fjw-19-UPi">
+                                    <rect key="frame" x="32" y="32.000000000000014" width="297" height="212.33333333333337"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="checkmark.seal.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="UVG-4X-XF6">
+                                            <rect key="frame" x="0.0" y="-0.6666666666666643" width="297" height="81.333333333333314"/>
+                                            <color key="tintColor" name="ColorTossBlue"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" id="DdU-aj-bnO"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8I-4y-WlQ">
+                                            <rect key="frame" x="0.0" y="96" width="297" height="24"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" name="colorTeal01"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXv-Jh-TgD">
+                                            <rect key="frame" x="0.0" y="136" width="297" height="20.333333333333343"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" name="colorTeal01"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7iH-o2-7FQ">
+                                            <rect key="frame" x="0.0" y="172.33333333333337" width="297" height="40"/>
+                                            <color key="backgroundColor" name="colorTeal03"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="AFT-Fv-fYg"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Got it!">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="bottomButtonTapped:" destination="-1" eventType="touchUpInside" id="bEk-bg-gPa"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" name="colorTeal04"/>
+                            <constraints>
+                                <constraint firstItem="Fjw-19-UPi" firstAttribute="leading" secondItem="vzq-Hs-9FW" secondAttribute="leading" constant="32" id="8Lx-lW-clw"/>
+                                <constraint firstAttribute="trailing" secondItem="Fjw-19-UPi" secondAttribute="trailing" constant="32" id="CCs-Kz-tUK"/>
+                                <constraint firstAttribute="bottom" secondItem="Fjw-19-UPi" secondAttribute="bottom" constant="32" id="aB7-I5-4Pl"/>
+                                <constraint firstItem="Fjw-19-UPi" firstAttribute="top" secondItem="vzq-Hs-9FW" secondAttribute="top" constant="32" id="lLh-Vw-Qzf"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="vzq-Hs-9FW" firstAttribute="centerY" secondItem="M9c-Nk-JKw" secondAttribute="centerY" id="A7F-IO-dVP"/>
+                        <constraint firstAttribute="trailing" secondItem="vzq-Hs-9FW" secondAttribute="trailing" constant="16" id="QYA-fr-Plb"/>
+                        <constraint firstItem="vzq-Hs-9FW" firstAttribute="leading" secondItem="M9c-Nk-JKw" secondAttribute="leading" constant="16" id="zvw-Wl-rOS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="M9c-Nk-JKw" secondAttribute="trailing" id="LrU-G4-ED0"/>
+                <constraint firstItem="vzq-Hs-9FW" firstAttribute="top" secondItem="M9c-Nk-JKw" secondAttribute="bottom" id="QaJ-kr-GWm"/>
+                <constraint firstItem="M9c-Nk-JKw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="dVL-Zr-i3f"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="M9c-Nk-JKw" secondAttribute="bottom" id="lVt-wA-kXK"/>
+                <constraint firstItem="M9c-Nk-JKw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pgH-fM-aCK"/>
+            </constraints>
+            <point key="canvasLocation" x="75.572519083969468" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkmark.seal.fill" catalog="system" width="128" height="124"/>
+        <namedColor name="ColorTossBlue">
+            <color red="0.28235294117647058" green="0.50196078431372548" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="colorTeal01">
+            <color red="0.0" green="0.23529411764705882" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorTeal03">
+            <color red="0.46666666666666667" green="0.69019607843137254" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorTeal04">
+            <color red="0.8901960784313725" green="0.99607843137254903" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

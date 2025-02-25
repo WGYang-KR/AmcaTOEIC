@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchWebVC" customModule="SwipeHanja" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="3fs-rm-NmI" id="ZKc-R8-NgF"/>
+                <outlet property="backwardBtn" destination="A2p-yd-v6D" id="Pfm-6d-wIz"/>
+                <outlet property="forwardBtn" destination="04U-dw-Dut" id="iH0-4k-tMI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="QDy-me-CRz" id="y89-Nf-Atg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MN3-Lh-p2K">
+                    <rect key="frame" x="0.0" y="50" width="375" height="728"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2W0-eG-3bd">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hff-mY-Zpw">
+                                    <rect key="frame" x="16" y="0.0" width="343" height="32"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="civ-8M-ZH7">
+                                            <rect key="frame" x="0.0" y="0.0" width="40" height="32"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="32" id="hhX-BQ-OEa"/>
+                                                <constraint firstAttribute="width" constant="40" id="iUN-Yn-YuK"/>
+                                            </constraints>
+                                            <color key="tintColor" name="colorTeal02"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" image="chevron.backward" catalog="system">
+                                                <color key="titleColor" name="colorTeal02"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="previousVCBtnTapped:" destination="-1" eventType="touchUpInside" id="VM4-Do-Pfk"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hanja.dict.naver.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ox2-tE-rRr">
+                                            <rect key="frame" x="40" y="0.0" width="263" height="32"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                            <color key="textColor" name="colorTeal02"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" horizontalHuggingPriority="248" translatesAutoresizingMaskIntoConstraints="NO" id="1ns-KD-sPI">
+                                            <rect key="frame" x="303" y="0.0" width="40" height="32"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="Oo1-SZ-STn"/>
+                                                <constraint firstAttribute="height" constant="32" id="ThL-IG-oaK"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="hff-mY-Zpw" secondAttribute="bottom" constant="4" id="Uzj-CO-Pjc"/>
+                                <constraint firstAttribute="trailing" secondItem="hff-mY-Zpw" secondAttribute="trailing" constant="16" id="XZU-lt-nSj"/>
+                                <constraint firstItem="hff-mY-Zpw" firstAttribute="top" secondItem="2W0-eG-3bd" secondAttribute="top" id="Yz6-0H-zzM"/>
+                                <constraint firstItem="hff-mY-Zpw" firstAttribute="leading" secondItem="2W0-eG-3bd" secondAttribute="leading" constant="16" id="mBP-fP-S9Y"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAT-Et-IkW">
+                            <rect key="frame" x="0.0" y="36" width="375" height="652"/>
+                            <subviews>
+                                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QDy-me-CRz">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="652"/>
+                                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <wkWebViewConfiguration key="configuration">
+                                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                        <wkPreferences key="preferences"/>
+                                    </wkWebViewConfiguration>
+                                </wkWebView>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="3fs-rm-NmI">
+                                    <rect key="frame" x="171.66666666666666" y="310" width="32" height="32"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="32" id="WaL-G3-FGv"/>
+                                        <constraint firstAttribute="width" constant="32" id="d35-cR-CzL"/>
+                                    </constraints>
+                                </activityIndicatorView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="QDy-me-CRz" firstAttribute="top" secondItem="cAT-Et-IkW" secondAttribute="top" id="4L7-Je-JAb"/>
+                                <constraint firstAttribute="bottom" secondItem="QDy-me-CRz" secondAttribute="bottom" id="9KR-Ud-vHH"/>
+                                <constraint firstItem="QDy-me-CRz" firstAttribute="leading" secondItem="cAT-Et-IkW" secondAttribute="leading" id="OvK-Sf-1vf"/>
+                                <constraint firstItem="3fs-rm-NmI" firstAttribute="centerY" secondItem="cAT-Et-IkW" secondAttribute="centerY" id="QSG-Sn-300"/>
+                                <constraint firstItem="3fs-rm-NmI" firstAttribute="centerX" secondItem="cAT-Et-IkW" secondAttribute="centerX" id="VwA-K6-EHM"/>
+                                <constraint firstAttribute="trailing" secondItem="QDy-me-CRz" secondAttribute="trailing" id="Y0d-5i-29T"/>
+                                <constraint firstItem="3fs-rm-NmI" firstAttribute="centerY" secondItem="cAT-Et-IkW" secondAttribute="centerY" id="dwy-8y-G3h"/>
+                                <constraint firstItem="3fs-rm-NmI" firstAttribute="centerX" secondItem="cAT-Et-IkW" secondAttribute="centerX" id="qOG-jp-ro2"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdu-by-xwZ">
+                            <rect key="frame" x="0.0" y="688" width="375" height="36"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0BK-u0-mEz">
+                                    <rect key="frame" x="16" y="4" width="343" height="32"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2p-yd-v6D">
+                                            <rect key="frame" x="0.0" y="0.0" width="40" height="32"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="32" id="0Tt-xe-pN2"/>
+                                                <constraint firstAttribute="width" constant="40" id="SDh-hD-NLk"/>
+                                            </constraints>
+                                            <color key="tintColor" name="colorTeal02"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" image="chevron.backward" catalog="system">
+                                                <color key="titleColor" name="colorTeal02"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="backwardBtnTapped:" destination="-1" eventType="touchUpInside" id="WwI-tY-B0X"/>
+                                            </connections>
+                                        </button>
+                                        <view contentMode="scaleToFill" horizontalHuggingPriority="248" translatesAutoresizingMaskIntoConstraints="NO" id="yzd-x8-Zlm">
+                                            <rect key="frame" x="40" y="0.0" width="61" height="32"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04U-dw-Dut">
+                                            <rect key="frame" x="101" y="0.0" width="40" height="32"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="32" id="YV3-Mc-4Pq"/>
+                                                <constraint firstAttribute="width" constant="40" id="dPK-y1-ogf"/>
+                                            </constraints>
+                                            <color key="tintColor" name="colorTeal02"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" image="chevron.right" catalog="system">
+                                                <color key="titleColor" name="colorTeal02"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="forwardBtnTapped:" destination="-1" eventType="touchUpInside" id="4an-RT-baS"/>
+                                            </connections>
+                                        </button>
+                                        <view contentMode="scaleToFill" horizontalHuggingPriority="248" translatesAutoresizingMaskIntoConstraints="NO" id="O9I-Zo-WSd">
+                                            <rect key="frame" x="141" y="0.0" width="61" height="32"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dv6-a5-LZ6">
+                                            <rect key="frame" x="202" y="0.0" width="40" height="32"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="32" id="AsN-bJ-wJl"/>
+                                                <constraint firstAttribute="width" constant="40" id="ZYI-OM-89c"/>
+                                            </constraints>
+                                            <color key="tintColor" name="colorTeal02"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" image="arrow.clockwise" catalog="system">
+                                                <color key="titleColor" name="colorTeal02"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="refreshBtnTapped:" destination="-1" eventType="touchUpInside" id="s28-bL-7hu"/>
+                                            </connections>
+                                        </button>
+                                        <view contentMode="scaleToFill" horizontalHuggingPriority="248" translatesAutoresizingMaskIntoConstraints="NO" id="0Yq-9b-Eqd">
+                                            <rect key="frame" x="242" y="0.0" width="61" height="32"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsw-xQ-zu7">
+                                            <rect key="frame" x="303" y="0.0" width="40" height="32"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="jRF-dD-bkA"/>
+                                                <constraint firstAttribute="height" constant="32" id="kyl-pN-YZ0"/>
+                                            </constraints>
+                                            <color key="tintColor" name="colorTeal02"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" image="safari" catalog="system">
+                                                <color key="titleColor" name="colorTeal02"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="browserBtnTapped:" destination="-1" eventType="touchUpInside" id="G4f-qb-5bQ"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="yzd-x8-Zlm" firstAttribute="width" secondItem="O9I-Zo-WSd" secondAttribute="width" id="FDi-nm-zaU"/>
+                                        <constraint firstItem="0Yq-9b-Eqd" firstAttribute="width" secondItem="yzd-x8-Zlm" secondAttribute="width" id="uBJ-vF-IhV"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="0BK-u0-mEz" firstAttribute="leading" secondItem="cdu-by-xwZ" secondAttribute="leading" constant="16" id="hy5-B0-zQL"/>
+                                <constraint firstAttribute="trailing" secondItem="0BK-u0-mEz" secondAttribute="trailing" constant="16" id="lFs-AB-9ZI"/>
+                                <constraint firstItem="0BK-u0-mEz" firstAttribute="top" secondItem="cdu-by-xwZ" secondAttribute="top" constant="4" id="qnc-j0-NHc"/>
+                                <constraint firstAttribute="bottom" secondItem="0BK-u0-mEz" secondAttribute="bottom" id="wEt-VM-bWN"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="2W0-eG-3bd" firstAttribute="top" secondItem="MN3-Lh-p2K" secondAttribute="top" id="CJP-3G-UiV"/>
+                        <constraint firstAttribute="trailing" secondItem="2W0-eG-3bd" secondAttribute="trailing" id="Dnb-qU-G7T"/>
+                        <constraint firstItem="cAT-Et-IkW" firstAttribute="leading" secondItem="MN3-Lh-p2K" secondAttribute="leading" id="FGm-Tz-mlT"/>
+                        <constraint firstItem="cdu-by-xwZ" firstAttribute="leading" secondItem="MN3-Lh-p2K" secondAttribute="leading" id="TVl-Ue-2vN"/>
+                        <constraint firstItem="2W0-eG-3bd" firstAttribute="leading" secondItem="MN3-Lh-p2K" secondAttribute="leading" id="XUI-ql-uXx"/>
+                        <constraint firstAttribute="trailing" secondItem="cdu-by-xwZ" secondAttribute="trailing" id="gpY-VS-fFk"/>
+                        <constraint firstItem="cdu-by-xwZ" firstAttribute="top" secondItem="cAT-Et-IkW" secondAttribute="bottom" id="nDs-ad-aO9"/>
+                        <constraint firstItem="cAT-Et-IkW" firstAttribute="top" secondItem="2W0-eG-3bd" secondAttribute="bottom" id="oB0-2H-B3N"/>
+                        <constraint firstAttribute="trailing" secondItem="cAT-Et-IkW" secondAttribute="trailing" id="pZw-fI-Nw5"/>
+                        <constraint firstAttribute="bottom" secondItem="cdu-by-xwZ" secondAttribute="bottom" constant="4" id="vVr-rb-No7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="colorGrey04"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="MN3-Lh-p2K" secondAttribute="bottom" id="Kyt-Ta-wdc"/>
+                <constraint firstItem="MN3-Lh-p2K" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Vam-6u-LRr"/>
+                <constraint firstItem="MN3-Lh-p2K" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gv5-Qh-cPv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MN3-Lh-p2K" secondAttribute="trailing" id="muf-fF-7t0"/>
+            </constraints>
+            <point key="canvasLocation" x="150" y="-71"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.clockwise" catalog="system" width="113" height="128"/>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <image name="safari" catalog="system" width="128" height="123"/>
+        <namedColor name="colorGrey04">
+            <color red="0.97254901960784312" green="0.96470588235294119" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="colorTeal02">
+            <color red="0.074509803921568626" green="0.36470588235294116" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
