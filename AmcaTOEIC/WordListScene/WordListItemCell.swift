@@ -57,18 +57,6 @@ class WordListItemCell: UITableViewCell {
         selectionStyle = .none
         self.backgroundColor = .clear
         
-        // "Songti TC" 폰트를 설정
-        if let songtiFont = UIFont(name: "STSongti-TC-Regular", size: 40) {
-            firstLabel.font = songtiFont
-        } else {
-            print("Songti TC 폰트를 찾을 수 없습니다.")
-        }
-        
-        if let songtiFont = UIFont(name: "STSongti-TC-Regular", size: 17) {
-            radicalLabel.font = songtiFont
-        } else {
-            print("Songti TC 폰트를 찾을 수 없습니다.")
-        }
         
     }
 

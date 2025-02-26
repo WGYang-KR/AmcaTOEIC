@@ -21,18 +21,14 @@
 		6AA92B062D6DE46C00E8804E /* SearchWebVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AEC2D6DE46C00E8804E /* SearchWebVC.xib */; };
 		6AA92B072D6DE46C00E8804E /* CardPacks_20241231.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AFE2D6DE46C00E8804E /* CardPacks_20241231.json */; };
 		6AA92B082D6DE46C00E8804E /* FavoritesSwipeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92ACC2D6DE46C00E8804E /* FavoritesSwipeVC.xib */; };
-		6AA92B092D6DE46C00E8804E /* readme_en_v4.004.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AFB2D6DE46C00E8804E /* readme_en_v4.004.txt */; };
 		6AA92B0A2D6DE46C00E8804E /* SwipeCardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92ADA2D6DE46C00E8804E /* SwipeCardVC.xib */; };
 		6AA92B0B2D6DE46C00E8804E /* FavoritesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AC52D6DE46C00E8804E /* FavoritesVC.xib */; };
 		6AA92B0C2D6DE46C00E8804E /* CardItemComponentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92ADC2D6DE46C00E8804E /* CardItemComponentView.xib */; };
 		6AA92B0D2D6DE46C00E8804E /* WordListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AE72D6DE46C00E8804E /* WordListVC.xib */; };
 		6AA92B0E2D6DE46C00E8804E /* CardItemBackContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92ADE2D6DE46C00E8804E /* CardItemBackContentView.xib */; };
-		6AA92B0F2D6DE46C00E8804E /* copyright.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AF92D6DE46C00E8804E /* copyright.txt */; };
-		6AA92B102D6DE46C00E8804E /* KanjiStrokeOrders_v4.004.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AFA2D6DE46C00E8804E /* KanjiStrokeOrders_v4.004.ttf */; };
 		6AA92B112D6DE46C00E8804E /* SHOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AE22D6DE46C00E8804E /* SHOverlayView.xib */; };
 		6AA92B122D6DE46C00E8804E /* FavoritesItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AC92D6DE46C00E8804E /* FavoritesItemCell.xib */; };
 		6AA92B132D6DE46C00E8804E /* CardPackItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92ABF2D6DE46C00E8804E /* CardPackItemCell.xib */; };
-		6AA92B142D6DE46C00E8804E /* Songti.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AFD2D6DE46C00E8804E /* Songti.ttc */; };
 		6AA92B152D6DE46C00E8804E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AEE2D6DE46C00E8804E /* SettingsView.swift */; };
 		6AA92B162D6DE46C00E8804E /* KolodaCardStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AD32D6DE46C00E8804E /* KolodaCardStorage.swift */; };
 		6AA92B172D6DE46C00E8804E /* CardSideType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AB32D6DE46C00E8804E /* CardSideType.swift */; };
@@ -149,10 +145,6 @@
 		6AA92AF52D6DE46C00E8804E /* EmailHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailHelper.swift; sourceTree = "<group>"; };
 		6AA92AF62D6DE46C00E8804E /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		6AA92AF82D6DE46C00E8804E /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
-		6AA92AF92D6DE46C00E8804E /* copyright.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = copyright.txt; sourceTree = "<group>"; };
-		6AA92AFA2D6DE46C00E8804E /* KanjiStrokeOrders_v4.004.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KanjiStrokeOrders_v4.004.ttf; sourceTree = "<group>"; };
-		6AA92AFB2D6DE46C00E8804E /* readme_en_v4.004.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme_en_v4.004.txt; sourceTree = "<group>"; };
-		6AA92AFD2D6DE46C00E8804E /* Songti.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Songti.ttc; sourceTree = "<group>"; };
 		6AA92AFE2D6DE46C00E8804E /* CardPacks_20241231.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CardPacks_20241231.json; sourceTree = "<group>"; };
 		6AA92B402D6DE4B000E8804E /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		6AA92B422D6DE53D00E8804E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -384,22 +376,10 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
-		6AA92AFC2D6DE46C00E8804E /* KanjiStrokeOrders_v4.004 */ = {
-			isa = PBXGroup;
-			children = (
-				6AA92AF92D6DE46C00E8804E /* copyright.txt */,
-				6AA92AFA2D6DE46C00E8804E /* KanjiStrokeOrders_v4.004.ttf */,
-				6AA92AFB2D6DE46C00E8804E /* readme_en_v4.004.txt */,
-			);
-			path = KanjiStrokeOrders_v4.004;
-			sourceTree = "<group>";
-		};
 		6AA92AFF2D6DE46C00E8804E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 				6AA92AF82D6DE46C00E8804E /* DBManager.swift */,
-				6AA92AFC2D6DE46C00E8804E /* KanjiStrokeOrders_v4.004 */,
-				6AA92AFD2D6DE46C00E8804E /* Songti.ttc */,
 				6AA92AFE2D6DE46C00E8804E /* CardPacks_20241231.json */,
 			);
 			path = Resource;
@@ -498,18 +478,14 @@
 				6AA92B062D6DE46C00E8804E /* SearchWebVC.xib in Resources */,
 				6AA92B072D6DE46C00E8804E /* CardPacks_20241231.json in Resources */,
 				6AA92B082D6DE46C00E8804E /* FavoritesSwipeVC.xib in Resources */,
-				6AA92B092D6DE46C00E8804E /* readme_en_v4.004.txt in Resources */,
 				6AA92B0A2D6DE46C00E8804E /* SwipeCardVC.xib in Resources */,
 				6AA92B0B2D6DE46C00E8804E /* FavoritesVC.xib in Resources */,
 				6AA92B0C2D6DE46C00E8804E /* CardItemComponentView.xib in Resources */,
 				6AA92B0D2D6DE46C00E8804E /* WordListVC.xib in Resources */,
 				6AA92B0E2D6DE46C00E8804E /* CardItemBackContentView.xib in Resources */,
-				6AA92B0F2D6DE46C00E8804E /* copyright.txt in Resources */,
-				6AA92B102D6DE46C00E8804E /* KanjiStrokeOrders_v4.004.ttf in Resources */,
 				6AA92B112D6DE46C00E8804E /* SHOverlayView.xib in Resources */,
 				6AA92B122D6DE46C00E8804E /* FavoritesItemCell.xib in Resources */,
 				6AA92B132D6DE46C00E8804E /* CardPackItemCell.xib in Resources */,
-				6AA92B142D6DE46C00E8804E /* Songti.ttc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,7 +635,7 @@
 				DEVELOPMENT_TEAM = WRMZ68J9BN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AmcaTOEIC/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "암카 토익단어";
+				INFOPLIST_KEY_CFBundleDisplayName = "암카 토익";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -693,7 +669,7 @@
 				DEVELOPMENT_TEAM = WRMZ68J9BN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AmcaTOEIC/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "암카 토익단어";
+				INFOPLIST_KEY_CFBundleDisplayName = "암카 토익";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";

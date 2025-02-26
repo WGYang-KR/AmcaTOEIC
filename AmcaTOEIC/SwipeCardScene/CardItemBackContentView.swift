@@ -53,13 +53,7 @@ class CardItemBackContentView: NibUIView {
         containerView.layer.borderWidth = 2
         containerView.layer.borderColor = UIColor.colorGrey01.cgColor
     
-        // "Songti TC" 폰트를 설정
-        if let songtiFont = UIFont(name: "STSongti-TC-Regular", size: 18) {
-            radicalLabel.font = songtiFont
-        } else {
-            print("Songti TC 폰트를 찾을 수 없습니다.")
-        }
-        
+ 
     }
     
     
