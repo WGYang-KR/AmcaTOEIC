@@ -36,7 +36,7 @@ class AppSetting {
     
     static var searchDictURL: String {
         get {
-            remoteConfig.configValue(forKey: RemoteConfigKey.SearchDictURL.rawValue).stringValue ?? ""
+            remoteConfig.configValue(forKey: RemoteConfigKey.SearchDictURL.rawValue).stringValue
         }
     }
     

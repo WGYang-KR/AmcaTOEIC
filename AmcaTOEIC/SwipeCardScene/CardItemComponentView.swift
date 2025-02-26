@@ -7,6 +7,7 @@
 
 import UIKit
 import Combine
+import AVFoundation
 
 class CardItemComponentView: UIView {
     
@@ -15,6 +16,7 @@ class CardItemComponentView: UIView {
     @IBOutlet weak var pronunciationLabel: UILabel!
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var speakButton: UIButton!
     
     let linedStarImage: UIImage? = .init(systemName: "star")
     let filledStarImage: UIImage? = .init(systemName: "star.fill")
@@ -26,7 +28,11 @@ class CardItemComponentView: UIView {
     let favoriteBtnTapped = PassthroughSubject<Void,Never>()
     let searchBtnTapped = PassthroughSubject<Void,Never>()
     
+    var cardItem: CardItem?
+    
     func configure(cardItem: CardItem, isFavorite: AnyPublisher<Bool,Never>) {
+        
+        self.cardItem = cardItem
         
         self.label.text = cardItem.frontWord
         self.pronunciationLabel.isHidden = cardItem.pronunciation == ""
@@ -84,6 +90,12 @@ class CardItemComponentView: UIView {
     }
     
     @IBAction func speakButtonTapped(_ sender: Any) {
-        
+        if let word = cardItem?.frontWord {
+            speakButton.isEnabled = false
+            TTSHelper.shared.play(word) { [weak self] in
+                self?.speakButton.isEnabled = true
+            }
+        }
     }
 }
+
