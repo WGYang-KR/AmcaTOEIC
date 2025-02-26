@@ -13,7 +13,6 @@ final class CardPack: Object, Decodable{
     @Persisted(primaryKey: true) var _id: ObjectId
     @Persisted var index: Int
     @Persisted var level: Int
-    @Persisted var title: String //한자 9급
     @Persisted var cardList: List<CardItem> // = List<CardItem>()
     
     override init() {
@@ -30,7 +29,6 @@ final class CardPack: Object, Decodable{
         case _id
         case index
         case level
-        case title
         case cardList
     }
     
@@ -41,7 +39,6 @@ final class CardPack: Object, Decodable{
         _id = try container.decode(ObjectId.self, forKey: ._id)
         index = try container.decodeIfPresent(Int.self, forKey: .index) ?? 0
         level = try container.decodeIfPresent(Int.self, forKey: .level) ?? 0
-        title = try container.decodeIfPresent(String.self, forKey: .title) ?? ""
         let cardArray = try container.decodeIfPresent([CardItem].self, forKey: .cardList) ?? []
         let newCardList = List<CardItem>()
         for item in cardArray {
@@ -58,13 +55,16 @@ final class CardPack: Object, Decodable{
         self._id = _id
         self.index = index
         self.level = level
-        self.title = title
         self.cardList = cardList
         
     }
 }
 
 extension CardPack {
+    
+    var title: String {
+        return "Day \(level)"
+    }
     ///총 카드수
     var totalCardCount: Int {
         return cardList.count

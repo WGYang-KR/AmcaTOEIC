@@ -59,11 +59,9 @@ class FavoritesItemCell: UITableViewCell {
         
         indexLabel.text = String(index + 1)
         let cardItem = favoriteCardItem.cardItem
-        self.topLabel.text = "\(cardItem.level)급"
+        self.topLabel.text = "Day \(cardItem.level)"
         self.firstLabel.text = cardItem.frontWord
-        self.secondLabel.text = cardItem.backWord
-        self.radicalLabel.text = "\(cardItem.radical)(\(cardItem.radicalMeaning))"
-        self.strokeCountLabel.text = "\(cardItem.strokeCount)획"
+        self.secondLabel.text = cardItem.backWord.replacingOccurrences(of: "; ", with: "\n")
         self.isFavorite.send(favoriteCardItem.isFavorite)
     }
 

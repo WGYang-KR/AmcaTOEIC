@@ -30,9 +30,7 @@ class WordListItemCell: UITableViewCell {
     func configure(index: Int, cardItem: CardItem) {
         indexLabel.text = String(index)
         firstLabel.text = cardItem.frontWord
-        secondLabel.text = cardItem.backWord
-        self.radicalLabel.text = "\(cardItem.radical)(\(cardItem.radicalMeaning))"
-        self.strokeCountLabel.text = "\(cardItem.strokeCount)획"
+        secondLabel.text = cardItem.backWord.replacingOccurrences(of: "; ", with: "\n")
         checkMarkImageView.image  = cardItem.hasMemorized ? checkMarkImage : nil
         self.isFavorite.send(cardItem.isFavorite)
         

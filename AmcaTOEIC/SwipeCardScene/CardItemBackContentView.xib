@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardItemBackContentView" customModule="SwipeHanja" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardItemBackContentView" customModule="AmcaTOEIC" customModuleProvider="target">
             <connections>
                 <outlet property="containerView" destination="Trz-Ev-8Ra" id="77X-ze-PDw"/>
                 <outlet property="favoriteButton" destination="NyZ-JD-8C9" id="cAR-S2-ipF"/>
@@ -64,16 +64,16 @@
                             </connections>
                         </button>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="9Mj-xC-lhY">
-                            <rect key="frame" x="16" y="290.5" width="343" height="86"/>
+                            <rect key="frame" x="16" y="319" width="343" height="29"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="훈음" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="z5K-aW-ZWx">
-                                    <rect key="frame" x="137" y="0.0" width="69.5" height="48"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                    <rect key="frame" x="150.5" y="0.0" width="42" height="29"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                     <color key="textColor" name="ColorTossBlack01"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="a4P-RU-1aQ">
-                                    <rect key="frame" x="52.5" y="64" width="238" height="22"/>
+                                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="a4P-RU-1aQ">
+                                    <rect key="frame" x="52.5" y="0.0" width="238" height="22"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dtZ-aK-UhQ">
                                             <rect key="frame" x="0.0" y="0.0" width="136.5" height="22"/>
@@ -148,7 +148,7 @@
                 <constraint firstItem="Trz-Ev-8Ra" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pOX-c8-4Zt"/>
                 <constraint firstAttribute="bottom" secondItem="Trz-Ev-8Ra" secondAttribute="bottom" id="pPp-my-Unj"/>
             </constraints>
-            <point key="canvasLocation" x="-90.07633587786259" y="96.126760563380287"/>
+            <point key="canvasLocation" x="-90.400000000000006" y="95.802098950524751"/>
         </view>
     </objects>
     <resources>

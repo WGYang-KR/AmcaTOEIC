@@ -19,7 +19,6 @@
 		6AA92B042D6DE46C00E8804E /* FavoritesStartLearningCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AC72D6DE46C00E8804E /* FavoritesStartLearningCell.xib */; };
 		6AA92B052D6DE46C00E8804E /* WordListItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AE92D6DE46C00E8804E /* WordListItemCell.xib */; };
 		6AA92B062D6DE46C00E8804E /* SearchWebVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AEC2D6DE46C00E8804E /* SearchWebVC.xib */; };
-		6AA92B072D6DE46C00E8804E /* CardPacks_20241231.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AFE2D6DE46C00E8804E /* CardPacks_20241231.json */; };
 		6AA92B082D6DE46C00E8804E /* FavoritesSwipeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92ACC2D6DE46C00E8804E /* FavoritesSwipeVC.xib */; };
 		6AA92B0A2D6DE46C00E8804E /* SwipeCardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92ADA2D6DE46C00E8804E /* SwipeCardVC.xib */; };
 		6AA92B0B2D6DE46C00E8804E /* FavoritesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AC52D6DE46C00E8804E /* FavoritesVC.xib */; };
@@ -75,6 +74,7 @@
 		6AA92B412D6DE4B000E8804E /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92B402D6DE4B000E8804E /* PrivacyInfo.xcprivacy */; };
 		6AA92B432D6DE53D00E8804E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92B422D6DE53D00E8804E /* GoogleService-Info.plist */; };
 		6AA92B452D6DE5C100E8804E /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92B442D6DE5C100E8804E /* remote_config_defaults.plist */; };
+		6AA92B4D2D6F3E5800E8804E /* TOEIC_CardDATA_20250226-091816.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92B4C2D6F3E5800E8804E /* TOEIC_CardDATA_20250226-091816.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -145,10 +145,10 @@
 		6AA92AF52D6DE46C00E8804E /* EmailHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailHelper.swift; sourceTree = "<group>"; };
 		6AA92AF62D6DE46C00E8804E /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		6AA92AF82D6DE46C00E8804E /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
-		6AA92AFE2D6DE46C00E8804E /* CardPacks_20241231.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CardPacks_20241231.json; sourceTree = "<group>"; };
 		6AA92B402D6DE4B000E8804E /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		6AA92B422D6DE53D00E8804E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6AA92B442D6DE5C100E8804E /* remote_config_defaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = remote_config_defaults.plist; sourceTree = "<group>"; };
+		6AA92B4C2D6F3E5800E8804E /* TOEIC_CardDATA_20250226-091816.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "TOEIC_CardDATA_20250226-091816.json"; sourceTree = "<group>"; };
 		96916ED89851F61E1AC54B68 /* Pods-AmcaTOEIC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmcaTOEIC.debug.xcconfig"; path = "Target Support Files/Pods-AmcaTOEIC/Pods-AmcaTOEIC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -380,7 +380,7 @@
 			isa = PBXGroup;
 			children = (
 				6AA92AF82D6DE46C00E8804E /* DBManager.swift */,
-				6AA92AFE2D6DE46C00E8804E /* CardPacks_20241231.json */,
+				6AA92B4C2D6F3E5800E8804E /* TOEIC_CardDATA_20250226-091816.json */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -464,6 +464,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AA92B4D2D6F3E5800E8804E /* TOEIC_CardDATA_20250226-091816.json in Resources */,
 				6AA92AA82D6DE28400E8804E /* Assets.xcassets in Resources */,
 				6AA92AAA2D6DE28400E8804E /* LaunchScreen.storyboard in Resources */,
 				6AA92B002D6DE46C00E8804E /* BuyPopUpVC.xib in Resources */,
@@ -476,7 +477,6 @@
 				6AA92B042D6DE46C00E8804E /* FavoritesStartLearningCell.xib in Resources */,
 				6AA92B052D6DE46C00E8804E /* WordListItemCell.xib in Resources */,
 				6AA92B062D6DE46C00E8804E /* SearchWebVC.xib in Resources */,
-				6AA92B072D6DE46C00E8804E /* CardPacks_20241231.json in Resources */,
 				6AA92B082D6DE46C00E8804E /* FavoritesSwipeVC.xib in Resources */,
 				6AA92B0A2D6DE46C00E8804E /* SwipeCardVC.xib in Resources */,
 				6AA92B0B2D6DE46C00E8804E /* FavoritesVC.xib in Resources */,
