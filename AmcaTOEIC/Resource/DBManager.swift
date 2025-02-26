@@ -9,11 +9,14 @@ import Foundation
 import RealmSwift
 
 class DBManager {
+    static let dataJSONFileName = "TOEIC_CardDATA_20250227-055645"
+    
     static let shared = DBManager()
     private init() { }
 
     var cardPacks: [CardPack] = []
     var totalCardItems: [CardItem] = []
+    
     
     func initRealm() {
       
@@ -29,7 +32,7 @@ class DBManager {
     ///전체 카드 리스트를, CardPack  JSON에서 불러온다
     private func loadCardsFromJson() {
         do {
-            cardPacks = try JSONSerialization.loadJSONFromFile(filename: "TOEIC_CardDATA_20250226-091816", type: [CardPack].self)
+            cardPacks = try JSONSerialization.loadJSONFromFile(filename: Self.dataJSONFileName , type: [CardPack].self)
             totalCardItems = cardPacks.reduce([CardItem](), { $0 + $1.cardList })
             shLog("전체 카드 데이터 JSON 로드 완료: \(totalCardItems.count)개")
         } catch(let error) {
