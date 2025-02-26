@@ -12,9 +12,6 @@ class CardItemBackContentView: NibUIView {
 
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var radicalLabel: UILabel!
-    @IBOutlet weak var strokeCountLabel: UILabel!
-    
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var searchButton: UIButton!
     

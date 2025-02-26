@@ -36,7 +36,7 @@ class SearchWebVC: UIViewController {
         webView.uiDelegate = self
         
         let encodedSeachText = searchText.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
-        let urlString = AppSetting.naverHanjaSearchURL.replacingOccurrences(of: "{SEARCH_TEXT}", with: encodedSeachText)
+        let urlString = AppSetting.searchDictURL.replacingOccurrences(of: "{SEARCH_TEXT}", with: encodedSeachText)
         
         if let url = URL(string: urlString) {
             let request = URLRequest(url: url)

@@ -41,7 +41,7 @@ class CardItemView: UIView {
                    cardSideType: CardSideType) {
         self.index = index
         self.isFavorite.send(isFavorite)
-        self.frontView.configure(text: cardItem.frontWord,
+        self.frontView.configure(cardItem: cardItem,
                                  isFavorite: self.isFavorite.eraseToAnyPublisher())
         self.backView.configure(cardItem: cardItem,
                                 isFavorite: self.isFavorite.eraseToAnyPublisher())

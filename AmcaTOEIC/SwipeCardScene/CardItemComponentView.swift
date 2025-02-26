@@ -12,6 +12,7 @@ class CardItemComponentView: UIView {
     
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var pronunciationLabel: UILabel!
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var searchButton: UIButton!
     
@@ -25,8 +26,11 @@ class CardItemComponentView: UIView {
     let favoriteBtnTapped = PassthroughSubject<Void,Never>()
     let searchBtnTapped = PassthroughSubject<Void,Never>()
     
-    func configure(text: String, isFavorite: AnyPublisher<Bool,Never>) {
-        self.label.text = text
+    func configure(cardItem: CardItem, isFavorite: AnyPublisher<Bool,Never>) {
+        
+        self.label.text = cardItem.frontWord
+        self.pronunciationLabel.isHidden = cardItem.pronunciation == ""
+        self.pronunciationLabel.text = "[" + cardItem.pronunciation + "]"
         
         //isFavorite 변수 변경되면 UI 업데이트되도록 바인드
         isFavorite.sink { [weak self] isFavorite  in
@@ -77,5 +81,9 @@ class CardItemComponentView: UIView {
             self?.searchButton.isEnabled = true
         })
     
+    }
+    
+    @IBAction func speakButtonTapped(_ sender: Any) {
+        
     }
 }
