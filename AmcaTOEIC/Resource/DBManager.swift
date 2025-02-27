@@ -9,7 +9,7 @@ import Foundation
 import RealmSwift
 
 class DBManager {
-    static let dataJSONFileName = "TOEIC_CardDATA_20250227-055645"
+    static let dataJSONFileName = "TOEIC_CardDATA_20250227-233230"
     
     static let shared = DBManager()
     private init() { }

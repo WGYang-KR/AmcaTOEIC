@@ -25,8 +25,8 @@ class TTSHelper: NSObject, AVSpeechSynthesizerDelegate {
             stop()
         }
         
-        print("TTS 음성 재생 실행")
-        print("읽는 문장: \(string)")
+        shLog("TTS 음성 재생 실행")
+        shLog("읽는 문장: \(string)")
         
         repeatCount = 0
         targetString = string
@@ -49,7 +49,7 @@ class TTSHelper: NSObject, AVSpeechSynthesizerDelegate {
     
     internal func stop() {
         if synthesizer.isSpeaking {
-            print("TTS 음성 강제 중지")
+            shLog("TTS 음성 강제 중지")
             synthesizer.stopSpeaking(at: .immediate)
         }
         completionHandler?()
@@ -62,7 +62,7 @@ class TTSHelper: NSObject, AVSpeechSynthesizerDelegate {
         if repeatCount < maxRepeat {
             speak()
         } else {
-            print("TTS 음성 3회 반복 후 종료")
+            shLog("TTS 음성 종료")
             completionHandler?()
             completionHandler = nil
         }

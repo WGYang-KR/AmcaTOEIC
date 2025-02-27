@@ -36,7 +36,7 @@ class CardItemComponentView: UIView {
         
         self.label.text = cardItem.frontWord
         self.pronunciationLabel.isHidden = cardItem.pronunciation == ""
-        self.pronunciationLabel.text = "[" + cardItem.pronunciation + "]"
+        self.pronunciationLabel.text = cardItem.pronunciation
         
         //isFavorite 변수 변경되면 UI 업데이트되도록 바인드
         isFavorite.sink { [weak self] isFavorite  in
