@@ -47,26 +47,8 @@
                                         <action selector="favoriteButtonTapped:" destination="-1" eventType="touchUpInside" id="GRs-LL-xRY"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOV-EZ-NOP">
-                                    <rect key="frame" x="73.999999999999986" y="0.0" width="50" height="50"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="50" id="cpB-xc-ujg"/>
-                                        <constraint firstAttribute="height" constant="50" id="hv1-9N-JJJ"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <color key="tintColor" name="colorTeal02"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" image="magnifyingglass" catalog="system">
-                                        <color key="titleColor" name="colorTeal02"/>
-                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="searchButtonTapped:" destination="-1" eventType="touchUpInside" id="9cj-6b-K3d"/>
-                                    </connections>
-                                </button>
                                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71c-H3-EHp">
-                                    <rect key="frame" x="148" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="73.999999999999986" y="0.0" width="50" height="50"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="50" id="Bg4-s9-drv"/>
@@ -81,6 +63,24 @@
                                     </state>
                                     <connections>
                                         <action selector="speakButtonTapped:" destination="-1" eventType="touchUpInside" id="skA-wM-6bA"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOV-EZ-NOP">
+                                    <rect key="frame" x="148" y="0.0" width="50" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="cpB-xc-ujg"/>
+                                        <constraint firstAttribute="height" constant="50" id="hv1-9N-JJJ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="tintColor" name="colorTeal02"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="magnifyingglass" catalog="system">
+                                        <color key="titleColor" name="colorTeal02"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="searchButtonTapped:" destination="-1" eventType="touchUpInside" id="9cj-6b-K3d"/>
                                     </connections>
                                 </button>
                             </subviews>

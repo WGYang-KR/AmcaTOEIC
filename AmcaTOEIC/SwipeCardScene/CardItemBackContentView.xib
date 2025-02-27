@@ -29,8 +29,8 @@
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="9Mj-xC-lhY">
                             <rect key="frame" x="16" y="319" width="343" height="29"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="훈음" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="z5K-aW-ZWx">
-                                    <rect key="frame" x="150.5" y="0.0" width="42" height="29"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="뜻" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="z5K-aW-ZWx">
+                                    <rect key="frame" x="161" y="0.0" width="21" height="29"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                     <color key="textColor" name="ColorTossBlack01"/>
                                     <nil key="highlightedColor"/>
@@ -38,7 +38,7 @@
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="zHU-G9-BmK">
-                            <rect key="frame" x="125.5" y="241" width="124" height="50"/>
+                            <rect key="frame" x="88.5" y="241" width="198" height="50"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NyZ-JD-8C9">
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -57,8 +57,22 @@
                                         <action selector="favoriteButtonTapped:" destination="-1" eventType="touchUpInside" id="0L6-Cm-pQO"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qX-7w-hIH">
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hqj-JZ-Var">
                                     <rect key="frame" x="74" y="0.0" width="50" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="1sI-4W-3cw"/>
+                                        <constraint firstAttribute="height" constant="50" id="MVX-eJ-nyj"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="tintColor" name="colorTeal02"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal">
+                                        <color key="titleColor" name="colorTeal02"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qX-7w-hIH">
+                                    <rect key="frame" x="148" y="0.0" width="50" height="50"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="50" id="ldL-Ui-V1e"/>
