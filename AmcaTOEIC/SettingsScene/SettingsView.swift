@@ -69,7 +69,7 @@ struct SettingsView: View {
                     HStack {
                         Button(action: {
                             EmailHelper.shared
-                                .sendEmail(subject: "[Swipe 한자] 문의 & 피드백",
+                                .sendEmail(subject: "[암카 토익] 문의 & 피드백",
                                            body:
                                    """
                                    Version: \(AppStatus.fullVersion)
