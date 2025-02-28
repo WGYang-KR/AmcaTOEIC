@@ -9,11 +9,14 @@ import UIKit
 
 class BuyPopUpVC: UIViewController {
     @IBOutlet var backBoxView: UIView!
+    @IBOutlet weak var priceLabel: UILabel!
+    
     var baseVC: UIViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         backBoxView.layer.cornerRadius = 12.0
+        priceLabel.text = "가격: 3,300원 (평생 소장)"
     }
     
     override func viewDidAppear(_ animated: Bool) {
