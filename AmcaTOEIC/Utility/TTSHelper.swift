@@ -17,16 +17,26 @@ class TTSHelper: NSObject, AVSpeechSynthesizerDelegate {
     override init() {
         super.init()
         synthesizer.delegate = self
+        prepare()
+    }
+    
+    func prepare() {
+        do {
+            // 앱 시작 시 한 번만 설정
+            try AVAudioSession.sharedInstance().setCategory(.playback, options: [.duckOthers])
+        } catch {
+            shLog("Audio session setup error: \(error)")
+        }
     }
     
     internal func play(_ string: String, completion: (() -> Void)? = nil) {
         // 기존 재생 중이라면 중단하고 초기화
         if synthesizer.isSpeaking {
+            shLog("TTS 기존 음성 중지")
             stop()
         }
         
-        shLog("TTS 음성 재생 실행")
-        shLog("읽는 문장: \(string)")
+        shLog("TTS 음성 읽을 문장: \(string)")
         
         repeatCount = 0
         targetString = string
@@ -41,10 +51,16 @@ class TTSHelper: NSObject, AVSpeechSynthesizerDelegate {
         utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
         utterance.rate = 0.5
         utterance.pitchMultiplier = 0.8
+        utterance.preUtteranceDelay = 0.0
+
+        do {
+            try AVAudioSession.sharedInstance().setActive(true, options: [])
+        } catch {
+            shLog("Audio session setup error: \(error)")
+        }
         
         synthesizer.speak(utterance)
         
-        try? AVAudioSession.sharedInstance().setCategory(.playback, options: .allowBluetooth)
     }
     
     internal func stop() {
@@ -58,13 +74,14 @@ class TTSHelper: NSObject, AVSpeechSynthesizerDelegate {
     
     // 음성이 끝날 때 호출됨
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
-        repeatCount += 1
-        if repeatCount < maxRepeat {
-            speak()
-        } else {
-            shLog("TTS 음성 종료")
-            completionHandler?()
-            completionHandler = nil
+        shLog("TTS 음성 완료")
+        do {
+            try AVAudioSession.sharedInstance().setActive(false, options: [])
+        } catch {
+            shLog("Audio session setup error: \(error)")
         }
+        
+        completionHandler?()
+        completionHandler = nil
     }
 }
