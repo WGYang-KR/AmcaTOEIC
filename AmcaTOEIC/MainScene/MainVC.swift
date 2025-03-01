@@ -19,7 +19,7 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         initVM()
         initTableView()
-        titleLabel.text = "암카 토익1100"
+        titleLabel.text = "암카 토익"
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -134,7 +134,7 @@ extension MainVC: UITableViewDelegate {
         let item = vm.cardPackList[indexPath.row]
         
         if AppStatus.isADVersionApp, item.level <= 6 {
-            presentOverFull(BuyPopUpVC(), animated: true)
+            presentOverFull(PurchasePopUpVC(), animated: true)
         } else if item.learningStatus == .completed {
             AlertHelper.alertConfirm(baseVC: self, title: "학습이 완료된 챕터예요.\n학습을 다시 진행할까요?", message: "") {[weak self] in
                 self?.vm.resetLearningStatus(at: indexPath.row)

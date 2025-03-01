@@ -13,7 +13,7 @@
 		6AA92AAA2D6DE28400E8804E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AA22D6DE28400E8804E /* LaunchScreen.storyboard */; };
 		6AA92AAC2D6DE28400E8804E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92A9E2D6DE28400E8804E /* AppDelegate.swift */; };
 		6AA92AAD2D6DE28400E8804E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AA52D6DE28400E8804E /* SceneDelegate.swift */; };
-		6AA92B002D6DE46C00E8804E /* BuyPopUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AF12D6DE46C00E8804E /* BuyPopUpVC.xib */; };
+		6AA92B002D6DE46C00E8804E /* PurchasePopUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AF12D6DE46C00E8804E /* PurchasePopUpVC.xib */; };
 		6AA92B012D6DE46C00E8804E /* CardItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AE02D6DE46C00E8804E /* CardItemView.xib */; };
 		6AA92B022D6DE46C00E8804E /* SwipeCardCompletionPopUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AE42D6DE46C00E8804E /* SwipeCardCompletionPopUpVC.xib */; };
 		6AA92B032D6DE46C00E8804E /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92ABC2D6DE46C00E8804E /* MainVC.xib */; };
@@ -46,7 +46,7 @@
 		6AA92B232D6DE46C00E8804E /* SwipeCardVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AD82D6DE46C00E8804E /* SwipeCardVM.swift */; };
 		6AA92B242D6DE46C00E8804E /* CommonUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AF42D6DE46C00E8804E /* CommonUtility.swift */; };
 		6AA92B252D6DE46C00E8804E /* KolodaViewAnimatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AD52D6DE46C00E8804E /* KolodaViewAnimatior.swift */; };
-		6AA92B262D6DE46C00E8804E /* BuyPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AF02D6DE46C00E8804E /* BuyPopUpVC.swift */; };
+		6AA92B262D6DE46C00E8804E /* PurchasePopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AF02D6DE46C00E8804E /* PurchasePopUpVC.swift */; };
 		6AA92B272D6DE46C00E8804E /* CardItemComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92ADB2D6DE46C00E8804E /* CardItemComponentView.swift */; };
 		6AA92B282D6DE46C00E8804E /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92ABB2D6DE46C00E8804E /* MainVC.swift */; };
 		6AA92B292D6DE46C00E8804E /* FavoritesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AC32D6DE46C00E8804E /* FavoritesVM.swift */; };
@@ -78,6 +78,8 @@
 		6ABA33F52D729E7700CD052F /* TOEIC_CardDATA_20250301-104545.json in Resources */ = {isa = PBXBuildFile; fileRef = 6ABA33F42D729E7700CD052F /* TOEIC_CardDATA_20250301-104545.json */; };
 		6ABA33F82D729FB400CD052F /* DashBoardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ABA33F72D729FB400CD052F /* DashBoardCell.xib */; };
 		6ABA33F92D729FB400CD052F /* DashBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABA33F62D729FB400CD052F /* DashBoardCell.swift */; };
+		6ABA33EB2D727E0C00CD052F /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABA33EA2D727E0600CD052F /* IAPHelper.swift */; };
+		6ABA33ED2D72811700CD052F /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABA33EC2D72811300CD052F /* IAPManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -142,8 +144,8 @@
 		6AA92AEB2D6DE46C00E8804E /* SearchWebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWebVC.swift; sourceTree = "<group>"; };
 		6AA92AEC2D6DE46C00E8804E /* SearchWebVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchWebVC.xib; sourceTree = "<group>"; };
 		6AA92AEE2D6DE46C00E8804E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		6AA92AF02D6DE46C00E8804E /* BuyPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyPopUpVC.swift; sourceTree = "<group>"; };
-		6AA92AF12D6DE46C00E8804E /* BuyPopUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyPopUpVC.xib; sourceTree = "<group>"; };
+		6AA92AF02D6DE46C00E8804E /* PurchasePopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasePopUpVC.swift; sourceTree = "<group>"; };
+		6AA92AF12D6DE46C00E8804E /* PurchasePopUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchasePopUpVC.xib; sourceTree = "<group>"; };
 		6AA92AF32D6DE46C00E8804E /* NibUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibUIView.swift; sourceTree = "<group>"; };
 		6AA92AF42D6DE46C00E8804E /* CommonUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtility.swift; sourceTree = "<group>"; };
 		6AA92AF52D6DE46C00E8804E /* EmailHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailHelper.swift; sourceTree = "<group>"; };
@@ -155,6 +157,8 @@
 		6ABA33F42D729E7700CD052F /* TOEIC_CardDATA_20250301-104545.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "TOEIC_CardDATA_20250301-104545.json"; sourceTree = "<group>"; };
 		6ABA33F62D729FB400CD052F /* DashBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardCell.swift; sourceTree = "<group>"; };
 		6ABA33F72D729FB400CD052F /* DashBoardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashBoardCell.xib; sourceTree = "<group>"; };
+		6ABA33EA2D727E0600CD052F /* IAPHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
+		6ABA33EC2D72811300CD052F /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
 		96916ED89851F61E1AC54B68 /* Pods-AmcaTOEIC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmcaTOEIC.debug.xcconfig"; path = "Target Support Files/Pods-AmcaTOEIC/Pods-AmcaTOEIC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,7 +204,7 @@
 				6AA92AEA2D6DE46C00E8804E /* WordListScene */,
 				6AA92AED2D6DE46C00E8804E /* SearchScene */,
 				6AA92AEF2D6DE46C00E8804E /* SettingsScene */,
-				6AA92AF22D6DE46C00E8804E /* AdPopUpScene */,
+				6AA92AF22D6DE46C00E8804E /* PurchasePopUpScene */,
 				6AA92AF72D6DE46C00E8804E /* Utility */,
 				6AA92AFF2D6DE46C00E8804E /* Resource */,
 				6AA92A9E2D6DE28400E8804E /* AppDelegate.swift */,
@@ -364,18 +368,20 @@
 			path = SettingsScene;
 			sourceTree = "<group>";
 		};
-		6AA92AF22D6DE46C00E8804E /* AdPopUpScene */ = {
+		6AA92AF22D6DE46C00E8804E /* PurchasePopUpScene */ = {
 			isa = PBXGroup;
 			children = (
-				6AA92AF02D6DE46C00E8804E /* BuyPopUpVC.swift */,
-				6AA92AF12D6DE46C00E8804E /* BuyPopUpVC.xib */,
+				6AA92AF02D6DE46C00E8804E /* PurchasePopUpVC.swift */,
+				6AA92AF12D6DE46C00E8804E /* PurchasePopUpVC.xib */,
 			);
-			path = AdPopUpScene;
+			path = PurchasePopUpScene;
 			sourceTree = "<group>";
 		};
 		6AA92AF72D6DE46C00E8804E /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				6ABA33EA2D727E0600CD052F /* IAPHelper.swift */,
+				6ABA33EC2D72811300CD052F /* IAPManager.swift */,
 				6A8705F42D6FADD8001FA41D /* TTSHelper.swift */,
 				6AA92AF32D6DE46C00E8804E /* NibUIView.swift */,
 				6AA92AF42D6DE46C00E8804E /* CommonUtility.swift */,
@@ -476,7 +482,7 @@
 				6ABA33F82D729FB400CD052F /* DashBoardCell.xib in Resources */,
 				6AA92AA82D6DE28400E8804E /* Assets.xcassets in Resources */,
 				6AA92AAA2D6DE28400E8804E /* LaunchScreen.storyboard in Resources */,
-				6AA92B002D6DE46C00E8804E /* BuyPopUpVC.xib in Resources */,
+				6AA92B002D6DE46C00E8804E /* PurchasePopUpVC.xib in Resources */,
 				6AA92B012D6DE46C00E8804E /* CardItemView.xib in Resources */,
 				6AA92B452D6DE5C100E8804E /* remote_config_defaults.plist in Resources */,
 				6AA92B022D6DE46C00E8804E /* SwipeCardCompletionPopUpVC.xib in Resources */,
@@ -572,6 +578,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ABA33ED2D72811700CD052F /* IAPManager.swift in Sources */,
 				6AA92AAC2D6DE28400E8804E /* AppDelegate.swift in Sources */,
 				6AA92B152D6DE46C00E8804E /* SettingsView.swift in Sources */,
 				6AA92B162D6DE46C00E8804E /* KolodaCardStorage.swift in Sources */,
@@ -590,12 +597,13 @@
 				6AA92B232D6DE46C00E8804E /* SwipeCardVM.swift in Sources */,
 				6AA92B242D6DE46C00E8804E /* CommonUtility.swift in Sources */,
 				6AA92B252D6DE46C00E8804E /* KolodaViewAnimatior.swift in Sources */,
-				6AA92B262D6DE46C00E8804E /* BuyPopUpVC.swift in Sources */,
+				6AA92B262D6DE46C00E8804E /* PurchasePopUpVC.swift in Sources */,
 				6AA92B272D6DE46C00E8804E /* CardItemComponentView.swift in Sources */,
 				6AA92B282D6DE46C00E8804E /* MainVC.swift in Sources */,
 				6AA92B292D6DE46C00E8804E /* FavoritesVM.swift in Sources */,
 				6AA92B2A2D6DE46C00E8804E /* WordListVC.swift in Sources */,
 				6AA92B2B2D6DE46C00E8804E /* KolodaView.swift in Sources */,
+				6ABA33EB2D727E0C00CD052F /* IAPHelper.swift in Sources */,
 				6AA92B2C2D6DE46C00E8804E /* FavoritesSwipeVC.swift in Sources */,
 				6AA92B2D2D6DE46C00E8804E /* MainTabBarController.swift in Sources */,
 				6AA92B2E2D6DE46C00E8804E /* FavoritesStartLearningCell.swift in Sources */,
