@@ -54,6 +54,7 @@ class MainVC: UIViewController {
     func initTableView() {
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.register(UINib(nibName: "\(DashBoardCell.self)", bundle: nil), forCellReuseIdentifier: "\(DashBoardCell.self)")
         tableView.register(UINib(nibName: "\(CardPackItemCell.self)", bundle: nil), forCellReuseIdentifier: "\(CardPackItemCell.self)")
         
         tableView.rowHeight = UITableView.automaticDimension
@@ -64,11 +65,37 @@ class MainVC: UIViewController {
 }
 
 extension MainVC: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return vm.cardPackList.count
+        if section == 0 {
+            return 1
+        } else {
+            return vm.cardPackList.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
+        if indexPath.section == 0 {
+            //DashBoard
+            guard let cell = tableView
+                .dequeueReusableCell(withIdentifier: "\(DashBoardCell.self)", for: indexPath) as? DashBoardCell
+            else { return UITableViewCell() }
+            
+            let completeCardCount = 1500 - vm.cardPackList.reduce(0){$0 + $1.remainCardCount}
+            cell.completeWordsLabel.text = "\(completeCardCount)"
+            cell.completeDaysLabel.text = String(format: "%d", vm.cardPackList.filter({ $0.learningStatus == .completed }).count)
+            
+            let rate = Int( Float(completeCardCount) / 1500.0 * 100 )
+            cell.completeRateLabel.text = "\(rate)%"
+            return cell
+        }
+        
+        
         guard let cell = tableView
             .dequeueReusableCell(withIdentifier: "\(CardPackItemCell.self)", for: indexPath) as? CardPackItemCell
         else { return UITableViewCell() }

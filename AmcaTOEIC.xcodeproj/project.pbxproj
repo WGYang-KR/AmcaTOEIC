@@ -76,6 +76,8 @@
 		6AA92B432D6DE53D00E8804E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92B422D6DE53D00E8804E /* GoogleService-Info.plist */; };
 		6AA92B452D6DE5C100E8804E /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92B442D6DE5C100E8804E /* remote_config_defaults.plist */; };
 		6ABA33F52D729E7700CD052F /* TOEIC_CardDATA_20250301-104545.json in Resources */ = {isa = PBXBuildFile; fileRef = 6ABA33F42D729E7700CD052F /* TOEIC_CardDATA_20250301-104545.json */; };
+		6ABA33F82D729FB400CD052F /* DashBoardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ABA33F72D729FB400CD052F /* DashBoardCell.xib */; };
+		6ABA33F92D729FB400CD052F /* DashBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABA33F62D729FB400CD052F /* DashBoardCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -151,6 +153,8 @@
 		6AA92B422D6DE53D00E8804E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6AA92B442D6DE5C100E8804E /* remote_config_defaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = remote_config_defaults.plist; sourceTree = "<group>"; };
 		6ABA33F42D729E7700CD052F /* TOEIC_CardDATA_20250301-104545.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "TOEIC_CardDATA_20250301-104545.json"; sourceTree = "<group>"; };
+		6ABA33F62D729FB400CD052F /* DashBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardCell.swift; sourceTree = "<group>"; };
+		6ABA33F72D729FB400CD052F /* DashBoardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashBoardCell.xib; sourceTree = "<group>"; };
 		96916ED89851F61E1AC54B68 /* Pods-AmcaTOEIC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmcaTOEIC.debug.xcconfig"; path = "Target Support Files/Pods-AmcaTOEIC/Pods-AmcaTOEIC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -249,6 +253,8 @@
 				6AA92ABD2D6DE46C00E8804E /* MainVM.swift */,
 				6AA92ABE2D6DE46C00E8804E /* CardPackItemCell.swift */,
 				6AA92ABF2D6DE46C00E8804E /* CardPackItemCell.xib */,
+				6ABA33F62D729FB400CD052F /* DashBoardCell.swift */,
+				6ABA33F72D729FB400CD052F /* DashBoardCell.xib */,
 			);
 			path = MainScene;
 			sourceTree = "<group>";
@@ -467,6 +473,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ABA33F82D729FB400CD052F /* DashBoardCell.xib in Resources */,
 				6AA92AA82D6DE28400E8804E /* Assets.xcassets in Resources */,
 				6AA92AAA2D6DE28400E8804E /* LaunchScreen.storyboard in Resources */,
 				6AA92B002D6DE46C00E8804E /* BuyPopUpVC.xib in Resources */,
@@ -606,6 +613,7 @@
 				6AA92B392D6DE46C00E8804E /* FavoritesSwipeVM.swift in Sources */,
 				6AA92B3A2D6DE46C00E8804E /* FavoriteData.swift in Sources */,
 				6AA92B3B2D6DE46C00E8804E /* DraggableCardView.swift in Sources */,
+				6ABA33F92D729FB400CD052F /* DashBoardCell.swift in Sources */,
 				6AA92B3C2D6DE46C00E8804E /* AppStatus.swift in Sources */,
 				6AA92B3D2D6DE46C00E8804E /* AppSetting.swift in Sources */,
 				6AA92B3E2D6DE46C00E8804E /* EmailHelper.swift in Sources */,
