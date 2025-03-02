@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="110" id="KGk-i7-Jjw" customClass="FavoritesStartLearningCell" customModule="SwipeHanja" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="110" id="KGk-i7-Jjw" customClass="FavoritesStartLearningCell" customModule="AmcaTOEIC" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="559" height="110"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -30,7 +30,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="단어장 학습하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afH-ce-Bff">
                                                 <rect key="frame" x="0.0" y="0.0" width="391.66666666666669" height="54"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                <color key="textColor" name="colorTeal02"/>
+                                                <color key="textColor" name="textSecondary"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Etb-tS-zhB">
@@ -45,20 +45,20 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="/" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aeo-YQ-DO3">
                                                         <rect key="frame" x="30" y="0.0" width="5" height="54"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" name="colorTeal02"/>
+                                                        <color key="textColor" name="textSecondary"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKJ-d6-x4k">
                                                         <rect key="frame" x="35" y="0.0" width="28.333333333333329" height="54"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" name="colorTeal02"/>
+                                                        <color key="textColor" name="textSecondary"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="253" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="k8t-TS-aIO">
                                                 <rect key="frame" x="479" y="2" width="28" height="50.333333333333329"/>
-                                                <color key="tintColor" name="colorTeal03"/>
+                                                <color key="tintColor" name="textTertiary"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="28" id="oym-h3-058"/>
                                                 </constraints>
@@ -66,7 +66,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="backMiddle"/>
                                 <constraints>
                                     <constraint firstItem="raW-2k-7qS" firstAttribute="leading" secondItem="IWV-fK-y4n" secondAttribute="leading" constant="30" id="2lt-1z-u3R"/>
                                     <constraint firstAttribute="trailing" secondItem="raW-2k-7qS" secondAttribute="trailing" constant="22" id="Be9-1o-aVa"/>
@@ -110,14 +110,17 @@
     </objects>
     <resources>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <namedColor name="backMiddle">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <namedColor name="colorSwipeNo">
             <color red="0.94117647058823528" green="0.2627450980392157" blue="0.32156862745098042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="colorTeal02">
-            <color red="0.074509803921568626" green="0.36470588235294116" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="textSecondary">
+            <color red="0.31372550129999999" green="0.34901961679999999" blue="0.40392160420000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <namedColor name="colorTeal03">
-            <color red="0.46666666666666667" green="0.69019607843137254" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="textTertiary">
+            <color red="0.42745098469999998" green="0.46274507050000002" blue="0.51372551919999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

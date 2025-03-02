@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoritesVC" customModule="SwipeHanja" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoritesVC" customModule="AmcaTOEIC" customModuleProvider="target">
             <connections>
                 <outlet property="tableView" destination="djT-bj-yxV" id="A1d-4O-jfJ"/>
                 <outlet property="titleLabel" destination="ksx-xd-K4O" id="dte-RO-bcj"/>
@@ -41,7 +41,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="단어장" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksx-xd-K4O">
                                             <rect key="frame" x="32" y="4" width="297" height="24"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                            <color key="textColor" name="colorTeal02"/>
+                                            <color key="textColor" name="textSecondary"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BK1-Nb-U9a">
@@ -81,7 +81,7 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" name="colorGrey04"/>
+            <color key="backgroundColor" name="backBase"/>
             <constraints>
                 <constraint firstItem="Lsz-Px-9dr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7Uy-vA-W6r"/>
                 <constraint firstItem="Lsz-Px-9dr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="D8l-Xz-J8a"/>
@@ -92,11 +92,11 @@
         </view>
     </objects>
     <resources>
-        <namedColor name="colorGrey04">
-            <color red="0.97254901960784312" green="0.96470588235294119" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="backBase">
+            <color red="0.94901967050000002" green="0.95686274770000002" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <namedColor name="colorTeal02">
-            <color red="0.074509803921568626" green="0.36470588235294116" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="textSecondary">
+            <color red="0.31372550129999999" green="0.34901961679999999" blue="0.40392160420000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

@@ -19,10 +19,12 @@ class DashBoardCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        selectionStyle = .none
+        
         let cornerRadius: CGFloat = 16
         containerView.layer.cornerRadius = cornerRadius
-        containerView.layer.borderWidth = 1
-        containerView.layer.borderColor = UIColor(resource: .colorGrey01).cgColor
+//        containerView.layer.borderWidth = 1
+//        containerView.layer.borderColor = UIColor(resource: .colorGrey01).cgColor
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

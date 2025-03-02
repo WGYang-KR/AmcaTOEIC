@@ -16,6 +16,7 @@ class WordListItemCell: UITableViewCell {
     @IBOutlet weak var strokeCountLabel: UILabel!
     @IBOutlet weak var checkMarkImageView: UIImageView!
     
+    @IBOutlet weak var speakButton: UIButton!
     @IBOutlet weak var favoriteButton: UIButton!
     
     let linedStarImage: UIImage? = .init(systemName: "star")
@@ -40,7 +41,7 @@ class WordListItemCell: UITableViewCell {
             shLog("Favorite UI 변경: \(isFavorite)")
             if !isFavorite {
                 favoriteButton.setImage(linedStarImage, for: .normal)
-                favoriteButton.tintColor = .colorTeal02
+                favoriteButton.tintColor = .textSecondary
             } else {
                 favoriteButton.setImage(filledStarImage, for: .normal)
                 favoriteButton.tintColor = .colorGold
@@ -69,6 +70,16 @@ class WordListItemCell: UITableViewCell {
     
     @IBAction func searchButtonTapped(_ sender: Any) {
         selectBtnTapped.send(Void())
+    }
+    
+    @IBAction func speakButtonTapped(_ sender: Any) {
+        
+        if let word = firstLabel.text {
+            speakButton.isEnabled = false
+            TTSHelper.shared.play(word) { [weak self] in
+                self?.speakButton.isEnabled = true
+            }
+        }
     }
     
     @IBAction func favoriteButtonTapped(_ sender: Any) {

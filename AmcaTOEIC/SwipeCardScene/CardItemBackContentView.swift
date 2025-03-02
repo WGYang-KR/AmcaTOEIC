@@ -33,7 +33,7 @@ class CardItemBackContentView: NibUIView {
             guard let self else { return }
             if !isFavorite {
                 favoriteButton.setImage(linedStarImage, for: .normal)
-                favoriteButton.tintColor = .colorTeal02
+                favoriteButton.tintColor = .textSecondary
             } else {
                 favoriteButton.setImage(filledStarImage, for: .normal)
                 favoriteButton.tintColor = .colorGold
@@ -46,7 +46,8 @@ class CardItemBackContentView: NibUIView {
         super.initView()
         
         containerView.layer.borderWidth = 2
-        containerView.layer.borderColor = UIColor.colorGrey01.cgColor
+        containerView.layer.borderColor = UIColor.colorCardBorder.cgColor
+        //TODO: 
     
  
     }

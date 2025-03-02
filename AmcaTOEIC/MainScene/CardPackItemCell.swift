@@ -43,7 +43,7 @@ class CardPackItemCell: UITableViewCell {
     
     override func setHighlighted(_ highlighted: Bool, animated: Bool) {
         super.setHighlighted(highlighted, animated: animated)
-        containerView.backgroundColor = highlighted ? .colorTeal04 : .white
+        containerView.backgroundColor = highlighted ? .backTop : .backMiddle 
     }
     
 }

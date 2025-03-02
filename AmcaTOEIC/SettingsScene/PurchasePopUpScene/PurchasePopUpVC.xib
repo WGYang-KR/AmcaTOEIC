@@ -6,7 +6,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -34,6 +33,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="‘암카 토익’의 암기 카드로 효율적인 단어 학습을 하고 계신가요?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laB-cq-iM3">
                                             <rect key="frame" x="0.0" y="0.0" width="279" height="43"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                            <color key="textColor" name="textPrimary"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AtZ-U4-pIZ">
@@ -42,13 +42,13 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Day 4부터 Day 60은 유료로 제공됩니다." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvc-ai-KLo">
                                                     <rect key="frame" x="0.0" y="0.0" width="279" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="textPrimary"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="단 한번의 결제로 모든 콘텐츠가 해제됩니다." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lag-Gu-4mM">
                                                     <rect key="frame" x="0.0" y="27.5" width="279" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="textPrimary"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -56,13 +56,13 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="결제 가격: 3,300원 (평생 소장)" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01N-PQ-7aq">
                                             <rect key="frame" x="0.0" y="122" width="279" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" name="textPrimary"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="지금 바로 결제하고 학습을 계속하세요!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJg-ft-4N5">
                                             <rect key="frame" x="0.0" y="158.5" width="279" height="21.5"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" name="textPrimary"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MHG-u5-TDg">
@@ -70,7 +70,7 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdS-Eg-Alg">
                                                     <rect key="frame" x="0.0" y="0.0" width="135.5" height="45"/>
-                                                    <color key="tintColor" name="colorTeal02"/>
+                                                    <color key="tintColor" name="textSecondary"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <buttonConfiguration key="configuration" style="gray" title="닫기"/>
                                                     <connections>
@@ -95,7 +95,7 @@
                                     </subviews>
                                 </stackView>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" name="backMiddle"/>
                             <constraints>
                                 <constraint firstItem="5n2-CT-6cP" firstAttribute="leading" secondItem="N9I-wb-MQ1" secondAttribute="leading" constant="24" id="Nhh-aS-as0"/>
                                 <constraint firstItem="5n2-CT-6cP" firstAttribute="top" secondItem="N9I-wb-MQ1" secondAttribute="top" constant="24" id="ZI9-AY-y1e"/>
@@ -127,11 +127,14 @@
         <namedColor name="ColorTossBlue">
             <color red="0.28235294117647058" green="0.50196078431372548" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <namedColor name="colorTeal02">
-            <color red="0.074509803921568626" green="0.36470588235294116" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="backMiddle">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="textPrimary">
+            <color red="0.20784312490000001" green="0.23921570180000001" blue="0.2901961207" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="textSecondary">
+            <color red="0.31372550129999999" green="0.34901961679999999" blue="0.40392160420000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
     </resources>
 </document>

@@ -69,7 +69,7 @@ class FavoritesItemCell: UITableViewCell {
     func setFavoriteButtonUI(_ isFavorite: Bool) {
         if !isFavorite {
             favoriteButton.setImage(linedStarImage, for: .normal)
-            favoriteButton.tintColor = .colorTeal02
+            favoriteButton.tintColor = .textSecondary
         } else {
             favoriteButton.setImage(filledStarImage, for: .normal)
             favoriteButton.tintColor = .colorGold

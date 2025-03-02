@@ -105,17 +105,17 @@ extension MainVC: UITableViewDataSource {
         cell.remainCountLabel.text = String(item.remainCardCount)
         cell.totalCountLabel.text = String(item.totalCardCount)
         if item.remainCardCount == 0 {
-            cell.remainCountLabel.textColor = .colorTeal02
+            cell.remainCountLabel.textColor = .textSecondary
             cell.remainCountLabel.font = UIFont.systemFont(ofSize: 17.0, weight: .regular)
             cell.checkSealImageView.isHidden = false
             cell.chevronLeftImageView.isHidden = true
         } else if  item.remainCardCount < item.totalCardCount {
-            cell.remainCountLabel.textColor = .colorSwipeNo
+            cell.remainCountLabel.textColor = .systemRed
             cell.remainCountLabel.font = UIFont.systemFont(ofSize: 17.0, weight: .semibold)
             cell.checkSealImageView.isHidden = true
             cell.chevronLeftImageView.isHidden = false
         } else {
-            cell.remainCountLabel.textColor = .colorTeal02
+            cell.remainCountLabel.textColor = .textSecondary
             cell.remainCountLabel.font = UIFont.systemFont(ofSize: 17.0, weight: .semibold)
             cell.checkSealImageView.isHidden = true
             cell.chevronLeftImageView.isHidden = false

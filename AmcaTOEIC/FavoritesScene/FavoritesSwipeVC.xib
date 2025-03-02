@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoritesSwipeVC" customModule="SwipeHanja" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoritesSwipeVC" customModule="AmcaTOEIC" customModuleProvider="target">
             <connections>
                 <outlet property="countLeftLabel" destination="fVT-yb-IUF" id="Q5h-S3-uEV"/>
                 <outlet property="countRightLabel" destination="L7U-Sx-sti" id="1IW-fy-Qcw"/>
@@ -45,10 +45,10 @@
                                                         <constraint firstAttribute="height" constant="32" id="SW3-uU-75Z"/>
                                                         <constraint firstAttribute="width" constant="32" id="cXK-cf-aSE"/>
                                                     </constraints>
-                                                    <color key="tintColor" name="colorTeal02"/>
+                                                    <color key="tintColor" name="textSecondary"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" image="xmark" catalog="system">
-                                                        <color key="titleColor" name="colorTeal02"/>
+                                                        <color key="titleColor" name="textSecondary"/>
                                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24"/>
                                                     </state>
                                                     <connections>
@@ -58,7 +58,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="단어장" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRe-zG-SNM">
                                                     <rect key="frame" x="32" y="0.0" width="297" height="32"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                    <color key="textColor" name="colorTeal02"/>
+                                                    <color key="textColor" name="textSecondary"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0X-uW-my1">
@@ -68,10 +68,10 @@
                                                         <constraint firstAttribute="height" constant="32" id="MXx-1E-1bY"/>
                                                         <constraint firstAttribute="width" constant="32" id="ipF-cp-673"/>
                                                     </constraints>
-                                                    <color key="tintColor" name="colorTeal02"/>
+                                                    <color key="tintColor" name="textSecondary"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" image="arrow.counterclockwise" catalog="system">
-                                                        <color key="titleColor" name="colorTeal02"/>
+                                                        <color key="titleColor" name="textSecondary"/>
                                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                                                     </state>
                                                     <connections>
@@ -90,7 +90,7 @@
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gP1-B6-RvW">
                                     <rect key="frame" x="0.0" y="48" width="393" height="2"/>
-                                    <color key="backgroundColor" name="colorGrey02"/>
+                                    <color key="backgroundColor" name="backTop"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="2" id="xtC-U0-xR9"/>
                                     </constraints>
@@ -167,19 +167,19 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdv-5i-Ceu">
                                                     <rect key="frame" x="0.0" y="0.0" width="30" height="20.333333333333332"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                    <color key="textColor" name="colorTeal01"/>
+                                                    <color key="textColor" name="textPrimary"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="/" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqz-Ie-fXE">
                                                     <rect key="frame" x="30" y="0.0" width="5" height="20.333333333333332"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" name="colorTeal02"/>
+                                                    <color key="textColor" name="textSecondary"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdi-Mt-VZN">
                                                     <rect key="frame" x="35" y="0.0" width="28.333333333333329" height="20.333333333333332"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" name="colorTeal02"/>
+                                                    <color key="textColor" name="textSecondary"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -202,9 +202,9 @@
                                         <constraint firstItem="FiO-G0-nhx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SkZ-U7-pIN" secondAttribute="trailing" id="we7-x5-70M"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kwg-H7-GWL" customClass="KolodaView" customModule="SwipeHanja" customModuleProvider="target">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kwg-H7-GWL" customClass="KolodaView" customModule="AmcaTOEIC" customModuleProvider="target">
                                     <rect key="frame" x="32" y="84" width="329" height="499"/>
-                                    <color key="backgroundColor" name="colorGrey02"/>
+                                    <color key="backgroundColor" name="colorCardBack"/>
                                 </view>
                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m1K-uo-LVZ">
                                     <rect key="frame" x="50" y="619" width="293" height="40"/>
@@ -216,10 +216,10 @@
                                                 <constraint firstAttribute="height" constant="40" id="4DF-b9-PRK"/>
                                                 <constraint firstAttribute="width" constant="40" id="swo-js-bp0"/>
                                             </constraints>
-                                            <color key="tintColor" name="colorTeal02"/>
+                                            <color key="tintColor" name="textSecondary"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" image="arrow.uturn.backward" catalog="system">
-                                                <color key="titleColor" name="colorTeal02"/>
+                                                <color key="titleColor" name="textSecondary"/>
                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                                             </state>
                                             <connections>
@@ -254,10 +254,10 @@
                                                 <constraint firstAttribute="height" constant="40" id="fMz-43-psx"/>
                                                 <constraint firstAttribute="width" constant="40" id="kMt-DJ-RiX"/>
                                             </constraints>
-                                            <color key="tintColor" name="colorTeal02"/>
+                                            <color key="tintColor" name="textSecondary"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" image="shuffle" catalog="system">
-                                                <color key="titleColor" name="colorTeal02"/>
+                                                <color key="titleColor" name="textSecondary"/>
                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                                             </state>
                                             <connections>
@@ -275,10 +275,10 @@
                                                 <constraint firstAttribute="height" constant="40" id="90v-lg-ihd"/>
                                                 <constraint firstAttribute="width" constant="40" id="ZLb-0M-c96"/>
                                             </constraints>
-                                            <color key="tintColor" name="colorTeal02"/>
+                                            <color key="tintColor" name="textSecondary"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" image="rectangle.portrait.righthalf.filled" catalog="system">
-                                                <color key="titleColor" name="colorTeal02"/>
+                                                <color key="titleColor" name="textSecondary"/>
                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                                             </state>
                                             <connections>
@@ -320,27 +320,30 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" name="colorGrey04"/>
+            <color key="backgroundColor" name="backBase"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1to-Ph-lgN" secondAttribute="trailing" id="NJl-lV-fnh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1to-Ph-lgN" secondAttribute="bottom" id="RsG-pp-ybi"/>
                 <constraint firstItem="1to-Ph-lgN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bnT-7j-l8u"/>
                 <constraint firstItem="1to-Ph-lgN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xUV-hP-8Mm"/>
             </constraints>
-            <point key="canvasLocation" x="138" y="21"/>
+            <point key="canvasLocation" x="134" y="21"/>
         </view>
     </objects>
     <resources>
-        <image name="arrow.counterclockwise" catalog="system" width="113" height="128"/>
+        <image name="arrow.counterclockwise" catalog="system" width="110" height="128"/>
         <image name="arrow.uturn.backward" catalog="system" width="128" height="113"/>
         <image name="rectangle.portrait.righthalf.filled" catalog="system" width="115" height="128"/>
         <image name="shuffle" catalog="system" width="128" height="95"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
-        <namedColor name="colorGrey02">
-            <color red="0.82352941176470584" green="0.9137254901960784" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="backBase">
+            <color red="0.94901967050000002" green="0.95686274770000002" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <namedColor name="colorGrey04">
-            <color red="0.97254901960784312" green="0.96470588235294119" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="backTop">
+            <color red="0.90196079019999997" green="0.90980386729999996" blue="0.92156863209999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="colorCardBack">
+            <color red="0.90196079019999997" green="0.90980386729999996" blue="0.92156863209999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="colorSwipeNo">
             <color red="0.94117647058823528" green="0.2627450980392157" blue="0.32156862745098042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -353,6 +356,12 @@
         </namedColor>
         <namedColor name="colorTeal02">
             <color red="0.074509803921568626" green="0.36470588235294116" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textPrimary">
+            <color red="0.20784312490000001" green="0.23921570180000001" blue="0.2901961207" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="textSecondary">
+            <color red="0.31372550129999999" green="0.34901961679999999" blue="0.40392160420000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

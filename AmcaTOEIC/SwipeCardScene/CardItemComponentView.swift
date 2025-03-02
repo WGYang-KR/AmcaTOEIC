@@ -43,7 +43,7 @@ class CardItemComponentView: UIView {
             guard let self else { return }
             if !isFavorite {
                 favoriteButton.setImage(linedStarImage, for: .normal)
-                favoriteButton.tintColor = .colorTeal02
+                favoriteButton.tintColor = .textSecondary
             } else {
                 favoriteButton.setImage(filledStarImage, for: .normal)
                 favoriteButton.tintColor = .colorGold
@@ -70,8 +70,8 @@ class CardItemComponentView: UIView {
             addSubview(view)
         }
         
-        containerView.layer.borderWidth = 2
-        containerView.layer.borderColor = UIColor.colorGrey01.cgColor
+        containerView.layer.borderWidth = 1
+        containerView.layer.borderColor = UIColor.colorCardBorder.cgColor
 
     }
     

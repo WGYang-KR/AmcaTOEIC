@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -32,6 +33,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="암기카드 학습법" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laB-cq-iM3">
                                             <rect key="frame" x="0.0" y="0.0" width="279" height="21.5"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                            <color key="textColor" name="textPrimary"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AtZ-U4-pIZ">
@@ -40,25 +42,25 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="- 단어 카드를 반복 탭하며 영어와 뜻을 암독합니다." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPB-zd-cHo">
                                                     <rect key="frame" x="0.0" y="0.0" width="279" height="38.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="textPrimary"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="- 카드를 좌우 스와이프하여 '알고 있음'과 '학습 필요'로 분류합니다" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNj-EC-tEC">
                                                     <rect key="frame" x="0.0" y="46.5" width="279" height="38.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="textPrimary"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="- 모든 카드 순회 후, '학습 필요'로 분류된 카드로 학습이 다시 시작됩니다." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMn-7D-ZW6">
                                                     <rect key="frame" x="0.0" y="93" width="279" height="38.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="textPrimary"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="- 모든 단어 카드가 '알고 있음'으로 분류되면 한 챕터가 완료됩니다." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gim-B3-BDo">
                                                     <rect key="frame" x="0.0" y="139.5" width="279" height="38.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="textPrimary"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -84,7 +86,7 @@
                                     </subviews>
                                 </stackView>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" name="backMiddle"/>
                             <constraints>
                                 <constraint firstItem="5n2-CT-6cP" firstAttribute="leading" secondItem="N9I-wb-MQ1" secondAttribute="leading" constant="24" id="Nhh-aS-as0"/>
                                 <constraint firstItem="5n2-CT-6cP" firstAttribute="top" secondItem="N9I-wb-MQ1" secondAttribute="top" constant="24" id="ZI9-AY-y1e"/>
@@ -113,9 +115,12 @@
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="backMiddle">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="textPrimary">
+            <color red="0.20784312490000001" green="0.23921570180000001" blue="0.2901961207" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

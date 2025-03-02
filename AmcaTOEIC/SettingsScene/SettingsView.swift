@@ -56,7 +56,7 @@ struct SettingsView: View {
             Spacer()
             Text("설정")
                 .font(.system(size: 20, weight: .semibold))
-                .foregroundStyle(Color.colorTeal02)
+                .foregroundStyle(Color.textSecondary)
             Spacer()
             Rectangle()
                 .foregroundColor(.clear)
@@ -84,7 +84,7 @@ struct SettingsView: View {
                 .aspectRatio(contentMode: .fit) // 원본 이미지의 비율을 유지하도록 함
                 .frame(height: 20) // 이미지의 크기를 24x24로 조정
         }
-        .tint(.colorTeal02)
+        .tint(.textSecondary)
         .frame(width: 32, height: 32) // 버튼의 크기를 32x32로 조정
     }
     
@@ -98,7 +98,7 @@ struct SettingsView: View {
                     }, label: {
                         Text("정식 버전 이용중")
                             .fontWeight(.regular)
-                            .foregroundStyle(Color.colorTeal02)
+                            .foregroundStyle(Color.textSecondary)
                     })
                     .disabled(true)
                     Spacer()
@@ -111,13 +111,13 @@ struct SettingsView: View {
                     }, label: {
                         Text("정식 버전 구매하기")
                             .fontWeight(.regular)
-                            .foregroundStyle(Color.colorTeal02)
+                            .foregroundStyle(Color.textSecondary)
                     })
                     
                     Spacer()
                     
                     Image(systemName: "chevron.right")
-                        .foregroundColor(.colorTeal03)
+                        .foregroundColor(.textTertiary)
                 }
                 
                 HStack {
@@ -126,7 +126,7 @@ struct SettingsView: View {
                     }, label: {
                         Text("구매기록 복원하기")
                             .fontWeight(.regular)
-                            .foregroundStyle(Color.colorTeal02)
+                            .foregroundStyle(Color.textSecondary)
                     })
                     .alert(isPresented: $showsRestoreAlert) {
                         Alert(
@@ -140,7 +140,7 @@ struct SettingsView: View {
                     Spacer()
                     
                     Image(systemName: "chevron.right")
-                        .foregroundColor(.colorTeal03)
+                        .foregroundColor(.textTertiary)
                 }
             }
             
@@ -159,13 +159,13 @@ struct SettingsView: View {
                 }, label: {
                     Text("암키카드 학습법")
                         .fontWeight(.regular)
-                        .foregroundStyle(Color.colorTeal02)
+                        .foregroundStyle(Color.textSecondary)
                 })
                 
                 Spacer()
                 
                 Image(systemName: "chevron.right")
-                    .foregroundColor(.colorTeal03)
+                    .foregroundColor(.textTertiary)
             }
             
             HStack {
@@ -174,7 +174,7 @@ struct SettingsView: View {
                 }, label: {
                     Text("학습 기록 초기화")
                         .fontWeight(.regular)
-                        .foregroundStyle(Color.colorTeal02)
+                        .foregroundStyle(Color.textSecondary)
                 })
                 .alert(isPresented: $showingAlert) {
                     Alert(
@@ -189,7 +189,7 @@ struct SettingsView: View {
                 Spacer()
                 
                 Image(systemName: "chevron.right")
-                    .foregroundColor(.colorTeal03)
+                    .foregroundColor(.textTertiary)
             }
         }
     }
@@ -209,21 +209,21 @@ struct SettingsView: View {
                 }, label: {
                     Text("문의 & 피드백")
                         .fontWeight(.regular)
-                        .foregroundStyle(Color.colorTeal02)
+                        .foregroundStyle(Color.textSecondary)
                 })
                 
                 Spacer()
                 
                 Image(systemName: "chevron.right")
-                    .foregroundColor(.colorTeal03)
+                    .foregroundColor(.textTertiary)
             }
             
             HStack(alignment: .center) {
                 Text("버전")
-                    .foregroundStyle(Color.colorTeal02)
+                    .foregroundStyle(Color.textSecondary)
                 Spacer()
                 Text(AppStatus.fullVersion)
-                    .foregroundStyle(Color.colorTeal02)
+                    .foregroundStyle(Color.textSecondary)
             }
         }
     }

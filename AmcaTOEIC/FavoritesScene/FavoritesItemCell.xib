@@ -30,7 +30,7 @@
                                             <constraint firstAttribute="width" constant="32" id="FHt-rW-FaW"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" name="colorTeal02"/>
+                                        <color key="textColor" name="textSecondary"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="XQo-1u-p1R">
@@ -39,13 +39,13 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="漢" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSb-Er-y1R">
                                                 <rect key="frame" x="0.0" y="0.0" width="21" height="28.666666666666668"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <color key="textColor" name="ColorTossBlack01"/>
+                                                <color key="textColor" name="textPrimary"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="한나라 한" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0VQ-Aq-0xl">
                                                 <rect key="frame" x="0.0" y="32.666666666666671" width="74.333333333333329" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" name="ColorTossBlack01"/>
+                                                <color key="textColor" name="textPrimary"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Der-F4-xSF">
@@ -139,10 +139,10 @@
                                                     <constraint firstAttribute="width" constant="28" id="sA7-9o-Tf1"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="tintColor" name="colorTeal02"/>
+                                                <color key="tintColor" name="textSecondary"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="magnifyingglass" catalog="system">
-                                                    <color key="titleColor" name="colorTeal02"/>
+                                                    <color key="titleColor" name="textSecondary"/>
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="18"/>
                                                 </state>
                                                 <connections>
@@ -152,7 +152,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="backMiddle"/>
                                 <constraints>
                                     <constraint firstItem="XQo-1u-p1R" firstAttribute="top" secondItem="Afz-9S-F6O" secondAttribute="bottom" id="BjA-hA-n4y"/>
                                     <constraint firstItem="Z2P-df-CWH" firstAttribute="leading" secondItem="XQo-1u-p1R" secondAttribute="leading" id="GQ1-uc-EMS"/>
@@ -206,8 +206,17 @@
         <namedColor name="ColorTossBlack01">
             <color red="0.10196078431372549" green="0.12156862745098039" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
+        <namedColor name="backMiddle">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <namedColor name="colorTeal02">
             <color red="0.074509803921568626" green="0.36470588235294116" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textPrimary">
+            <color red="0.20784312490000001" green="0.23921570180000001" blue="0.2901961207" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="textSecondary">
+            <color red="0.31372550129999999" green="0.34901961679999999" blue="0.40392160420000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

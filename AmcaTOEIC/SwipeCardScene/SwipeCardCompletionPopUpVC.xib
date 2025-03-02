@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SwipeCardCompletionPopUpVC" customModule="SwipeHanja" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SwipeCardCompletionPopUpVC" customModule="AmcaTOEIC" customModuleProvider="target">
             <connections>
                 <outlet property="bottomButton" destination="7iH-o2-7FQ" id="3FK-gO-JSH"/>
                 <outlet property="containerCenterYConstraint" destination="A7F-IO-dVP" id="Ub7-r1-FZY"/>
@@ -46,26 +46,29 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8I-4y-WlQ">
                                             <rect key="frame" x="0.0" y="96" width="297" height="24"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                            <color key="textColor" name="colorTeal01"/>
+                                            <color key="textColor" name="textPrimary"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXv-Jh-TgD">
                                             <rect key="frame" x="0.0" y="136" width="297" height="20.333333333333343"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" name="colorTeal01"/>
+                                            <color key="textColor" name="textPrimary"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7iH-o2-7FQ">
                                             <rect key="frame" x="0.0" y="172.33333333333337" width="297" height="40"/>
-                                            <color key="backgroundColor" name="colorTeal03"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="AFT-Fv-fYg"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <color key="tintColor" name="ColorTossBlue"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" title="Got it!">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <buttonConfiguration key="configuration" style="tinted" title="확인">
+                                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                            </buttonConfiguration>
                                             <connections>
                                                 <action selector="bottomButtonTapped:" destination="-1" eventType="touchUpInside" id="bEk-bg-gPa"/>
                                             </connections>
@@ -73,7 +76,7 @@
                                     </subviews>
                                 </stackView>
                             </subviews>
-                            <color key="backgroundColor" name="colorTeal04"/>
+                            <color key="backgroundColor" name="backMiddle"/>
                             <constraints>
                                 <constraint firstItem="Fjw-19-UPi" firstAttribute="leading" secondItem="vzq-Hs-9FW" secondAttribute="leading" constant="32" id="8Lx-lW-clw"/>
                                 <constraint firstAttribute="trailing" secondItem="Fjw-19-UPi" secondAttribute="trailing" constant="32" id="CCs-Kz-tUK"/>
@@ -86,6 +89,7 @@
                     <constraints>
                         <constraint firstItem="vzq-Hs-9FW" firstAttribute="centerY" secondItem="M9c-Nk-JKw" secondAttribute="centerY" id="A7F-IO-dVP"/>
                         <constraint firstAttribute="trailing" secondItem="vzq-Hs-9FW" secondAttribute="trailing" constant="16" id="QYA-fr-Plb"/>
+                        <constraint firstItem="vzq-Hs-9FW" firstAttribute="top" secondItem="M9c-Nk-JKw" secondAttribute="bottom" id="QaJ-kr-GWm"/>
                         <constraint firstItem="vzq-Hs-9FW" firstAttribute="leading" secondItem="M9c-Nk-JKw" secondAttribute="leading" constant="16" id="zvw-Wl-rOS"/>
                     </constraints>
                 </view>
@@ -94,12 +98,11 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="M9c-Nk-JKw" secondAttribute="trailing" id="LrU-G4-ED0"/>
-                <constraint firstItem="vzq-Hs-9FW" firstAttribute="top" secondItem="M9c-Nk-JKw" secondAttribute="bottom" id="QaJ-kr-GWm"/>
                 <constraint firstItem="M9c-Nk-JKw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="dVL-Zr-i3f"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="M9c-Nk-JKw" secondAttribute="bottom" id="lVt-wA-kXK"/>
                 <constraint firstItem="M9c-Nk-JKw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pgH-fM-aCK"/>
             </constraints>
-            <point key="canvasLocation" x="75.572519083969468" y="-11.267605633802818"/>
+            <point key="canvasLocation" x="103" y="33"/>
         </view>
     </objects>
     <resources>
@@ -107,14 +110,11 @@
         <namedColor name="ColorTossBlue">
             <color red="0.28235294117647058" green="0.50196078431372548" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <namedColor name="colorTeal01">
-            <color red="0.0" green="0.23529411764705882" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="backMiddle">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <namedColor name="colorTeal03">
-            <color red="0.46666666666666667" green="0.69019607843137254" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="colorTeal04">
-            <color red="0.8901960784313725" green="0.99607843137254903" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="textPrimary">
+            <color red="0.20784312490000001" green="0.23921570180000001" blue="0.2901961207" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
