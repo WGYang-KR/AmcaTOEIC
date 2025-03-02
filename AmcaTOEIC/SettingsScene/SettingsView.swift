@@ -13,6 +13,7 @@ struct SettingsView: View {
     @State private var showingAlert = false
     
     @State private var isPurchased: Bool = false
+    @State private var showsGuideAlert: Bool = false
     @State private var showsPurchaseAlert: Bool = false
     @State private var showsRestoreAlert: Bool = false
     
@@ -36,6 +37,12 @@ struct SettingsView: View {
                 if showsPurchaseAlert {
                     PurchasePopUpViewControllerWrapper(isPresented: $showsPurchaseAlert)
                         .background(Color.clear) // SwiftUI에서 반투명 배경 추가
+                        .edgesIgnoringSafeArea(.all)
+                }
+                
+                if showsGuideAlert {
+                    GuidePopUpViewControllerWrapper(isPresented: $showsGuideAlert)
+                        .background(Color.clear)
                         .edgesIgnoringSafeArea(.all)
                 }
             }
@@ -144,7 +151,23 @@ struct SettingsView: View {
     }
     
     private var resetProgressSection: some View {
-        Section {
+        Section("학습") {
+            
+            HStack {
+                Button(action: {
+                    self.showsGuideAlert = true
+                }, label: {
+                    Text("암키카드 학습법")
+                        .fontWeight(.regular)
+                        .foregroundStyle(Color.colorTeal02)
+                })
+                
+                Spacer()
+                
+                Image(systemName: "chevron.right")
+                    .foregroundColor(.colorTeal03)
+            }
+            
             HStack {
                 Button(action: {
                     self.showingAlert = true
@@ -216,7 +239,6 @@ struct SettingsView: View {
             showsRestoreAlert = true
         }
     }
-    
 
 }
 

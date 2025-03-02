@@ -75,11 +75,13 @@
 		6AA92B412D6DE4B000E8804E /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92B402D6DE4B000E8804E /* PrivacyInfo.xcprivacy */; };
 		6AA92B432D6DE53D00E8804E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92B422D6DE53D00E8804E /* GoogleService-Info.plist */; };
 		6AA92B452D6DE5C100E8804E /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92B442D6DE5C100E8804E /* remote_config_defaults.plist */; };
+		6AB34C8C2D7430D90015FDCA /* GuidePopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB34C8A2D7430D90015FDCA /* GuidePopUpVC.swift */; };
+		6AB34C8D2D7430D90015FDCA /* GuidePopUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AB34C8B2D7430D90015FDCA /* GuidePopUpVC.xib */; };
+		6ABA33EB2D727E0C00CD052F /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABA33EA2D727E0600CD052F /* IAPHelper.swift */; };
+		6ABA33ED2D72811700CD052F /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABA33EC2D72811300CD052F /* IAPManager.swift */; };
 		6ABA33F52D729E7700CD052F /* TOEIC_CardDATA_20250301-104545.json in Resources */ = {isa = PBXBuildFile; fileRef = 6ABA33F42D729E7700CD052F /* TOEIC_CardDATA_20250301-104545.json */; };
 		6ABA33F82D729FB400CD052F /* DashBoardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ABA33F72D729FB400CD052F /* DashBoardCell.xib */; };
 		6ABA33F92D729FB400CD052F /* DashBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABA33F62D729FB400CD052F /* DashBoardCell.swift */; };
-		6ABA33EB2D727E0C00CD052F /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABA33EA2D727E0600CD052F /* IAPHelper.swift */; };
-		6ABA33ED2D72811700CD052F /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABA33EC2D72811300CD052F /* IAPManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -154,11 +156,13 @@
 		6AA92B402D6DE4B000E8804E /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		6AA92B422D6DE53D00E8804E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6AA92B442D6DE5C100E8804E /* remote_config_defaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = remote_config_defaults.plist; sourceTree = "<group>"; };
+		6AB34C8A2D7430D90015FDCA /* GuidePopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidePopUpVC.swift; sourceTree = "<group>"; };
+		6AB34C8B2D7430D90015FDCA /* GuidePopUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuidePopUpVC.xib; sourceTree = "<group>"; };
+		6ABA33EA2D727E0600CD052F /* IAPHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
+		6ABA33EC2D72811300CD052F /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
 		6ABA33F42D729E7700CD052F /* TOEIC_CardDATA_20250301-104545.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "TOEIC_CardDATA_20250301-104545.json"; sourceTree = "<group>"; };
 		6ABA33F62D729FB400CD052F /* DashBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardCell.swift; sourceTree = "<group>"; };
 		6ABA33F72D729FB400CD052F /* DashBoardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashBoardCell.xib; sourceTree = "<group>"; };
-		6ABA33EA2D727E0600CD052F /* IAPHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
-		6ABA33EC2D72811300CD052F /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
 		96916ED89851F61E1AC54B68 /* Pods-AmcaTOEIC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmcaTOEIC.debug.xcconfig"; path = "Target Support Files/Pods-AmcaTOEIC/Pods-AmcaTOEIC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -204,7 +208,6 @@
 				6AA92AEA2D6DE46C00E8804E /* WordListScene */,
 				6AA92AED2D6DE46C00E8804E /* SearchScene */,
 				6AA92AEF2D6DE46C00E8804E /* SettingsScene */,
-				6AA92AF22D6DE46C00E8804E /* PurchasePopUpScene */,
 				6AA92AF72D6DE46C00E8804E /* Utility */,
 				6AA92AFF2D6DE46C00E8804E /* Resource */,
 				6AA92A9E2D6DE28400E8804E /* AppDelegate.swift */,
@@ -363,6 +366,8 @@
 		6AA92AEF2D6DE46C00E8804E /* SettingsScene */ = {
 			isa = PBXGroup;
 			children = (
+				6AA92AF22D6DE46C00E8804E /* PurchasePopUpScene */,
+				6AB34C892D7430C20015FDCA /* GuidePopUpScene */,
 				6AA92AEE2D6DE46C00E8804E /* SettingsView.swift */,
 			);
 			path = SettingsScene;
@@ -398,6 +403,15 @@
 				6ABA33F42D729E7700CD052F /* TOEIC_CardDATA_20250301-104545.json */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		6AB34C892D7430C20015FDCA /* GuidePopUpScene */ = {
+			isa = PBXGroup;
+			children = (
+				6AB34C8A2D7430D90015FDCA /* GuidePopUpVC.swift */,
+				6AB34C8B2D7430D90015FDCA /* GuidePopUpVC.xib */,
+			);
+			path = GuidePopUpScene;
 			sourceTree = "<group>";
 		};
 		951CB9975B4DF793884657F4 /* Pods */ = {
@@ -491,6 +505,7 @@
 				6AA92B412D6DE4B000E8804E /* PrivacyInfo.xcprivacy in Resources */,
 				6AA92B042D6DE46C00E8804E /* FavoritesStartLearningCell.xib in Resources */,
 				6AA92B052D6DE46C00E8804E /* WordListItemCell.xib in Resources */,
+				6AB34C8D2D7430D90015FDCA /* GuidePopUpVC.xib in Resources */,
 				6AA92B062D6DE46C00E8804E /* SearchWebVC.xib in Resources */,
 				6AA92B082D6DE46C00E8804E /* FavoritesSwipeVC.xib in Resources */,
 				6AA92B0A2D6DE46C00E8804E /* SwipeCardVC.xib in Resources */,
@@ -588,6 +603,7 @@
 				6AA92B1A2D6DE46C00E8804E /* DBManager.swift in Sources */,
 				6AA92B1B2D6DE46C00E8804E /* FavoritesItemCell.swift in Sources */,
 				6AA92B1C2D6DE46C00E8804E /* SHOverlayView.swift in Sources */,
+				6AB34C8C2D7430D90015FDCA /* GuidePopUpVC.swift in Sources */,
 				6AA92B1D2D6DE46C00E8804E /* SwipeCardCompletionPopUpVC.swift in Sources */,
 				6AA92B1E2D6DE46C00E8804E /* NibUIView.swift in Sources */,
 				6AA92B1F2D6DE46C00E8804E /* WordListItemCell.swift in Sources */,
