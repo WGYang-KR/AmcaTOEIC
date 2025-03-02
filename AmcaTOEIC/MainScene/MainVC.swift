@@ -137,6 +137,9 @@ extension MainVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
+        if indexPath.section == 0 {
+            return 
+        }
         let item = vm.cardPackList[indexPath.row]
         
         if !IAPManager.shared.isProductPurchased(),
