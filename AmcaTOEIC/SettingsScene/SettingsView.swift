@@ -229,13 +229,13 @@ struct SettingsView: View {
     }
     
     func checkPurchaseStatus() {
-        isPurchased = IAPManager.shared.isProductPurchased(productIdentifier: .Sample_ID)
+        isPurchased = IAPManager.shared.isProductPurchased()
 //        isPurchased = true
     }
     
     func restorePurchase() {
         IAPManager.shared.restorePurchases { _ in
-            isPurchased = IAPManager.shared.isProductPurchased(productIdentifier: .Sample_ID)
+            isPurchased = IAPManager.shared.isProductPurchased()
             showsRestoreAlert = true
         }
     }

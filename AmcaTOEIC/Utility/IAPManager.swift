@@ -12,42 +12,47 @@ class IAPManager {
     
     static let shared = IAPManager()
    
-    private let productIdentifiers: [ProductIdentifierType] = [.Sample_ID, .AnotherProductID] // 나중에 상품이 여러 개로 확장될 수 있음
-    
-    enum ProductIdentifierType: String {
-        case Sample_ID
-        case AnotherProductID
-    }
-    
+    let productIdentifier = "Sample_ID"
+
     private init() {}
     
     ///몇번째 챕터까지 무료인지
     var freeChapterNumber: Int = 3
     
-    // MARK: - 상품 구매 여부 확인
-    func isProductPurchased(productIdentifier: ProductIdentifierType) -> Bool {
-        return IAPHelper.shared.isProductPurchased(productIdentifier: productIdentifier.rawValue)
-    }
-    
-    // MARK: - 모든 상품 구매 여부 확인
-    func areAllProductsPurchased() -> Bool {
-        for productIdentifier in productIdentifiers {
-            if !IAPHelper.shared.isProductPurchased(productIdentifier: productIdentifier.rawValue) {
-                return false
+    //MARK: - 상품 가격
+    func getProductPrice(completion: @escaping (SKProduct?)-> Void ){
+        IAPHelper.shared.fetchProducts(productIdentifiers: [productIdentifier]) { result in
+            switch result {
+            case .success(let products):
+                guard let product = products.first else {
+                    shLog("Error: productNotFound")
+                    completion(nil)
+                    return
+                }
+            
+                completion(product)
+                
+            case .failure(let error):
+                shLog("Error: \(error.localizedDescription)")
+                completion(nil)
             }
         }
-        return true
+    }
+    
+    // MARK: - 상품 구매 여부 확인
+    func isProductPurchased() -> Bool {
+        return IAPHelper.shared.isProductPurchased(productIdentifier: productIdentifier)
     }
     
     // MARK: - 상품 구매
-    func buyProduct(productIdentifier: ProductIdentifierType, completion: @escaping (Result<SKPaymentTransaction, Error>) -> Void) {
-        IAPHelper.shared.buyProduct(productIdentifier: productIdentifier.rawValue) { result in
+    func buyProduct(completion: @escaping (Result<SKPaymentTransaction, Error>) -> Void) {
+        IAPHelper.shared.buyProduct(productIdentifier: productIdentifier) { result in
             switch result {
             case .success(let transaction):
-                print("Product purchased successfully: \(transaction.payment.productIdentifier)")
+                shLog("구매 성공: \(transaction.payment.productIdentifier)")
                 completion(.success(transaction))
             case .failure(let error):
-                print("Purchase failed: \(error.localizedDescription)")
+                shLog("구매 실패: \(error.localizedDescription)")
                 completion(.failure(error))
             }
         }
@@ -58,10 +63,10 @@ class IAPManager {
         IAPHelper.shared.restorePurchases { result in
             switch result {
             case .success(let transactions):
-                print("Restored purchases: \(transactions.count)")
+                print("구매 복원 성공: \(transactions.count)")
                 completion(.success(transactions))
             case .failure(let error):
-                print("Restore failed: \(error.localizedDescription)")
+                print("구매 복원 실패: \(error.localizedDescription)")
                 completion(.failure(error))
             }
         }

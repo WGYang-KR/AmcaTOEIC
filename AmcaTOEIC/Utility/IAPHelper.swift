@@ -12,6 +12,7 @@ class IAPHelper: NSObject {
     
     static let shared = IAPHelper()
     
+    
     private override init() {
         super.init()
         SKPaymentQueue.default().add(self)
@@ -41,9 +42,12 @@ class IAPHelper: NSObject {
                     completion(.failure(IAPError.productNotFound))
                     return
                 }
+                
+                self.purchaseCompletionHandler = completion
+                
                 let payment = SKPayment(product: product)
                 SKPaymentQueue.default().add(payment)
-                self.purchaseCompletionHandler = completion
+             
                 
             case .failure(let error):
                 completion(.failure(error))
@@ -53,16 +57,17 @@ class IAPHelper: NSObject {
     
     // MARK: - 상품 복원
     func restorePurchases(completion: @escaping (Result<[SKPaymentTransaction], Error>) -> Void) {
-        SKPaymentQueue.default().restoreCompletedTransactions()
         self.restoreCompletionHandler = completion
+        SKPaymentQueue.default().restoreCompletedTransactions()
     }
     
     // MARK: - 상품 목록 가져오기
     func fetchProducts(productIdentifiers: Set<String>, completion: @escaping (Result<[SKProduct], Error>) -> Void) {
+        self.completionHandler = completion
         let request = SKProductsRequest(productIdentifiers: productIdentifiers)
         request.delegate = self
         request.start()
-        self.completionHandler = completion
+   
     }
     
     // MARK: - 구매 성공 처리

@@ -121,7 +121,7 @@ extension MainVC: UITableViewDataSource {
             cell.chevronLeftImageView.isHidden = false
         }
 
-        if !IAPManager.shared.isProductPurchased(productIdentifier: .Sample_ID),
+        if !IAPManager.shared.isProductPurchased(),
            indexPath.row >= IAPManager.shared.freeChapterNumber {
             cell.config(.locked)
         } else {
@@ -139,7 +139,7 @@ extension MainVC: UITableViewDelegate {
 
         let item = vm.cardPackList[indexPath.row]
         
-        if !IAPManager.shared.isProductPurchased(productIdentifier: .Sample_ID),
+        if !IAPManager.shared.isProductPurchased(),
            indexPath.row >= IAPManager.shared.freeChapterNumber {
             presentOverFull(PurchasePopUpVC(), animated: true)
             

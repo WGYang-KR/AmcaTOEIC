@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftUI
+import StoreKit
 
 struct PurchasePopUpViewControllerWrapper: UIViewControllerRepresentable {
     @Binding var isPresented: Bool
@@ -36,7 +37,21 @@ class PurchasePopUpVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         backBoxView.layer.cornerRadius = 12.0
-        priceLabel.text = "가격: 3,300원 (평생 소장)"
+        IAPManager.shared.getProductPrice { [weak self] product in
+            guard let self else { return }
+            guard let product else {
+                closeSelected(Void())
+                return
+            }
+            
+            let numberFormatter = NumberFormatter()
+            numberFormatter.numberStyle = .currency
+            numberFormatter.locale = product.priceLocale
+            let formattedString = numberFormatter.string(from: product.price)
+            
+            priceLabel.text = "가격: \(formattedString ?? "") (평생 소장)"
+        }
+       
     }
     
     override func viewDidAppear(_ animated: Bool) {
