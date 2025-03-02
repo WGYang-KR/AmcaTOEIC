@@ -111,8 +111,8 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Afz-9S-F6O">
-                                        <rect key="frame" x="247" y="8" width="66" height="28"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Afz-9S-F6O">
+                                        <rect key="frame" x="197" y="8" width="116" height="28"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ygg-U9-Wkt">
                                                 <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
@@ -131,8 +131,26 @@
                                                     <action selector="favoritesButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vhT-jM-own"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMN-go-n3P">
+                                                <rect key="frame" x="44" y="0.0" width="28" height="28"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="28" id="AVY-pw-FT9"/>
+                                                    <constraint firstAttribute="width" constant="28" id="uFf-Mr-in8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="tintColor" name="textSecondary"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="speaker.wave.2" catalog="system">
+                                                    <color key="titleColor" name="textSecondary"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="speakButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0n2-Zk-P2H"/>
+                                                </connections>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Og5-pT-lTh">
-                                                <rect key="frame" x="38" y="0.0" width="28" height="28"/>
+                                                <rect key="frame" x="88" y="0.0" width="28" height="28"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="28" id="BhD-nz-vg5"/>
@@ -191,6 +209,7 @@
                 <outlet property="radicalLabel" destination="A3T-8Z-0I8" id="V3K-pw-CeG"/>
                 <outlet property="searchButton" destination="Og5-pT-lTh" id="kka-en-gIs"/>
                 <outlet property="secondLabel" destination="0VQ-Aq-0xl" id="0uM-fF-fxA"/>
+                <outlet property="speakButton" destination="VMN-go-n3P" id="sHl-sx-0eT"/>
                 <outlet property="strokeCountLabel" destination="xnK-Rl-sU9" id="tB8-pl-JyN"/>
                 <outlet property="topLabel" destination="uMR-Vr-iMR" id="eBJ-OG-vyE"/>
             </connections>
@@ -199,6 +218,7 @@
     </objects>
     <resources>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="speaker.wave.2" catalog="system" width="128" height="88"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <namedColor name="ColorGold">
             <color red="0.99215686274509807" green="0.83137254901960789" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

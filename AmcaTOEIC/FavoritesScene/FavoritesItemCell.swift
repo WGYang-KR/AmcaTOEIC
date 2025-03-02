@@ -16,6 +16,7 @@ class FavoritesItemCell: UITableViewCell {
     @IBOutlet weak var secondLabel: UILabel!
     @IBOutlet weak var radicalLabel: UILabel!
     @IBOutlet weak var strokeCountLabel: UILabel!
+    @IBOutlet weak var speakButton: UIButton!
     @IBOutlet weak var searchButton: UIButton!
     
     let linedStarImage: UIImage? = .init(systemName: "star")
@@ -75,6 +76,18 @@ class FavoritesItemCell: UITableViewCell {
             favoriteButton.tintColor = .colorGold
         }
     }
+    
+    @IBAction func speakButtonTapped(_ sender: Any) {
+        
+        if let word = firstLabel.text {
+            speakButton.isEnabled = false
+            TTSHelper.shared.play(word) { [weak self] in
+                self?.speakButton.isEnabled = true
+            }
+        }
+    }
+    
+    
     @IBAction func searchButtonTapped(_ sender: Any) {
         searchBtnTapped.send(Void())
     }
