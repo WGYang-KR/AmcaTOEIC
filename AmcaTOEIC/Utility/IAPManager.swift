@@ -21,6 +21,9 @@ class IAPManager {
     
     private init() {}
     
+    ///몇번째 챕터까지 무료인지
+    var freeChapterNumber: Int = 3
+    
     // MARK: - 상품 구매 여부 확인
     func isProductPurchased(productIdentifier: ProductIdentifierType) -> Bool {
         return IAPHelper.shared.isProductPurchased(productIdentifier: productIdentifier.rawValue)

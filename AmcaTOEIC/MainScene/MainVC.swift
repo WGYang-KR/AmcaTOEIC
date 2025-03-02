@@ -121,6 +121,12 @@ extension MainVC: UITableViewDataSource {
             cell.chevronLeftImageView.isHidden = false
         }
 
+        if !IAPManager.shared.isProductPurchased(productIdentifier: .Sample_ID),
+           indexPath.row >= IAPManager.shared.freeChapterNumber {
+            cell.config(.locked)
+        } else {
+            cell.config(.normal)
+        }
         
         return cell
         
@@ -133,13 +139,16 @@ extension MainVC: UITableViewDelegate {
 
         let item = vm.cardPackList[indexPath.row]
         
-        if AppStatus.isADVersionApp, item.level <= 6 {
+        if !IAPManager.shared.isProductPurchased(productIdentifier: .Sample_ID),
+           indexPath.row >= IAPManager.shared.freeChapterNumber {
             presentOverFull(PurchasePopUpVC(), animated: true)
+            
         } else if item.learningStatus == .completed {
             AlertHelper.alertConfirm(baseVC: self, title: "학습이 완료된 챕터예요.\n학습을 다시 진행할까요?", message: "") {[weak self] in
                 self?.vm.resetLearningStatus(at: indexPath.row)
                 moveSwipeCardVC()
             }
+            
         } else {
             moveSwipeCardVC()
         }
