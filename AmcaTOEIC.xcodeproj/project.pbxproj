@@ -78,9 +78,9 @@
 		6AB34C8C2D7430D90015FDCA /* GuidePopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB34C8A2D7430D90015FDCA /* GuidePopUpVC.swift */; };
 		6AB34C8D2D7430D90015FDCA /* GuidePopUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AB34C8B2D7430D90015FDCA /* GuidePopUpVC.xib */; };
 		6AB34C902D7470460015FDCA /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB34C8F2D7470430015FDCA /* LoadingIndicator.swift */; };
+		6AB34C942D747EC50015FDCA /* TOEIC_CardDATA_20250302-205444.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AB34C932D747EC50015FDCA /* TOEIC_CardDATA_20250302-205444.json */; };
 		6ABA33EB2D727E0C00CD052F /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABA33EA2D727E0600CD052F /* IAPHelper.swift */; };
 		6ABA33ED2D72811700CD052F /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABA33EC2D72811300CD052F /* IAPManager.swift */; };
-		6ABA33F52D729E7700CD052F /* TOEIC_CardDATA_20250301-104545.json in Resources */ = {isa = PBXBuildFile; fileRef = 6ABA33F42D729E7700CD052F /* TOEIC_CardDATA_20250301-104545.json */; };
 		6ABA33F82D729FB400CD052F /* DashBoardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ABA33F72D729FB400CD052F /* DashBoardCell.xib */; };
 		6ABA33F92D729FB400CD052F /* DashBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABA33F62D729FB400CD052F /* DashBoardCell.swift */; };
 /* End PBXBuildFile section */
@@ -160,9 +160,9 @@
 		6AB34C8A2D7430D90015FDCA /* GuidePopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidePopUpVC.swift; sourceTree = "<group>"; };
 		6AB34C8B2D7430D90015FDCA /* GuidePopUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuidePopUpVC.xib; sourceTree = "<group>"; };
 		6AB34C8F2D7470430015FDCA /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		6AB34C932D747EC50015FDCA /* TOEIC_CardDATA_20250302-205444.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "TOEIC_CardDATA_20250302-205444.json"; sourceTree = "<group>"; };
 		6ABA33EA2D727E0600CD052F /* IAPHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
 		6ABA33EC2D72811300CD052F /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
-		6ABA33F42D729E7700CD052F /* TOEIC_CardDATA_20250301-104545.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "TOEIC_CardDATA_20250301-104545.json"; sourceTree = "<group>"; };
 		6ABA33F62D729FB400CD052F /* DashBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardCell.swift; sourceTree = "<group>"; };
 		6ABA33F72D729FB400CD052F /* DashBoardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashBoardCell.xib; sourceTree = "<group>"; };
 		96916ED89851F61E1AC54B68 /* Pods-AmcaTOEIC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmcaTOEIC.debug.xcconfig"; path = "Target Support Files/Pods-AmcaTOEIC/Pods-AmcaTOEIC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -403,7 +403,7 @@
 			isa = PBXGroup;
 			children = (
 				6AA92AF82D6DE46C00E8804E /* DBManager.swift */,
-				6ABA33F42D729E7700CD052F /* TOEIC_CardDATA_20250301-104545.json */,
+				6AB34C932D747EC50015FDCA /* TOEIC_CardDATA_20250302-205444.json */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -512,11 +512,11 @@
 				6AA92B062D6DE46C00E8804E /* SearchWebVC.xib in Resources */,
 				6AA92B082D6DE46C00E8804E /* FavoritesSwipeVC.xib in Resources */,
 				6AA92B0A2D6DE46C00E8804E /* SwipeCardVC.xib in Resources */,
-				6ABA33F52D729E7700CD052F /* TOEIC_CardDATA_20250301-104545.json in Resources */,
 				6AA92B0B2D6DE46C00E8804E /* FavoritesVC.xib in Resources */,
 				6AA92B0C2D6DE46C00E8804E /* CardItemComponentView.xib in Resources */,
 				6AA92B0D2D6DE46C00E8804E /* WordListVC.xib in Resources */,
 				6AA92B0E2D6DE46C00E8804E /* CardItemBackContentView.xib in Resources */,
+				6AB34C942D747EC50015FDCA /* TOEIC_CardDATA_20250302-205444.json in Resources */,
 				6AA92B112D6DE46C00E8804E /* SHOverlayView.xib in Resources */,
 				6AA92B122D6DE46C00E8804E /* FavoritesItemCell.xib in Resources */,
 				6AA92B132D6DE46C00E8804E /* CardPackItemCell.xib in Resources */,

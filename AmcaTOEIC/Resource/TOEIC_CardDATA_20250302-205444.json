@@ -66,7 +66,7 @@
         "level": 1,
         "frontWord": "account",
         "pronunciation": "[əkáunt]",
-        "backWord": "n. 계좌; n. 설명, 설명서"
+        "backWord": "n. 계정; v. 간주하다, 생각하다"
       },
       {
         "_id": "67bcf0535267b2ef7cd07f7a",
@@ -74,7 +74,7 @@
         "level": 1,
         "frontWord": "acknowledge",
         "pronunciation": "[æknάlidʒ, əknάlidʒ]",
-        "backWord": "v. 인정하다; v. (편지 등을) 수신확인하다"
+        "backWord": "v. 인정하다"
       },
       {
         "_id": "67bcf0534dc1688d5a2d9a2f",
@@ -82,7 +82,7 @@
         "level": 1,
         "frontWord": "address",
         "pronunciation": "[ədrés, ǽdres｜ədrés]",
-        "backWord": "n. 주소; v. 연설하다"
+        "backWord": "n. 주소; v. (문제를) 다루다, 연설하다"
       },
       {
         "_id": "67bcf053471c338f3b06c0e3",
@@ -98,7 +98,7 @@
         "level": 1,
         "frontWord": "application",
         "pronunciation": "[ӕpləkéiʃən]",
-        "backWord": "n. 신청, 지원서; n. 적용, 응용"
+        "backWord": "n. 신청, 신청서; n. 적용, 응용"
       },
       {
         "_id": "67bcf05397c5c78cd9c6cf6a",
@@ -106,7 +106,7 @@
         "level": 1,
         "frontWord": "approximately",
         "pronunciation": "[əprάksəmətli]",
-        "backWord": "ad. 대략; ad. 거의"
+        "backWord": "ad. 대략"
       },
       {
         "_id": "67bcf0535647a17321ea8f82",
@@ -114,7 +114,7 @@
         "level": 1,
         "frontWord": "audience",
         "pronunciation": "[ɔ́ːdiəns]",
-        "backWord": "n. 청중, 관객; n. 독자"
+        "backWord": "n. 청중; n. 독자"
       },
       {
         "_id": "67bcf0530f73e3ace394ea63",
@@ -130,7 +130,7 @@
         "level": 1,
         "frontWord": "banquet",
         "pronunciation": "[bǽŋkwit]",
-        "backWord": "n. 연회, 만찬; n. 성대한 식사"
+        "backWord": "n. 연회, 만찬"
       },
       {
         "_id": "67bcf053b43fab9562d83631",
@@ -154,7 +154,7 @@
         "level": 1,
         "frontWord": "confidential",
         "pronunciation": "[kὰnfədénʃəl]",
-        "backWord": "a. 기밀의, 비밀의; a. 신뢰를 요하는"
+        "backWord": "a. 기밀의; a. 신뢰를 요하는"
       },
       {
         "_id": "67bcf053d43d55ef25f27a86",
@@ -186,7 +186,7 @@
         "level": 1,
         "frontWord": "effective",
         "pronunciation": "[iféktiv]",
-        "backWord": "a. 효과적인; a. 효력을 발휘하는"
+        "backWord": "a. 효과적인"
       },
       {
         "_id": "67bcf0530807bec09400757f",
@@ -194,7 +194,7 @@
         "level": 1,
         "frontWord": "eligible",
         "pronunciation": "[élidʒəbl]",
-        "backWord": "a. 자격이 있는; a. 적격의"
+        "backWord": "a. 자격이 있는"
       },
       {
         "_id": "67bcf05327b7d91731c701e3",
@@ -202,7 +202,7 @@
         "level": 1,
         "frontWord": "enhance",
         "pronunciation": "[inhǽns]",
-        "backWord": "v. 향상시키다; v. 강화하다"
+        "backWord": "v. 향상시키다"
       },
       {
         "_id": "67bcf053348bc9622466f28b",
@@ -210,7 +210,7 @@
         "level": 1,
         "frontWord": "estimate",
         "pronunciation": "[éstəmèit]",
-        "backWord": "n. 견적서, 평가; v. 추산하다, 평가하다"
+        "backWord": "v. 추정하다; n. 추정, 견적서"
       },
       {
         "_id": "67bcf053f698deb1dfe191c0",
@@ -226,7 +226,7 @@
         "level": 1,
         "frontWord": "expire",
         "pronunciation": "[ikspáiər]",
-        "backWord": "v. 기한이 만료되다; v. 효력이 끝나다"
+        "backWord": "v. 만료되다, 끝나다"
       },
       {
         "_id": "67bcf053b2d1aca4e7fa6ed0",
@@ -234,7 +234,7 @@
         "level": 1,
         "frontWord": "extensive",
         "pronunciation": "[iksténsiv]",
-        "backWord": "a. 광범위한; a. 대규모의"
+        "backWord": "a. 광대한"
       },
       {
         "_id": "67bcf053402d31da735b02a5",
@@ -242,7 +242,7 @@
         "level": 1,
         "frontWord": "feature",
         "pronunciation": "[fíːʧər]",
-        "backWord": "n. 특징, 특색; n. 특집 기사"
+        "backWord": "n. 특징; v. 특징을 잡다"
       },
       {
         "_id": "67bcf053386b81af978a6289",
@@ -258,7 +258,7 @@
         "level": 1,
         "frontWord": "grant",
         "pronunciation": "[grænt]",
-        "backWord": "v. 승인하다; v. 수여하다"
+        "backWord": "n. 지원금, 승인; v. 승인하다, 지원하다"
       },
       {
         "_id": "67bcf0539e26abcc3545be01",
@@ -282,7 +282,7 @@
         "level": 1,
         "frontWord": "initiative",
         "pronunciation": "[iníʃiətiv]",
-        "backWord": "n. 주도권; n. 새로운 계획, 선도적 행 동"
+        "backWord": "n. 계획, 주도권"
       },
       {
         "_id": "67bcf0538f4ec4bb947a6832",
@@ -298,7 +298,7 @@
         "level": 1,
         "frontWord": "inventory",
         "pronunciation": "[ínvəntɔ̀ːri]",
-        "backWord": "n. 물품 목록, 재고; n. 재고 조사"
+        "backWord": "n. 재고, 목록"
       },
       {
         "_id": "67bcf05368cbc398b3faf545",
@@ -346,7 +346,7 @@
         "level": 1,
         "frontWord": "promote",
         "pronunciation": "[prəmóut]",
-        "backWord": "v. 촉진하다; v. 승진시키다"
+        "backWord": "v. 승진시키다; v. 촉진하다"
       },
       {
         "_id": "67bcf053939789bcaa11274e",
@@ -370,7 +370,7 @@
         "level": 1,
         "frontWord": "renowned",
         "pronunciation": "[rináund]",
-        "backWord": "a. 유명한"
+        "backWord": "a. 유명한, 명성 있는"
       },
       {
         "_id": "67bcf0531f31b38371b5bef5",
@@ -386,7 +386,7 @@
         "level": 1,
         "frontWord": "resume",
         "pronunciation": "[rizúːm]",
-        "backWord": "v. 재개하다; n. 이력서"
+        "backWord": "n. 이력서; v. 재개하다"
       },
       {
         "_id": "67bcf0536cc313e954bca4a7",
@@ -425,7 +425,7 @@
         "level": 2,
         "frontWord": "affect",
         "pronunciation": "[əfékt]",
-        "backWord": "v. 영향을 미치다; n. 정서, 감정 (주로 심리학 에서 사용됨)"
+        "backWord": "v. 영향을 미치다"
       },
       {
         "_id": "67bcf05386e309838377af50",
@@ -441,7 +441,7 @@
         "level": 2,
         "frontWord": "assembly",
         "pronunciation": "[əsémbli]",
-        "backWord": "n. 조립; n. 집회, 회의"
+        "backWord": "n. 집회, 조립"
       },
       {
         "_id": "67bcf053e78b90948b395a4e",
@@ -449,7 +449,7 @@
         "level": 2,
         "frontWord": "associate",
         "pronunciation": "[əsóuʃièit, əsóusièit]",
-        "backWord": "v. 관련시키다, 연관짓다; v. (사람과) 어울리다, 교제 하다"
+        "backWord": "v. 관련시키다, 연관짓다; v. (사람과) 어울리다, 교제하다"
       },
       {
         "_id": "67bcf053cc142704f4ede0a9",
@@ -545,7 +545,7 @@
         "level": 2,
         "frontWord": "deliver",
         "pronunciation": "[dilívər]",
-        "backWord": "v. 배송하다; v. 연설하다"
+        "backWord": "v. 배달하다"
       },
       {
         "_id": "67bcf053b42502e4cc89d6a7",
@@ -577,7 +577,7 @@
         "level": 2,
         "frontWord": "encourage",
         "pronunciation": "[inkə́ːridʒ]",
-        "backWord": "v. 격려하다; v. 촉진하다"
+        "backWord": "v. 격려하다"
       },
       {
         "_id": "67bcf0539c9998832c830494",
@@ -673,7 +673,7 @@
         "level": 2,
         "frontWord": "merchandise",
         "pronunciation": "[mə́ːrʧəndàiz]",
-        "backWord": "n. 상품, 물품; v. 판매하다, 홍보하다"
+        "backWord": "n. 상품"
       },
       {
         "_id": "67bcf05372f7fd1472615f7b",
@@ -705,7 +705,7 @@
         "level": 2,
         "frontWord": "promptly",
         "pronunciation": "[prάmptli]",
-        "backWord": "ad. 지체 없이, 즉시; ad. 정확히"
+        "backWord": "ad. 신속히"
       },
       {
         "_id": "67bcf05313195aca5adbe5bf",
@@ -721,7 +721,7 @@
         "level": 2,
         "frontWord": "relevant",
         "pronunciation": "[réləvənt]",
-        "backWord": "a. 관련 있는; a. 적절한"
+        "backWord": "a. 관련된"
       },
       {
         "_id": "67bcf053325246235498a954",
@@ -729,7 +729,7 @@
         "level": 2,
         "frontWord": "reliable",
         "pronunciation": "[riláiəbl]",
-        "backWord": "a. 믿을 수 있는, 신뢰할 수 있는; n. 신뢰성, 확실성"
+        "backWord": "a. 믿을 만한"
       },
       {
         "_id": "67bcf053b00a5f306fa5eb19",
@@ -745,7 +745,7 @@
         "level": 2,
         "frontWord": "renew",
         "pronunciation": "[rinjúː]",
-        "backWord": "v. 갱신하다; v. 재개하다"
+        "backWord": "v. 갱신하다, 재개하다"
       },
       {
         "_id": "67bcf0533eeecffa3161844e",
@@ -753,7 +753,7 @@
         "level": 2,
         "frontWord": "renovate",
         "pronunciation": "[rénəvèit]",
-        "backWord": "v. 수리하다, 개조하다"
+        "backWord": "v. 개조하다"
       },
       {
         "_id": "67bcf0535528a9ba662955b2",
@@ -769,7 +769,7 @@
         "level": 2,
         "frontWord": "simply",
         "pronunciation": "[símpli]",
-        "backWord": "ad. 단순하게, 간결하게; ad. 그저, 단지"
+        "backWord": "ad. 단순히"
       },
       {
         "_id": "67bcf053a31c751b15d93de5",
@@ -777,7 +777,7 @@
         "level": 2,
         "frontWord": "spacious",
         "pronunciation": "[spéiʃəs]",
-        "backWord": "a. 넓은, 공간이 많은; a. 마음이 넓은, 너그러운"
+        "backWord": "a. 넓은"
       },
       {
         "_id": "67bcf053f896a37053ccbe1d",
@@ -793,7 +793,7 @@
         "level": 2,
         "frontWord": "substantial",
         "pronunciation": "[səbstǽnʃəl]",
-        "backWord": "a. 상당한; a. 튼튼한, 단단한"
+        "backWord": "a. 상당한, 실질적인"
       },
       {
         "_id": "67bcf053b5dc74dfe43b8e50",
@@ -824,7 +824,7 @@
         "level": 3,
         "frontWord": "access",
         "pronunciation": "[ǽkses]",
-        "backWord": "n. 접근, 이용 권한; v. 접근하다, 이용하다"
+        "backWord": "n. 접근, 이용권; v. 접근하다"
       },
       {
         "_id": "67bcf053eb03ca83a96655ad",
@@ -952,7 +952,7 @@
         "level": 3,
         "frontWord": "description",
         "pronunciation": "[diskrípʃən]",
-        "backWord": "n. 묘사, 설명"
+        "backWord": "n. 설명"
       },
       {
         "_id": "67bcf053c09cf363746e4593",
@@ -976,7 +976,7 @@
         "level": 3,
         "frontWord": "due",
         "pronunciation": "[djuː]",
-        "backWord": "a. 기한이 된; a. 적절한, 맞는"
+        "backWord": "a. 만기의; ad. 예정으로"
       },
       {
         "_id": "67bcf0530709f78a640c0efe",
@@ -984,7 +984,7 @@
         "level": 3,
         "frontWord": "environment",
         "pronunciation": "[inváiərənmənt]",
-        "backWord": "n. 자연환경; n. 생활환경, 분위기"
+        "backWord": "n. 환경"
       },
       {
         "_id": "67bcf05371b24166224ed77c",
@@ -1008,7 +1008,7 @@
         "level": 3,
         "frontWord": "flaw",
         "pronunciation": "[flɔː]",
-        "backWord": "n. 결함, 흠; v. 결함을 만들다"
+        "backWord": "n. 결점, 흠"
       },
       {
         "_id": "67bcf053af3826e21f65a809",
@@ -1024,7 +1024,7 @@
         "level": 3,
         "frontWord": "guarantee",
         "pronunciation": "[gӕrəntíː]",
-        "backWord": "n. 보증, 보장; v. 보장하다, 확실히 하다"
+        "backWord": "n. 보증, 품질 보증서, 확약; v. 보증하다"
       },
       {
         "_id": "67bcf053bead183b2cfc146f",
@@ -1056,7 +1056,7 @@
         "level": 3,
         "frontWord": "material",
         "pronunciation": "[mətíəriəl]",
-        "backWord": "n. 재료, 물질; n. 자료, 정보"
+        "backWord": "n. 자재, 소재"
       },
       {
         "_id": "67bcf053ffe37ceee71b5351",
@@ -1064,7 +1064,7 @@
         "level": 3,
         "frontWord": "performance",
         "pronunciation": "[pərfɔ́ːrməns]",
-        "backWord": "n. 성과; n. 공연"
+        "backWord": "n. 성과, 공연"
       },
       {
         "_id": "67bcf0531799d7f0df613324",
@@ -1080,7 +1080,7 @@
         "level": 3,
         "frontWord": "policy",
         "pronunciation": "[pάləsi]",
-        "backWord": "n. 정책, 방침; n. 보험 증권"
+        "backWord": "n. 정책"
       },
       {
         "_id": "67bcf053f1cbaeadf119622a",
@@ -1104,7 +1104,7 @@
         "level": 3,
         "frontWord": "range",
         "pronunciation": "[reindʒ]",
-        "backWord": "n. 범위; v. (범위가) ~에 이르다"
+        "backWord": "n. 범위; v. ~에 이르다"
       },
       {
         "_id": "67bcf053255a0389b86aba3f",
@@ -1144,7 +1144,7 @@
         "level": 3,
         "frontWord": "regret",
         "pronunciation": "[rigrét]",
-        "backWord": "v. 후회하다; v. 유감스럽게 생각하다"
+        "backWord": "v. 후회하다; n. 후회"
       },
       {
         "_id": "67bcf053c04ed009d2456460",
@@ -1168,7 +1168,7 @@
         "level": 3,
         "frontWord": "reveal",
         "pronunciation": "[rivíːl]",
-        "backWord": "v. 드러내다, 폭로하다; v. 보여주다, 나타내다"
+        "backWord": "v. 드러내다, 드러내 보이다"
       },
       {
         "_id": "67bcf0539d429fb0da0e541e",
@@ -1176,7 +1176,7 @@
         "level": 3,
         "frontWord": "specialize",
         "pronunciation": "[spéʃəlàiz]",
-        "backWord": "v. 전문화하다"
+        "backWord": "v. 전문으로 하다"
       },
       {
         "_id": "67bcf05399d8453724736051",
@@ -1231,7 +1231,7 @@
         "level": 4,
         "frontWord": "adequate",
         "pronunciation": "[ǽdikwət]",
-        "backWord": "a. 충분한, 적절한; a. 적합한"
+        "backWord": "a. 충분한"
       },
       {
         "_id": "67bcf053725c779aee70e64c",
@@ -1247,7 +1247,7 @@
         "level": 4,
         "frontWord": "alternative",
         "pronunciation": "[ɔːltə́ːrnətiv, æltə́ːrnətiv]",
-        "backWord": "n. 대안; a. 대안의"
+        "backWord": "n. 대안; a. 대체의"
       },
       {
         "_id": "67bcf053bca9f8fa679f86e3",
@@ -1271,7 +1271,7 @@
         "level": 4,
         "frontWord": "attire",
         "pronunciation": "[ətáiər]",
-        "backWord": "n. 의복, 옷차림"
+        "backWord": "n. 의복, 복장"
       },
       {
         "_id": "67bcf053c0e855230b472291",
@@ -1287,7 +1287,7 @@
         "level": 4,
         "frontWord": "beneficial",
         "pronunciation": "[bènəfíʃəl]",
-        "backWord": "a. 이익이 되는"
+        "backWord": "a. 유익한"
       },
       {
         "_id": "67bcf053001e064a32ba296d",
@@ -1311,7 +1311,7 @@
         "level": 4,
         "frontWord": "complaint",
         "pronunciation": "[kəmpléint]",
-        "backWord": "n. 불평, 불만; n. 고충, 문제점"
+        "backWord": "n. 불만"
       },
       {
         "_id": "67bcf0531a3483c195cddbbd",
@@ -1415,7 +1415,7 @@
         "level": 4,
         "frontWord": "fatigue",
         "pronunciation": "[fətíːg]",
-        "backWord": "n. 피로; v. 피곤하게 하다"
+        "backWord": "n. 피로"
       },
       {
         "_id": "67bcf05397866a1261576251",
@@ -1463,7 +1463,7 @@
         "level": 4,
         "frontWord": "obtain",
         "pronunciation": "[əbtéin]",
-        "backWord": "v. 얻다, 획득하다; v. 확보하다"
+        "backWord": "v. 얻다"
       },
       {
         "_id": "67bcf053128176fe9a04cadd",
@@ -1535,7 +1535,7 @@
         "level": 4,
         "frontWord": "remain",
         "pronunciation": "[riméin]",
-        "backWord": "v. 어떤 상태를 유지하 다; v. 남아 있다"
+        "backWord": "v. 남다, 유지되다"
       },
       {
         "_id": "67bcf0539b7f24b48bb38090",
@@ -1543,7 +1543,7 @@
         "level": 4,
         "frontWord": "reputation",
         "pronunciation": "[rèpjutéiʃən]",
-        "backWord": "n. 평판, 명성"
+        "backWord": "n. 명성"
       },
       {
         "_id": "67bcf053577e704ee836f614",
@@ -1551,7 +1551,7 @@
         "level": 4,
         "frontWord": "reservation",
         "pronunciation": "[rèzərvéiʃən]",
-        "backWord": "n. 예약; n. 거리낌, 의구심"
+        "backWord": "n. 예약"
       },
       {
         "_id": "67bcf053515472974323e4e3",
@@ -1559,7 +1559,7 @@
         "level": 4,
         "frontWord": "responsibility",
         "pronunciation": "[rispὰnsəbíləti]",
-        "backWord": "n. 책임, 의무; n. 담당, 역할"
+        "backWord": "n. 책임"
       },
       {
         "_id": "67bcf053223085da895a90ba",
@@ -1583,7 +1583,7 @@
         "level": 4,
         "frontWord": "solicit",
         "pronunciation": "[səlísit]",
-        "backWord": "v. 요청하다, 간청하다; v. 청구하다"
+        "backWord": "v. 간청하다"
       },
       {
         "_id": "67bcf053dddf36d9cc775cf2",
@@ -1591,7 +1591,7 @@
         "level": 4,
         "frontWord": "statement",
         "pronunciation": "[stéitmənt]",
-        "backWord": "n. 진술, 발표; n. 명세서, 서류"
+        "backWord": "n. 진술, 선언"
       },
       {
         "_id": "67bcf0538d54efd9ff1aa8ea",
@@ -1607,7 +1607,7 @@
         "level": 4,
         "frontWord": "supply",
         "pronunciation": "[səplái]",
-        "backWord": "n. 공급, 비축품; v. 제공하다, 공급하다"
+        "backWord": "n. 공급; v. 공급하다"
       },
       {
         "_id": "67bcf053dfc74168e0706061",
@@ -1615,7 +1615,7 @@
         "level": 4,
         "frontWord": "transaction",
         "pronunciation": "[trænsǽkʃən]",
-        "backWord": "n. 거래; n. 처리"
+        "backWord": "n. 거래"
       },
       {
         "_id": "67bcf0539de732ab53fdc18e",
@@ -1638,7 +1638,7 @@
         "level": 5,
         "frontWord": "acquire",
         "pronunciation": "[əkwáiər]",
-        "backWord": "v. 얻다, 획득하다; v. 습득하다"
+        "backWord": "v. 획득하다"
       },
       {
         "_id": "67bcf05385c89be1f1a1a96e",
@@ -1662,7 +1662,7 @@
         "level": 5,
         "frontWord": "attempt",
         "pronunciation": "[ətémpt]",
-        "backWord": "n. 시도, 노력; v. 시도하다, 노력하다"
+        "backWord": "v. 시도하다; n. 시도"
       },
       {
         "_id": "67bcf053ee7a48287150044e",
@@ -1670,7 +1670,7 @@
         "level": 5,
         "frontWord": "attention",
         "pronunciation": "[əténʃən]",
-        "backWord": "n. 주의, 집중"
+        "backWord": "n. 주의, 주목, 흥미"
       },
       {
         "_id": "67bcf0533eaf424b32d0ba6e",
@@ -1702,7 +1702,7 @@
         "level": 5,
         "frontWord": "chronic",
         "pronunciation": "[krάnik]",
-        "backWord": "a. 만성적인"
+        "backWord": "a. 만성적인, 만성 질환을 앓고 있는"
       },
       {
         "_id": "67bcf0532b76a083253776e3",
@@ -1726,7 +1726,7 @@
         "level": 5,
         "frontWord": "concern",
         "pronunciation": "[kənsə́ːrn]",
-        "backWord": "n. 우려, 걱정; v. 관련되다"
+        "backWord": "n. 관심; v. 관심을 가지다"
       },
       {
         "_id": "67bcf053e2db82b5b164ea44",
@@ -1766,7 +1766,7 @@
         "level": 5,
         "frontWord": "defective",
         "pronunciation": "[diféktiv]",
-        "backWord": "a. 결함이 있는"
+        "backWord": "a. 결함이 있는, 불량한"
       },
       {
         "_id": "67bcf0534cffead71f4d9931",
@@ -1790,7 +1790,7 @@
         "level": 5,
         "frontWord": "exquisite",
         "pronunciation": "[ikskwízit, ékskwizit]",
-        "backWord": "a. 매우 아름다운, 섬세 한; a. 정교한, 세밀한"
+        "backWord": "a. 절묘한, 정교한"
       },
       {
         "_id": "67bcf05371cac20e9e2669c8",
@@ -1806,7 +1806,7 @@
         "level": 5,
         "frontWord": "fit",
         "pronunciation": "[fit]",
-        "backWord": "a. 적합한, 알맞은; v. 꼭 맞다"
+        "backWord": "v. 맞다; a. 적합한, 알맞은; 건강한"
       },
       {
         "_id": "67bcf053f9e01abd406007db",
@@ -1822,7 +1822,7 @@
         "level": 5,
         "frontWord": "improve",
         "pronunciation": "[imprúːv]",
-        "backWord": "v. 개선하다, 향상시키다; v. 나아지다, 좋아지다"
+        "backWord": "v. 개선하다, 나아지다"
       },
       {
         "_id": "67bcf053a3582551d0ad2aae",
@@ -1830,7 +1830,7 @@
         "level": 5,
         "frontWord": "inconvenience",
         "pronunciation": "[ìnkənvíːnjəns]",
-        "backWord": "n. 불편; v. 불편을 끼치다"
+        "backWord": "n. 불편"
       },
       {
         "_id": "67bcf053c7af1529dec9035f",
@@ -1854,7 +1854,7 @@
         "level": 5,
         "frontWord": "notice",
         "pronunciation": "[nóutis]",
-        "backWord": "n. 공지; n. 주목, 인지"
+        "backWord": "n. 공지; v. 알아차리다"
       },
       {
         "_id": "67bcf053f71b0cf59da88b50",
@@ -1870,7 +1870,7 @@
         "level": 5,
         "frontWord": "operate",
         "pronunciation": "[άpərèit]",
-        "backWord": "v. 기계를 작동시키다; v. 사업을 운영하다"
+        "backWord": "v. 작동하다"
       },
       {
         "_id": "67bcf0537ff9f6d2d3961b17",
@@ -1886,7 +1886,7 @@
         "level": 5,
         "frontWord": "periodically",
         "pronunciation": "[pìəriάdikəli]",
-        "backWord": "ad. 정기적으로"
+        "backWord": "ad. 주기적으로"
       },
       {
         "_id": "67bcf05313d6edc354bac2c4",
@@ -1910,7 +1910,7 @@
         "level": 5,
         "frontWord": "plummet",
         "pronunciation": "[plΛmit]",
-        "backWord": "v. 급락하다; n. 급락"
+        "backWord": "v. 곤두박질치다, 급락하다"
       },
       {
         "_id": "67bcf053781503ea66799255",
@@ -1926,7 +1926,7 @@
         "level": 5,
         "frontWord": "process",
         "pronunciation": "[prάses]",
-        "backWord": "n. 절차, 과정; v. 처리하다"
+        "backWord": "n. 과정; v. 처리하다, 가공하다"
       },
       {
         "_id": "67bcf0537fa0d47304e8ce7c",
@@ -1942,7 +1942,7 @@
         "level": 5,
         "frontWord": "purchase",
         "pronunciation": "[pə́ːrʧəs]",
-        "backWord": "n. 구매, 구입; v. 구매하다, 구입하다"
+        "backWord": "v. 구매하다; n. 구매"
       },
       {
         "_id": "67bcf053a3f2d1ab351c49ca",
@@ -1974,7 +1974,7 @@
         "level": 5,
         "frontWord": "setback",
         "pronunciation": "[seˈtbæˌk]",
-        "backWord": "n. 방해, 좌절; n. 후퇴"
+        "backWord": "n. 차질, 역경"
       },
       {
         "_id": "67bcf05319f9c966e52e4ee8",
@@ -1998,7 +1998,7 @@
         "level": 5,
         "frontWord": "streamline",
         "pronunciation": "[striˈmlaiˌn]",
-        "backWord": "v. 간소화하다"
+        "backWord": "v. 효율화하다, 간소화하다"
       },
       {
         "_id": "67bcf0530be3dbc5c2288347",
@@ -2006,7 +2006,7 @@
         "level": 5,
         "frontWord": "temporarily",
         "pronunciation": "[tèmpərérəli]",
-        "backWord": "ad. 일시적으로; ad. 잠시 동안"
+        "backWord": "ad. 일시적으로"
       },
       {
         "_id": "67bcf053a9d093deaac1a8b8",
@@ -2014,7 +2014,7 @@
         "level": 5,
         "frontWord": "transfer",
         "pronunciation": "[trænsfə́ːr, -´-｜trænsfə́ː]",
-        "backWord": "v. 이동하다; v. 전근하다"
+        "backWord": "v. 이전하다; n. 이전"
       },
       {
         "_id": "67bcf053169911adae6e4ba5",
@@ -2022,7 +2022,7 @@
         "level": 5,
         "frontWord": "transportation",
         "pronunciation": "[trӕnspərtéiʃən]",
-        "backWord": "n. 교통수단; n. 운송"
+        "backWord": "n. 교통, 운송"
       },
       {
         "_id": "67bcf0537b275e3fb32fd120",
@@ -2053,7 +2053,7 @@
         "level": 6,
         "frontWord": "aid",
         "pronunciation": "[eid]",
-        "backWord": "n. 도움, 지원; v. 돕다, 지원하다"
+        "backWord": "n. 도움; v. 돕다"
       },
       {
         "_id": "67bcf0536ac1f7456546cf24",
@@ -2085,7 +2085,7 @@
         "level": 6,
         "frontWord": "comparable",
         "pronunciation": "[kάmpərəbl]",
-        "backWord": "a. 비교할 만한; a. 유사한"
+        "backWord": "a. 비교할 수 있는"
       },
       {
         "_id": "67bcf053ef8dc9f360c1778c",
@@ -2093,7 +2093,7 @@
         "level": 6,
         "frontWord": "compliance",
         "pronunciation": "[kəmpláiəns, -ənsi]",
-        "backWord": "n. 준수, 따름; n. 순응, 따름"
+        "backWord": "n. 준수"
       },
       {
         "_id": "67bcf053ac4b302ce8da93ef",
@@ -2141,7 +2141,7 @@
         "level": 6,
         "frontWord": "dedicated",
         "pronunciation": "[dédikèitid]",
-        "backWord": "a. 헌신적인, 전념하는; a. 특정 목적을 위한"
+        "backWord": "a. 전념하는, 헌신적인"
       },
       {
         "_id": "67bcf053753fa11ce3ec6cda",
@@ -2245,7 +2245,7 @@
         "level": 6,
         "frontWord": "hesitate",
         "pronunciation": "[hézətèit]",
-        "backWord": "v. 주저하다, 망설이다; v. 망설이며 말하다"
+        "backWord": "v. 망설이다"
       },
       {
         "_id": "67bcf05307a84b04281b11e8",
@@ -2341,7 +2341,7 @@
         "level": 6,
         "frontWord": "personal",
         "pronunciation": "[pə́rsənl]",
-        "backWord": "a. 개인적인; a. 사적인"
+        "backWord": "a. 개인적인"
       },
       {
         "_id": "67bcf0530fd57de5252ff3ed",
@@ -2365,7 +2365,7 @@
         "level": 6,
         "frontWord": "provide",
         "pronunciation": "[prəváid]",
-        "backWord": "v. 제공하다, 공급하다; v. 준비하다, 대비하다"
+        "backWord": "v. 제공하다"
       },
       {
         "_id": "67bcf0530b5b2ee3a606b2b5",
@@ -2397,7 +2397,7 @@
         "level": 6,
         "frontWord": "subscription",
         "pronunciation": "[səbskrípʃən]",
-        "backWord": "n. 구독, 가입; n. 정기결제"
+        "backWord": "n. 구독"
       },
       {
         "_id": "67bcf0533b94dea5e04fd609",
@@ -2413,7 +2413,7 @@
         "level": 6,
         "frontWord": "surplus",
         "pronunciation": "[sə́ːrplʌs]",
-        "backWord": "n. 잉여, 과잉; a. 남는, 과잉의"
+        "backWord": "n. 초과, 과잉; a. 과잉의"
       },
       {
         "_id": "67bcf05390cccc5547d19fb9",
@@ -2548,7 +2548,7 @@
         "level": 7,
         "frontWord": "determine",
         "pronunciation": "[ditə́ːrmin]",
-        "backWord": "v. 결정하다; v. 알아내다, 측정하다"
+        "backWord": "v. 결정하다, 판단하다"
       },
       {
         "_id": "67bcf0539839064437bcd42e",
@@ -2684,7 +2684,7 @@
         "level": 7,
         "frontWord": "keep",
         "pronunciation": "[kiːp]",
-        "backWord": "v. 유지하다; v. 보관하다"
+        "backWord": "v. 유지하다, 보관하다"
       },
       {
         "_id": "67bcf053e419795f63450f69",
@@ -2692,7 +2692,7 @@
         "level": 7,
         "frontWord": "load",
         "pronunciation": "[loud]",
-        "backWord": "n. 짐, 중량; v. 짐을 싣다"
+        "backWord": "n. 짐, 부하; v. 불러오다, 적재하다"
       },
       {
         "_id": "67bcf05342aa8685158af3f2",
@@ -2708,7 +2708,7 @@
         "level": 7,
         "frontWord": "moderate",
         "pronunciation": "[mάdərət]",
-        "backWord": "a. 적당한, 중간의; v. 완화하다, 조정하다"
+        "backWord": "a. 보통의; v. 누그러지다, 완화되다"
       },
       {
         "_id": "67bcf0539d5615118ba91b5d",
@@ -2724,7 +2724,7 @@
         "level": 7,
         "frontWord": "operation",
         "pronunciation": "[ὰpəréiʃən]",
-        "backWord": "n. 운영; n. 작전"
+        "backWord": "n. 작동, 운영"
       },
       {
         "_id": "67bcf0532ad45f66d9b38813",
@@ -2764,7 +2764,7 @@
         "level": 7,
         "frontWord": "propose",
         "pronunciation": "[prəpóuz]",
-        "backWord": "v. 제안하다; v. 청혼하다"
+        "backWord": "v. 제안하다, 작정하다"
       },
       {
         "_id": "67bcf053dc7c5129529e49a2",
@@ -2788,7 +2788,7 @@
         "level": 7,
         "frontWord": "replacement",
         "pronunciation": "[ripléismənt]",
-        "backWord": "n. 대체, 교체; n. 후임자, 후임"
+        "backWord": "n. 대체, 대체물, 후임자"
       },
       {
         "_id": "67bcf053928e8877a7b1e7f1",
@@ -2867,7 +2867,7 @@
         "level": 8,
         "frontWord": "addition",
         "pronunciation": "[ədíʃən]",
-        "backWord": "n. 추가, 덧셈; n. 부가물, 추가 부분"
+        "backWord": "n. 추가, 부가물"
       },
       {
         "_id": "67bcf053a74dc17a03987779",
@@ -2883,7 +2883,7 @@
         "level": 8,
         "frontWord": "annually",
         "pronunciation": "[ǽnjuəli]",
-        "backWord": "ad. 매년"
+        "backWord": "ad. 연간에"
       },
       {
         "_id": "67bcf05312662a1d46822fa6",
@@ -2891,7 +2891,7 @@
         "level": 8,
         "frontWord": "appointment",
         "pronunciation": "[əpɔ́intmənt]",
-        "backWord": "n. 약속, 예약; n. 임명, 지명"
+        "backWord": "n. 약속"
       },
       {
         "_id": "67bcf053b26d4351c0bcea92",
@@ -2915,7 +2915,7 @@
         "level": 8,
         "frontWord": "artifact",
         "pronunciation": "[άːrtəfӕkt]",
-        "backWord": "n. 인공물, 유물; n. 인위적 산물, 부작용"
+        "backWord": "n. 인공물"
       },
       {
         "_id": "67bcf053a493535ef7269fe9",
@@ -2939,7 +2939,7 @@
         "level": 8,
         "frontWord": "charity",
         "pronunciation": "[ʧǽrəti]",
-        "backWord": "n. 자선 단체; n. 자선 행위"
+        "backWord": "n. 자선"
       },
       {
         "_id": "67bcf053106494770437d49e",
@@ -2979,7 +2979,7 @@
         "level": 8,
         "frontWord": "contagious",
         "pronunciation": "[kəntéidʒəs]",
-        "backWord": "a. 전염성의; a. 영향을 주는"
+        "backWord": "a. 전염성 있는"
       },
       {
         "_id": "67bcf0532e40bc4a13027226",
@@ -2995,7 +2995,7 @@
         "level": 8,
         "frontWord": "contribution",
         "pronunciation": "[kὰntrəbjúːʃən]",
-        "backWord": "n. 기여, 공헌; n. 기부금"
+        "backWord": "n. 기여, 공헌"
       },
       {
         "_id": "67bcf053ac4e5f8954f6e826",
@@ -3067,7 +3067,7 @@
         "level": 8,
         "frontWord": "inquiry",
         "pronunciation": "[inkwáiəri, inkwəri]",
-        "backWord": "n. 질문, 문의; n. 조사, 연구"
+        "backWord": "n. 조사, 문의"
       },
       {
         "_id": "67bcf05331c092a3484aaf5b",
@@ -3099,7 +3099,7 @@
         "level": 8,
         "frontWord": "leave",
         "pronunciation": "[liːv]",
-        "backWord": "v. 떠나다; v. 남기다"
+        "backWord": "v. 떠나다; n. 휴가"
       },
       {
         "_id": "67bcf0538a29f42be1de30fc",
@@ -3107,7 +3107,7 @@
         "level": 8,
         "frontWord": "manuscript",
         "pronunciation": "[mǽnjuskrìpt]",
-        "backWord": "n. 원고, 필사본"
+        "backWord": "n. 원고"
       },
       {
         "_id": "67bcf053bf0fa32999e6d0a9",
@@ -3131,7 +3131,7 @@
         "level": 8,
         "frontWord": "plant",
         "pronunciation": "[plænt]",
-        "backWord": "n. 식물; n. 공장"
+        "backWord": "n. 식물; 공장; v. 심다"
       },
       {
         "_id": "67bcf0532b20323621a3a118",
@@ -3139,7 +3139,7 @@
         "level": 8,
         "frontWord": "position",
         "pronunciation": "[pəzíʃən]",
-        "backWord": "n. 위치, 자리; n. 직위, 일자리"
+        "backWord": "n. 위치; 직책"
       },
       {
         "_id": "67bcf053f095630d28904114",
@@ -3147,7 +3147,7 @@
         "level": 8,
         "frontWord": "postpone",
         "pronunciation": "[poustpóun]",
-        "backWord": "v. 연기하다, 미루다; v. 차일피일 미루다"
+        "backWord": "v. 연기하다"
       },
       {
         "_id": "67bcf0532c81f1db8b5964b9",
@@ -3155,7 +3155,7 @@
         "level": 8,
         "frontWord": "prefer",
         "pronunciation": "[prifə́ːr]",
-        "backWord": "v. 더 좋아하다, 선호하 다; v. 제안하다, 추천하다 (비 교적 덜 일반적)"
+        "backWord": "v. 선호하다"
       },
       {
         "_id": "67bcf05349a28fc1b9e13ddb",
@@ -3163,7 +3163,7 @@
         "level": 8,
         "frontWord": "priority",
         "pronunciation": "[praiɔ́ːrəti]",
-        "backWord": "n. 우선순위; n. 긴급히 처리해야 할 사항"
+        "backWord": "n. 우선 순위, 우선권"
       },
       {
         "_id": "67bcf053eee8d80ad4aceecb",
@@ -3187,7 +3187,7 @@
         "level": 8,
         "frontWord": "resource",
         "pronunciation": "[ríːsɔːrs]",
-        "backWord": "n. 자원; n. 재료, 원천"
+        "backWord": "n. 자원"
       },
       {
         "_id": "67bcf05371776320033a53fc",
@@ -3203,7 +3203,7 @@
         "level": 8,
         "frontWord": "retailer",
         "pronunciation": "[ríːteilər]",
-        "backWord": "n. 소매업자, 소매점"
+        "backWord": "n. 소매상"
       },
       {
         "_id": "67bcf05312703c131d25bd76",
@@ -3211,7 +3211,7 @@
         "level": 8,
         "frontWord": "revise",
         "pronunciation": "[riváiz]",
-        "backWord": "v. 수정하다; v. 검토하다"
+        "backWord": "v. 수정하다"
       },
       {
         "_id": "67bcf053c9c1d70b54e2af0d",
@@ -3219,7 +3219,7 @@
         "level": 8,
         "frontWord": "schedule",
         "pronunciation": "[skédʒuːl]",
-        "backWord": "n. 일정, 시간표; v. 일정을 잡다, 계획하다"
+        "backWord": "n. 일정; v. 예정하다"
       },
       {
         "_id": "67bcf0536bf294947cb99a01",
@@ -3243,7 +3243,7 @@
         "level": 8,
         "frontWord": "supervisor",
         "pronunciation": "[súːpərvàizər]",
-        "backWord": "n. 감독자; n. 관리인"
+        "backWord": "n. 감독자"
       },
       {
         "_id": "67bcf05322c2cec661b67863",
@@ -3266,7 +3266,7 @@
         "level": 9,
         "frontWord": "acceptable",
         "pronunciation": "[ækséptəbl, əkséptəbl]",
-        "backWord": "a. 받아들일 수 있는; a. 수용 가능한"
+        "backWord": "a. 수용 가능한"
       },
       {
         "_id": "67bcf0539fb014c9bc2bcb44",
@@ -3290,7 +3290,7 @@
         "level": 9,
         "frontWord": "apparent",
         "pronunciation": "[əpǽrənt, əpέər-]",
-        "backWord": "a. 명백한, 분명한; a. 겉보기의, 외관상"
+        "backWord": "a. 명백한, 분명한"
       },
       {
         "_id": "67bcf0538ec2fdcbab847dd2",
@@ -3298,7 +3298,7 @@
         "level": 9,
         "frontWord": "appendix",
         "pronunciation": "[əpéndiks]",
-        "backWord": "n. 부록; n. 맹장"
+        "backWord": "n. 부록"
       },
       {
         "_id": "67bcf053c5ea38126b206e99",
@@ -3306,7 +3306,7 @@
         "level": 9,
         "frontWord": "appraise",
         "pronunciation": "[əpréiz]",
-        "backWord": "v. 평가하다; v. 감정하다"
+        "backWord": "v. 평가하다, 감정하다"
       },
       {
         "_id": "67bcf0537adc96b3a9020663",
@@ -3314,7 +3314,7 @@
         "level": 9,
         "frontWord": "avid",
         "pronunciation": "[ǽvid]",
-        "backWord": "a. 열렬한, 열광적인"
+        "backWord": "a. 열심인"
       },
       {
         "_id": "67bcf0535ef7c3100f2bef44",
@@ -3322,7 +3322,7 @@
         "level": 9,
         "frontWord": "boardroom",
         "pronunciation": "[bɔ́ːrdrùːm]",
-        "backWord": "n. 이사회 회의실; n. 고위 경영 회의 공간"
+        "backWord": "n. 이사회실"
       },
       {
         "_id": "67bcf053abe9a21f6b3f3f42",
@@ -3346,7 +3346,7 @@
         "level": 9,
         "frontWord": "carefully",
         "pronunciation": "[kέərfəli]",
-        "backWord": "ad. 주의 깊게, 신중하게; ad. 세심하게"
+        "backWord": "ad. 주의 깊게"
       },
       {
         "_id": "67bcf05397d266d0570b091c",
@@ -3354,7 +3354,7 @@
         "level": 9,
         "frontWord": "conservation",
         "pronunciation": "[kὰnsərvéiʃən]",
-        "backWord": "n. 보존, 보호; n. 절약"
+        "backWord": "n. 보존"
       },
       {
         "_id": "67bcf053b7dff4e07878bd85",
@@ -3362,7 +3362,7 @@
         "level": 9,
         "frontWord": "consideration",
         "pronunciation": "[kənsìdəréiʃən]",
-        "backWord": "n. 고려; n. 배려"
+        "backWord": "n. 고려"
       },
       {
         "_id": "67bcf05368fee7e1cbd567f0",
@@ -3386,7 +3386,7 @@
         "level": 9,
         "frontWord": "duplication",
         "pronunciation": "[djùːplikéiʃən]",
-        "backWord": "n. 복제; n. 중복"
+        "backWord": "n. 복제"
       },
       {
         "_id": "67bcf0538dc8f4ed0cefafe2",
@@ -3442,7 +3442,7 @@
         "level": 9,
         "frontWord": "fluctuation",
         "pronunciation": "[flΛkʧuéiʃən]",
-        "backWord": "n. 변동, 오르내림"
+        "backWord": "n. 변동"
       },
       {
         "_id": "67bcf053921f39ca87a8d145",
@@ -3450,7 +3450,7 @@
         "level": 9,
         "frontWord": "foremost",
         "pronunciation": "[fɔˈrmouˌst]",
-        "backWord": "a. 가장 중요한; a. 선두의, 일류의"
+        "backWord": "a. 최고의; 첫째로"
       },
       {
         "_id": "67bcf0533df244ccb879dee2",
@@ -3458,7 +3458,7 @@
         "level": 9,
         "frontWord": "frequent",
         "pronunciation": "[fríːkwənt]",
-        "backWord": "v. 자주 방문하다; a. 빈번한"
+        "backWord": "a. 자주 발생하는; v. 자주 찾다"
       },
       {
         "_id": "67bcf0538ccae123df878ce7",
@@ -3466,7 +3466,7 @@
         "level": 9,
         "frontWord": "heritage",
         "pronunciation": "[héritidʒ]",
-        "backWord": "n. 문화유산; n. 전통"
+        "backWord": "n. 유산, 전통"
       },
       {
         "_id": "67bcf05370c1ed778be20798",
@@ -3538,7 +3538,7 @@
         "level": 9,
         "frontWord": "notable",
         "pronunciation": "[nóutəbl]",
-        "backWord": "a. 주목할 만한, 중요한; n. 유명인사, 저명한 사람"
+        "backWord": "a. 주목할 만한"
       },
       {
         "_id": "67bcf0539e08dd292b4e5ab3",
@@ -3546,7 +3546,7 @@
         "level": 9,
         "frontWord": "outgoing",
         "pronunciation": "[auˈtgouˌiŋ]",
-        "backWord": "a. 외향적인, 사교적인; a. 퇴임하는, 떠나는"
+        "backWord": "a. 외향적인, 사교적인"
       },
       {
         "_id": "67bcf053531f60c8c41373d2",
@@ -3562,7 +3562,7 @@
         "level": 9,
         "frontWord": "perfectly",
         "pronunciation": "[pə́ːrfiktli]",
-        "backWord": "ad. 완벽하게; ad. 전적으로"
+        "backWord": "ad. 완벽하게"
       },
       {
         "_id": "67bcf0533d5ea86720fd0392",
@@ -3602,7 +3602,7 @@
         "level": 9,
         "frontWord": "regarding",
         "pronunciation": "[rigάːrdiŋ]",
-        "backWord": "prep. 무엇에 관하여"
+        "backWord": "prep. ~에 관하여"
       },
       {
         "_id": "67bcf053552e13727c2fe92f",
@@ -3642,7 +3642,7 @@
         "level": 9,
         "frontWord": "valuable",
         "pronunciation": "[vǽljuəbl]",
-        "backWord": "a. 귀중한, 중요한; n. 귀중품"
+        "backWord": "a. 가치 있는, 소중한"
       },
       {
         "_id": "67bcf053379bbeee99b2f4c0",
@@ -3650,7 +3650,7 @@
         "level": 9,
         "frontWord": "view",
         "pronunciation": "[vjuː]",
-        "backWord": "n. 견해, 관점; n. 전망, 경치"
+        "backWord": "n. 경치; 견해; v. 보다"
       },
       {
         "_id": "67bcf05364f87019b821d5ba",
@@ -3673,7 +3673,7 @@
         "level": 10,
         "frontWord": "accommodate",
         "pronunciation": "[əkάmədèit]",
-        "backWord": "v. (사람, 물건을) 수용하 다; v. (요청, 필요를) 충족시키 다"
+        "backWord": "v. 수용하다"
       },
       {
         "_id": "67bcf05384d0d4e697fd0ab6",
@@ -3681,7 +3681,7 @@
         "level": 10,
         "frontWord": "activity",
         "pronunciation": "[æktívəti]",
-        "backWord": "n. 활동; n. 업무"
+        "backWord": "n. 활동, 움직임, 활기"
       },
       {
         "_id": "67bcf0532a184a05c52c60dd",
@@ -3697,7 +3697,7 @@
         "level": 10,
         "frontWord": "admission",
         "pronunciation": "[ædmíʃən]",
-        "backWord": "n. 입장; n. 입학"
+        "backWord": "n. 가입, 입장, 입학; 입장료"
       },
       {
         "_id": "67bcf0532d73aa1f3961fc32",
@@ -3713,7 +3713,7 @@
         "level": 10,
         "frontWord": "aggravate",
         "pronunciation": "[ǽgrəvèit]",
-        "backWord": "v. 악화시키다"
+        "backWord": "v. 악화시키다, 짜증나게 만들다"
       },
       {
         "_id": "67bcf0539825c4cf72a7e6a9",
@@ -3761,7 +3761,7 @@
         "level": 10,
         "frontWord": "breakthrough",
         "pronunciation": "[breiˈkθruˌ]",
-        "backWord": "n. 중요한 발견; n. 돌파구, 진전"
+        "backWord": "n. 돌파구, 큰 발전"
       },
       {
         "_id": "67bcf053603d575f74514088",
@@ -3777,7 +3777,7 @@
         "level": 10,
         "frontWord": "bring",
         "pronunciation": "[briŋ]",
-        "backWord": "v. 가져오다; v. (사람을) 데려오다"
+        "backWord": "v. 가져오다, 야기하다"
       },
       {
         "_id": "67bcf0535b5f6da935cceeaf",
@@ -3793,7 +3793,7 @@
         "level": 10,
         "frontWord": "claim",
         "pronunciation": "[kleim]",
-        "backWord": "n. 주장, 요구; v. 주장하다"
+        "backWord": "v. 주장하다; n. 주장"
       },
       {
         "_id": "67bcf053427aed0622aa90c9",
@@ -3801,7 +3801,7 @@
         "level": 10,
         "frontWord": "collateral",
         "pronunciation": "[kəlǽtərəl]",
-        "backWord": "n. 담보(물); a. 부수적인"
+        "backWord": "n. 담보물"
       },
       {
         "_id": "67bcf053bfbd57ea4d6ed65c",
@@ -3961,7 +3961,7 @@
         "level": 10,
         "frontWord": "practice",
         "pronunciation": "[prǽktis]",
-        "backWord": "n. 실행, 실습, 연습; n. 관습, 관례"
+        "backWord": "n. 실천, 연습; v. 연습하다"
       },
       {
         "_id": "67bcf0537a01217a73461d28",
@@ -3985,7 +3985,7 @@
         "level": 10,
         "frontWord": "quality",
         "pronunciation": "[kwάləti]",
-        "backWord": "n. 품질; n. 특성, 성질"
+        "backWord": "n. 품질"
       },
       {
         "_id": "67bcf0531c165fd742238a75",
@@ -3993,7 +3993,7 @@
         "level": 10,
         "frontWord": "readily",
         "pronunciation": "[rédəli]",
-        "backWord": "ad. 쉽게; ad. 즉시"
+        "backWord": "ad. 쉽게, 기꺼이"
       },
       {
         "_id": "67bcf053dfb911634c2612cd",
@@ -4009,7 +4009,7 @@
         "level": 10,
         "frontWord": "remarkable",
         "pronunciation": "[rimάːrkəbl]",
-        "backWord": "a. 눈에 띄는, 주목할 만 한; a. 놀라운"
+        "backWord": "a. 놀라운"
       },
       {
         "_id": "67bcf0539c439beb9835c9c2",
@@ -4025,7 +4025,7 @@
         "level": 10,
         "frontWord": "sharply",
         "pronunciation": "[ʃάːrpli]",
-        "backWord": "ad. 급격하게; ad. 날카롭게"
+        "backWord": "ad. 급격하게"
       },
       {
         "_id": "67bcf0538ff55d23f8a0a67b",
@@ -4065,7 +4065,7 @@
         "level": 10,
         "frontWord": "welcome",
         "pronunciation": "[wélkəm]",
-        "backWord": "v. 환영하다; a. 환영받는, 반가운"
+        "backWord": "v. 환영하다; a. 환영받는"
       }
     ]
   },
@@ -4200,7 +4200,7 @@
         "level": 11,
         "frontWord": "counterpart",
         "pronunciation": "[káuntərpὰːrt]",
-        "backWord": "n. 상대방, 대응물"
+        "backWord": "n. 대응하는 것; 상대방"
       },
       {
         "_id": "67bcf0539ac639a0361ca840",
@@ -4208,7 +4208,7 @@
         "level": 11,
         "frontWord": "credential",
         "pronunciation": "[kridénʃəl]",
-        "backWord": "n. 자격증, 신분 증명서; n. 학력, 경력"
+        "backWord": "n. 자격; 증명서"
       },
       {
         "_id": "67bcf053d995d98b754978d1",
@@ -4312,7 +4312,7 @@
         "level": 11,
         "frontWord": "initially",
         "pronunciation": "[iníʃəli]",
-        "backWord": "ad. 처음에, 초기에"
+        "backWord": "ad. 처음에"
       },
       {
         "_id": "67bcf053ab3354607008b2b3",
@@ -4352,7 +4352,7 @@
         "level": 11,
         "frontWord": "objective",
         "pronunciation": "[əbdʒéktiv]",
-        "backWord": "n. 목표, 목적; a. 객관적인"
+        "backWord": "n. 목표"
       },
       {
         "_id": "67bcf05380494f7943aa796b",
@@ -4368,7 +4368,7 @@
         "level": 11,
         "frontWord": "plunge",
         "pronunciation": "[plʌndʒ]",
-        "backWord": "n. 급락; v. 빠지다, 뛰어들다"
+        "backWord": "n. 급락, 낙하; v. 급락하다; 뛰어들다"
       },
       {
         "_id": "67bcf053d4b789aae078d20f",
@@ -4376,7 +4376,7 @@
         "level": 11,
         "frontWord": "preliminary",
         "pronunciation": "[prilímənèri]",
-        "backWord": "a. 예비의, 초기의; n. 예비 단계, 준비 단계"
+        "backWord": "a. 예비의; n. 예비 행위"
       },
       {
         "_id": "67bcf053325a938b0913955b",
@@ -4440,7 +4440,7 @@
         "level": 11,
         "frontWord": "subordinate",
         "pronunciation": "[səbɔ́ːrdənət]",
-        "backWord": "a. 하위의, 종속적인; n. 부하직원, 하급자"
+        "backWord": "a. 종속적인; n. 하급자"
       },
       {
         "_id": "67bcf053499efc6e48496a8c",
@@ -4607,7 +4607,7 @@
         "level": 12,
         "frontWord": "equal",
         "pronunciation": "[íːkwəl]",
-        "backWord": "a. 동등한; n. 동등한 사람 또는 것"
+        "backWord": "a. 동등한; v. ~와 같다"
       },
       {
         "_id": "67bcf053ecc15f0053d4bddf",
@@ -4615,7 +4615,7 @@
         "level": 12,
         "frontWord": "further",
         "pronunciation": "[fə́ːrðər]",
-        "backWord": "a. 추가적인; ad. 1 더 나아가, 더 멀리"
+        "backWord": "ad. 더욱; a. 추가적인; v. 촉진하다"
       },
       {
         "_id": "67bcf0536f5017014922a3b4",
@@ -4631,7 +4631,7 @@
         "level": 12,
         "frontWord": "handling",
         "pronunciation": "[hǽndliŋ]",
-        "backWord": "n. 처리, 취급; n. 조작, 운전"
+        "backWord": "n. 취급, 처리, 조작"
       },
       {
         "_id": "67bcf0538e3e6506ed5d8beb",
@@ -4695,7 +4695,7 @@
         "level": 12,
         "frontWord": "move",
         "pronunciation": "[muːv]",
-        "backWord": "v. 움직이다, 이동하다; v. 행동을 취하다, 조치를 취하다"
+        "backWord": "v. 움직이다; n. 움직임"
       },
       {
         "_id": "67bcf05319b43a79c50f0f98",
@@ -4735,7 +4735,7 @@
         "level": 12,
         "frontWord": "option",
         "pronunciation": "[άpʃən]",
-        "backWord": "n. 선택 사항; n. 계약상의 선택권, 옵션"
+        "backWord": "n. 선택, 옵션"
       },
       {
         "_id": "67bcf0537232d49f8e099e3f",
@@ -4759,7 +4759,7 @@
         "level": 12,
         "frontWord": "outlying",
         "pronunciation": "[auˈtlaiˌiŋ]",
-        "backWord": "a. 외곽의, 멀리 떨어진"
+        "backWord": "a. 외딴, 외진"
       },
       {
         "_id": "67bcf05347078c1593a73793",
@@ -4831,7 +4831,7 @@
         "level": 12,
         "frontWord": "resolution",
         "pronunciation": "[rèzəlúːʃən]",
-        "backWord": "n. 해결, 결의안; n. 결심"
+        "backWord": "n. 결의; 해상도"
       },
       {
         "_id": "67bcf053d5e33b31b128e5ff",
@@ -4879,7 +4879,7 @@
         "level": 12,
         "frontWord": "workforce",
         "pronunciation": "",
-        "backWord": "n. 노동력"
+        "backWord": "n. 노동 인구, 작업진"
       }
     ]
   },
@@ -4934,7 +4934,7 @@
         "level": 13,
         "frontWord": "captivate",
         "pronunciation": "[kǽptəvèit]",
-        "backWord": "v. 마음을 사로잡다; v. 매혹시키다"
+        "backWord": "v. 매혹하다, ~의 마음을 사로잡다"
       },
       {
         "_id": "67bcf0533f93669393b24fb9",
@@ -4942,7 +4942,7 @@
         "level": 13,
         "frontWord": "cease",
         "pronunciation": "[siːs]",
-        "backWord": "v. 중단하다; v. 그만두다"
+        "backWord": "v. 중단하다"
       },
       {
         "_id": "67bcf0539f0f8a40c553b77c",
@@ -4974,7 +4974,7 @@
         "level": 13,
         "frontWord": "convention",
         "pronunciation": "[kənvénʃən]",
-        "backWord": "n. 회의, 대회의; n. 관습, 풍습"
+        "backWord": "n. 대회; 관습, 관례"
       },
       {
         "_id": "67bcf053b87fe2dbabbec3ea",
@@ -4990,7 +4990,7 @@
         "level": 13,
         "frontWord": "deceive",
         "pronunciation": "[disíːv]",
-        "backWord": "v. 속이다; v. 오해하게 하다"
+        "backWord": "v. 속이다, 기만하다"
       },
       {
         "_id": "67bcf053ad3daca2f8434892",
@@ -5078,7 +5078,7 @@
         "level": 13,
         "frontWord": "fare",
         "pronunciation": "[fεər]",
-        "backWord": "n. 교통 요금; n. 음식"
+        "backWord": "n. 요금, 운임"
       },
       {
         "_id": "67bcf053854b4ce93a267e54",
@@ -5102,7 +5102,7 @@
         "level": 13,
         "frontWord": "gradually",
         "pronunciation": "[grǽdʒuəli]",
-        "backWord": "ad. 점진적으로, 서서히"
+        "backWord": "ad. 점차적으로"
       },
       {
         "_id": "67bcf0533ce59e82683e9474",
@@ -5110,7 +5110,7 @@
         "level": 13,
         "frontWord": "intersection",
         "pronunciation": "[ˈɪntərsekʃn]",
-        "backWord": "n. 교차로, 교차 지점"
+        "backWord": "n. 교차로"
       },
       {
         "_id": "67bcf0538a3c05e17846afa6",
@@ -5118,7 +5118,7 @@
         "level": 13,
         "frontWord": "long",
         "pronunciation": "[lɔːŋ]",
-        "backWord": "a. 길다; a. 오랜 시간 동안"
+        "backWord": "a. 긴; ad. 오랫동안"
       },
       {
         "_id": "67bcf053574649ae852aeb4f",
@@ -5126,7 +5126,7 @@
         "level": 13,
         "frontWord": "mandate",
         "pronunciation": "[mǽndeit]",
-        "backWord": "n. 명령, 지시; v. 권한을 부여하다, 위임하 다"
+        "backWord": "n. 권한; v. 명령하다; 권한을 주다"
       },
       {
         "_id": "67bcf053706d119d6e50483f",
@@ -5150,7 +5150,7 @@
         "level": 13,
         "frontWord": "offspring",
         "pronunciation": "[ɔˈfspriˌŋ]",
-        "backWord": "n. 자손, 후손; n. 결과물, 산물"
+        "backWord": "n. 자식; 후손"
       },
       {
         "_id": "67bcf0534cb886c80c9a5e0b",
@@ -5190,7 +5190,7 @@
         "level": 13,
         "frontWord": "routine",
         "pronunciation": "[ruːtíːn]",
-        "backWord": "n. 일상, 일과; a. 정기적인, 일상적인"
+        "backWord": "n. 일상; a. 일상적인"
       },
       {
         "_id": "67bcf053e62bc8879937d272",
@@ -5222,7 +5222,7 @@
         "level": 13,
         "frontWord": "select",
         "pronunciation": "[silékt]",
-        "backWord": "v. 선택하다; a. 엄선된"
+        "backWord": "v. 선택하다, 선발하다"
       },
       {
         "_id": "67bcf05364cd8143ad194d90",
@@ -5230,7 +5230,7 @@
         "level": 13,
         "frontWord": "sensitive",
         "pronunciation": "[sénsətiv]",
-        "backWord": "a. 감각이 예민한; a. 감정에 쉽게 영향을 받는"
+        "backWord": "a. 민감한"
       },
       {
         "_id": "67bcf05303d6aea2d140051b",
@@ -5254,7 +5254,7 @@
         "level": 13,
         "frontWord": "spokesperson",
         "pronunciation": "[spóukspə̀ːrsn]",
-        "backWord": "n. 대변인, 대표"
+        "backWord": "n. 대변인"
       },
       {
         "_id": "67bcf053a95a29bd2f5f00ca",
@@ -5278,7 +5278,7 @@
         "level": 13,
         "frontWord": "strain",
         "pronunciation": "[strein]",
-        "backWord": "n. 긴장, 압박; v. 무리하게 사용하다, 긴장 시키다"
+        "backWord": "n. 부담, 중압; v. 안감힘을 쓰다"
       },
       {
         "_id": "67bcf053b4e72128dc3aa333",
@@ -5286,7 +5286,7 @@
         "level": 13,
         "frontWord": "various",
         "pronunciation": "[vέəriəs]",
-        "backWord": "a. 다양한; ad. 다양한 방법으로"
+        "backWord": "a. 다양한"
       }
     ]
   },
@@ -5325,7 +5325,7 @@
         "level": 14,
         "frontWord": "argue",
         "pronunciation": "[άːrgjuː]",
-        "backWord": "v. 토론하다, 논쟁하다; v. 주장하다"
+        "backWord": "v. 언쟁을 하다, 다투다"
       },
       {
         "_id": "67bcf053b4e9db028af5e273",
@@ -5437,7 +5437,7 @@
         "level": 14,
         "frontWord": "elaborate",
         "pronunciation": "[ilǽbərət]",
-        "backWord": "v. 자세히 설명하다; a. 정교한, 복잡한"
+        "backWord": "a. 정교한, 정성을 들인; v. 자세히 말하다"
       },
       {
         "_id": "67bcf053f2ada357be33ba3e",
@@ -5477,7 +5477,7 @@
         "level": 14,
         "frontWord": "face",
         "pronunciation": "[feis]",
-        "backWord": "v. 직면하다; n. 얼굴"
+        "backWord": "n. 얼굴; v. 직면하다, 마주보다"
       },
       {
         "_id": "67bcf053e05906f1f7f9e81e",
@@ -5565,7 +5565,7 @@
         "level": 14,
         "frontWord": "official",
         "pronunciation": "[əfíʃəl]",
-        "backWord": "n. 공무원, 관리; a. 공식적인"
+        "backWord": "n. 공무원; a. 공식적인, 공인된"
       },
       {
         "_id": "67bcf05326c62eab4cbc63b3",
@@ -5581,7 +5581,7 @@
         "level": 14,
         "frontWord": "petition",
         "pronunciation": "[pətíʃən]",
-        "backWord": "n. 청원서, 탄원서; v. 청원하다, 탄원하다"
+        "backWord": "n. 청원; v. 청원하다"
       },
       {
         "_id": "67bcf05307b3dafc36322a31",
@@ -5653,7 +5653,7 @@
         "level": 14,
         "frontWord": "tidy",
         "pronunciation": "[táidi]",
-        "backWord": "a. 깔끔한, 정돈된; v. 정리하다"
+        "backWord": "a. 깔끔한; v. 정돈하다"
       },
       {
         "_id": "67bcf053c64feb6453972a55",
@@ -5732,7 +5732,7 @@
         "level": 15,
         "frontWord": "cautiously",
         "pronunciation": "[kɔ́ːʃəsli]",
-        "backWord": "ad. 조심스럽게; usly는 (부)로만 사용됨) "
+        "backWord": "ad. 조심스럽게"
       },
       {
         "_id": "67bcf0535567fda169acfcd0",
@@ -5764,7 +5764,7 @@
         "level": 15,
         "frontWord": "comprehensive",
         "pronunciation": "[kὰmprihénsiv]",
-        "backWord": "a. 포괄적인; a. 철저한"
+        "backWord": "a. 포괄적인"
       },
       {
         "_id": "67bcf05309d401bc73749209",
@@ -5788,7 +5788,7 @@
         "level": 15,
         "frontWord": "dignitary",
         "pronunciation": "[dígnitèri]",
-        "backWord": "n. 고위 인사"
+        "backWord": "n. 고위 관리"
       },
       {
         "_id": "67bcf05388512a4986f291ef",
@@ -5820,7 +5820,7 @@
         "level": 15,
         "frontWord": "exception",
         "pronunciation": "[iksépʃən]",
-        "backWord": "n. 예외; n. 특례"
+        "backWord": "n. 예외"
       },
       {
         "_id": "67bcf053594a2b7a5528f9db",
@@ -5844,7 +5844,7 @@
         "level": 15,
         "frontWord": "gauge",
         "pronunciation": "[geidʒ]",
-        "backWord": "n. 계기, 측정기; v. 측정하다"
+        "backWord": "n. 측정기; v. 측정하다"
       },
       {
         "_id": "67bcf053e696e2a9b8efa05e",
@@ -5852,7 +5852,7 @@
         "level": 15,
         "frontWord": "gratuity",
         "pronunciation": "[grətjúːəti]",
-        "backWord": "n. 팁, 봉사료; n. 퇴직금"
+        "backWord": "n. 팁, 봉사료"
       },
       {
         "_id": "67bcf053eabb8a2176c38b1b",
@@ -5868,7 +5868,7 @@
         "level": 15,
         "frontWord": "inaugurate",
         "pronunciation": "[inɔ́ːgjurèit]",
-        "backWord": "v. 개시하다; v. 취임식을 거행하다"
+        "backWord": "v. 취임시키다; 개시하다"
       },
       {
         "_id": "67bcf053cd55f2d7e346f38a",
@@ -5900,7 +5900,7 @@
         "level": 15,
         "frontWord": "largely",
         "pronunciation": "[lάːrdʒli]",
-        "backWord": "ad. 대부분, 주로; ad. 대체로, 거의"
+        "backWord": "ad. 대부분; 주로"
       },
       {
         "_id": "67bcf05387fdb3861fd34bf2",
@@ -5924,7 +5924,7 @@
         "level": 15,
         "frontWord": "marginal",
         "pronunciation": "[mάːrdʒinl]",
-        "backWord": "a. 사소한, 미미한; a. 가장자리의, 경계에 있는"
+        "backWord": "a. 경계의; 미미한"
       },
       {
         "_id": "67bcf0533de251361b114b40",
@@ -5948,7 +5948,7 @@
         "level": 15,
         "frontWord": "occasionally",
         "pronunciation": "[əkéiʒənəli]",
-        "backWord": "ad. 가끔, 때때로"
+        "backWord": "ad. 가끔"
       },
       {
         "_id": "67bcf05310adb01624e9e5f4",
@@ -5956,7 +5956,7 @@
         "level": 15,
         "frontWord": "particularly",
         "pronunciation": "[pərtíkjulərli]",
-        "backWord": "ad. 특히; ad. 특별히"
+        "backWord": "ad. 특히"
       },
       {
         "_id": "67bcf0537b070c4176b1aec4",
@@ -5964,7 +5964,7 @@
         "level": 15,
         "frontWord": "precipitation",
         "pronunciation": "[prisìpətéiʃən]",
-        "backWord": "n. 강수량; n. 침전"
+        "backWord": "n. 강수량; 성급함"
       },
       {
         "_id": "67bcf0538d67023e8efb7a87",
@@ -5980,7 +5980,7 @@
         "level": 15,
         "frontWord": "properly",
         "pronunciation": "[prάpərli]",
-        "backWord": "ad. 적절하게, 제대로; ad. 적절하게, 맞게"
+        "backWord": "ad. 적절히"
       },
       {
         "_id": "67bcf0539dcc2171de869b5e",
@@ -5988,7 +5988,7 @@
         "level": 15,
         "frontWord": "provision",
         "pronunciation": "[prəvíʒən]",
-        "backWord": "n. 공급, 제공; n. 규정, 조건"
+        "backWord": "n. 공급, 제공; v. 공급하다"
       },
       {
         "_id": "67bcf0534fe3d17a3b621544",
@@ -6004,7 +6004,7 @@
         "level": 15,
         "frontWord": "relatively",
         "pronunciation": "[rélətivli]",
-        "backWord": "ad. 비교적, 상대적으로; ad. 꽤, 상당히 (비교 대상을 통해 상대적 평가)"
+        "backWord": "ad. 상대적으로"
       },
       {
         "_id": "67bcf0539ea0ca2f5bbb1ec3",
@@ -6020,7 +6020,7 @@
         "level": 15,
         "frontWord": "reward",
         "pronunciation": "[riwɔ́ːrd]",
-        "backWord": "n. 보상, 상; v. 보상하다"
+        "backWord": "n. 보상; v. 보상하다"
       },
       {
         "_id": "67bcf053de75912bbb2a4489",
@@ -6060,7 +6060,7 @@
         "level": 15,
         "frontWord": "slightly",
         "pronunciation": "[sláitli]",
-        "backWord": "ad. 약간, 조금; ad. 별로, 그렇게 많이"
+        "backWord": "ad. 약간"
       },
       {
         "_id": "67bcf0533e9ab5ce48b21ec5",
@@ -6123,7 +6123,7 @@
         "level": 16,
         "frontWord": "accelerate",
         "pronunciation": "[æksélərèit, əksélərèit]",
-        "backWord": "v. 속도를 높이다; v. 과정이나 활동을 더 빠르 게 진행하다"
+        "backWord": "v. 가속하다"
       },
       {
         "_id": "67bcf05327eb78a4c790ed19",
@@ -6147,7 +6147,7 @@
         "level": 16,
         "frontWord": "appearance",
         "pronunciation": "[əpíərəns]",
-        "backWord": "n. 외모; n. 출현, 등장"
+        "backWord": "n. 모양; 출현"
       },
       {
         "_id": "67bcf0538d9510778e84159e",
@@ -6203,7 +6203,7 @@
         "level": 16,
         "frontWord": "convey",
         "pronunciation": "[kənvéi]",
-        "backWord": "v. 전달하다(메시지, 감 정 등); v. 운반하다(물리적인 물건)"
+        "backWord": "v. 전달하다, 실어 나르다"
       },
       {
         "_id": "67bcf05371e6058d536c15c6",
@@ -6243,7 +6243,7 @@
         "level": 16,
         "frontWord": "devastate",
         "pronunciation": "[dévəstèit]",
-        "backWord": "v. 완전히 파괴하다; v. 충격을 주다"
+        "backWord": "v. 완전히 파괴하다"
       },
       {
         "_id": "67bcf053e0ad6af011e723ed",
@@ -6403,7 +6403,7 @@
         "level": 16,
         "frontWord": "insulation",
         "pronunciation": "[ìnsəléiʃən]",
-        "backWord": "n. 단열재, 절연체; n. 절연"
+        "backWord": "n. 단열재; 절연재"
       },
       {
         "_id": "67bcf0534134e856532a62c6",
@@ -6435,7 +6435,7 @@
         "level": 16,
         "frontWord": "prevention",
         "pronunciation": "[privénʃən]",
-        "backWord": "n. 방지, 예방"
+        "backWord": "n. 예방"
       },
       {
         "_id": "67bcf0531037ba266d44eb4a",
@@ -6530,7 +6530,7 @@
         "level": 17,
         "frontWord": "adjourn",
         "pronunciation": "[ədʒə́ːrn]",
-        "backWord": "v. 중단하다, 휴회하다; v. 장소를 옮기다"
+        "backWord": "v. 연기하다, 휴회하다"
       },
       {
         "_id": "67bcf0538a8953896983b2b6",
@@ -6562,7 +6562,7 @@
         "level": 17,
         "frontWord": "attribute",
         "pronunciation": "[ətríbjuːt]",
-        "backWord": "v. ~의 탓으로 돌리다; n. 특성, 속성"
+        "backWord": "v. ~의 결과로 보다, ~의 탓으로 돌리다; n. 특성, 자질, 속성"
       },
       {
         "_id": "67bcf0531e3849267ed5e31d",
@@ -6586,7 +6586,7 @@
         "level": 17,
         "frontWord": "circumscribe",
         "pronunciation": "[sərˌkəmskraiˈb]",
-        "backWord": "v. 제한하다; v. 둘러싸다, 경계짓다"
+        "backWord": "v. 제한하다, 억제하다"
       },
       {
         "_id": "67bcf053e14dd2b0a72282a6",
@@ -6602,7 +6602,7 @@
         "level": 17,
         "frontWord": "coherent",
         "pronunciation": "[kouhíərənt]",
-        "backWord": "a. 논리적인, 일관성 있 는; a. 조리 있게 말하는"
+        "backWord": "a. 일관된, 명료한"
       },
       {
         "_id": "67bcf053f70459786c8d7ec7",
@@ -6610,7 +6610,7 @@
         "level": 17,
         "frontWord": "collapse",
         "pronunciation": "[kəlǽps]",
-        "backWord": "v. 자격을 얻다; v. 적합하다고 인정받다"
+        "backWord": "v. 붕괴되다, 무너지다; n. 붕괴"
       },
       {
         "_id": "67bcf053a0e59e44bf11d4f9",
@@ -6618,7 +6618,7 @@
         "level": 17,
         "frontWord": "conglomerate",
         "pronunciation": "[kənglάmərit｜-glɔ́m-]",
-        "backWord": "n. 다각화된 대기업; a. 복합적인"
+        "backWord": "n. 복합 기업"
       },
       {
         "_id": "67bcf0537c4feb5dd90e73fe",
@@ -6642,7 +6642,7 @@
         "level": 17,
         "frontWord": "contend",
         "pronunciation": "[kənténd]",
-        "backWord": "v. 경쟁하다; v. 주장하다"
+        "backWord": "v. 주장하다; 다투다"
       },
       {
         "_id": "67bcf053dd28ae070f7e1a1c",
@@ -6658,7 +6658,7 @@
         "level": 17,
         "frontWord": "curtail",
         "pronunciation": "[kəːrtéil]",
-        "backWord": "v. 줄이다, 축소하다; v. 제한하다"
+        "backWord": "v. 줄이다, 삭감하다"
       },
       {
         "_id": "67bcf053aa1f66e484ab6516",
@@ -6690,7 +6690,7 @@
         "level": 17,
         "frontWord": "discharge",
         "pronunciation": "[disʧάːrdʒ]",
-        "backWord": "v. 방출하다; v. 해고하다"
+        "backWord": "v. 해고하다, 석방하다; n. 방출, 배출; 배출물"
       },
       {
         "_id": "67bcf0535f97733fe8e10a76",
@@ -6722,7 +6722,7 @@
         "level": 17,
         "frontWord": "fortify",
         "pronunciation": "[fɔ́ːrtəfài]",
-        "backWord": "v. 강화하다, 튼튼하게 하다; v. 영양가를 높이다"
+        "backWord": "v. 강화하다"
       },
       {
         "_id": "67bcf0538dbca42814dafaf2",
@@ -6730,7 +6730,7 @@
         "level": 17,
         "frontWord": "genuine",
         "pronunciation": "[dʒénjuin]",
-        "backWord": "a. 진짜의; a. 진실된"
+        "backWord": "a. 진짜의, 진품의"
       },
       {
         "_id": "67bcf053bd1fe105ee13314d",
@@ -6762,7 +6762,7 @@
         "level": 17,
         "frontWord": "liability",
         "pronunciation": "[làiəbíləti]",
-        "backWord": "n. 법적 책임; n. 채무"
+        "backWord": "n. 책임, 부채"
       },
       {
         "_id": "67bcf0531b6cef73676b8585",
@@ -6778,7 +6778,7 @@
         "level": 17,
         "frontWord": "perception",
         "pronunciation": "[pərsépʃən]",
-        "backWord": "n. 인식, 지각; n. 견해, 시각"
+        "backWord": "n. 인식; 지각"
       },
       {
         "_id": "67bcf0536d63448b94e54b33",
@@ -6818,7 +6818,7 @@
         "level": 17,
         "frontWord": "reciprocal",
         "pronunciation": "[risíprəkəl]",
-        "backWord": "a. 상호 간의; a. 호혜적인"
+        "backWord": "a. 상호의"
       },
       {
         "_id": "67bcf053c4e44bf14ccc357b",
@@ -6842,7 +6842,7 @@
         "level": 17,
         "frontWord": "rigid",
         "pronunciation": "[rídʒid]",
-        "backWord": "a. 엄격한; a. 굳은, 유연하지 않은"
+        "backWord": "a. 단단한; 엄격한"
       },
       {
         "_id": "67bcf0533a8799b4a2fbf6a7",
@@ -6850,7 +6850,7 @@
         "level": 17,
         "frontWord": "seating",
         "pronunciation": "[síːtiŋ]",
-        "backWord": "n. 좌석 배치, 좌석 수용 능력"
+        "backWord": "n. 좌석 배치"
       },
       {
         "_id": "67bcf053f4a3da949b495048",
@@ -6890,7 +6890,7 @@
         "level": 17,
         "frontWord": "undoubtedly",
         "pronunciation": "[ʌ̀ndáutidli]",
-        "backWord": "ad. 의심할 여지가 없이"
+        "backWord": "ad. 의심없이"
       },
       {
         "_id": "67bcf053348ea6dc8b2fd4c5",
@@ -6898,7 +6898,7 @@
         "level": 17,
         "frontWord": "unexpected",
         "pronunciation": "[əˌnikspeˈktid]",
-        "backWord": "a. 예상치 못한; a. 뜻밖의"
+        "backWord": "a. 예상치 못한"
       },
       {
         "_id": "67bcf0531ace6f303541d300",
@@ -6914,7 +6914,7 @@
         "level": 17,
         "frontWord": "widely",
         "pronunciation": "[wáidli]",
-        "backWord": "ad. 널리, 폭넓게"
+        "backWord": "ad. 널리"
       }
     ]
   },
@@ -6929,7 +6929,7 @@
         "level": 18,
         "frontWord": "abate",
         "pronunciation": "[əbéit]",
-        "backWord": "v. 감소하다, 약해지다; v. 완화하다"
+        "backWord": "v. 줄이다, 완화하다"
       },
       {
         "_id": "67bcf0539e84229dad380828",
@@ -6961,7 +6961,7 @@
         "level": 18,
         "frontWord": "benefit",
         "pronunciation": "[bénəfit]",
-        "backWord": "n. 이익, 혜택; v. 이익을 얻다, 유익하다"
+        "backWord": "n. 이익; v. 이익을 주다"
       },
       {
         "_id": "67bcf0536096a69db095fe18",
@@ -7001,7 +7001,7 @@
         "level": 18,
         "frontWord": "competition",
         "pronunciation": "[kὰmpətíʃən]",
-        "backWord": "n. 경쟁; n. 대회"
+        "backWord": "n. 경쟁"
       },
       {
         "_id": "67bcf053c28c3fcb761a9ea6",
@@ -7049,7 +7049,7 @@
         "level": 18,
         "frontWord": "depot",
         "pronunciation": "[díːpou]",
-        "backWord": "n. 정비 시설, 보관 장소; n. 창고, 저장소"
+        "backWord": "n. 창고; 정거장"
       },
       {
         "_id": "67bcf053c2b4101c211d02cd",
@@ -7121,7 +7121,7 @@
         "level": 18,
         "frontWord": "exhibition",
         "pronunciation": "[èksəbíʃən]",
-        "backWord": "n. 전시회; n. 발휘, 표현"
+        "backWord": "n. 전시회"
       },
       {
         "_id": "67bcf053cab84b9ba5e412d4",
@@ -7129,7 +7129,7 @@
         "level": 18,
         "frontWord": "fabric",
         "pronunciation": "[fǽbrik]",
-        "backWord": "n. 직물, 천; n. 구조, 구성"
+        "backWord": "n. 천, 직물"
       },
       {
         "_id": "67bcf053fb2b56c775e9a4d4",
@@ -7145,7 +7145,7 @@
         "level": 18,
         "frontWord": "form",
         "pronunciation": "[fɔːrm]",
-        "backWord": "n. 형태; n. 양식, 서식"
+        "backWord": "n. 형태, 서식; v. 형성하다"
       },
       {
         "_id": "67bcf053f93b9853b3f663d3",
@@ -7153,7 +7153,7 @@
         "level": 18,
         "frontWord": "handle",
         "pronunciation": "[hǽndl]",
-        "backWord": "v. 다루다, 처리하다; n. 손잡이, 핸들"
+        "backWord": "v. 다루다; n. 핸들"
       },
       {
         "_id": "67bcf0536a030be3ae9bf001",
@@ -7169,7 +7169,7 @@
         "level": 18,
         "frontWord": "include",
         "pronunciation": "[inklúːd]",
-        "backWord": "v. 포함하다, 포함시키다; v. 넣다"
+        "backWord": "v. 포함하다"
       },
       {
         "_id": "67bcf0532f267df7b3ad0940",
@@ -7217,7 +7217,7 @@
         "level": 18,
         "frontWord": "promotion",
         "pronunciation": "[prəmóuʃən]",
-        "backWord": "n. 승진; n. 홍보"
+        "backWord": "n. 승진; 홍보"
       },
       {
         "_id": "67bcf0538d7dab50854e1a14",
@@ -7273,7 +7273,7 @@
         "level": 18,
         "frontWord": "succinct",
         "pronunciation": "[səksíŋkt]",
-        "backWord": "a. 간결한; ad. 간결하게"
+        "backWord": "a. 간결한"
       },
       {
         "_id": "67bcf053ba139520ee9c5e61",
@@ -7544,7 +7544,7 @@
         "level": 19,
         "frontWord": "manufacturer",
         "pronunciation": "[mӕnjufǽkʧərər]",
-        "backWord": "n. 제조업체, 제조자; n. 제작자"
+        "backWord": "n. 제조업자"
       },
       {
         "_id": "67bcf053fbfec3b753691629",
@@ -7688,7 +7688,7 @@
         "level": 19,
         "frontWord": "shortly",
         "pronunciation": "[ʃɔ́ːrtli]",
-        "backWord": "ad. 곧, 금방; ad. 간단히, 짧게"
+        "backWord": "ad. 곧"
       },
       {
         "_id": "67bcf053e20cbacec3078e64",
@@ -7696,7 +7696,7 @@
         "level": 19,
         "frontWord": "soar",
         "pronunciation": "[sɔːr]",
-        "backWord": "v. 급격히 상승하다; v. 날아오르다"
+        "backWord": "v. 높이 솟다, 치솟다"
       },
       {
         "_id": "67bcf0533794cf71cdd74166",
@@ -7704,7 +7704,7 @@
         "level": 19,
         "frontWord": "strictly",
         "pronunciation": "[stríktli]",
-        "backWord": "ad. 엄격하게, 철저히"
+        "backWord": "ad. 엄격하게"
       },
       {
         "_id": "67bcf053fe4e24794572ffff",
