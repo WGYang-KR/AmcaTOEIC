@@ -28,6 +28,7 @@ struct PurchasePopUpViewControllerWrapper: UIViewControllerRepresentable {
 
 class PurchasePopUpVC: UIViewController {
     @IBOutlet var backBoxView: UIView!
+    @IBOutlet weak var buyButton: UIButton!
     @IBOutlet weak var priceLabel: UILabel!
     
     var baseVC: UIViewController?
@@ -37,19 +38,23 @@ class PurchasePopUpVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         backBoxView.layer.cornerRadius = 12.0
+        
+        buyButton.isEnabled = false
+        LoadingIndicator.showLoadingView()
         IAPManager.shared.getProductPrice { [weak self] product in
+            LoadingIndicator.hideLoadingView()
             guard let self else { return }
-            guard let product else {
-                closeSelected(Void())
-                return
-            }
+            guard let product else { return }
             
             let numberFormatter = NumberFormatter()
             numberFormatter.numberStyle = .currency
             numberFormatter.locale = product.priceLocale
             let formattedString = numberFormatter.string(from: product.price)
             
-            priceLabel.text = "가격: \(formattedString ?? "") (평생 소장)"
+            priceLabel.text = "가격: \(formattedString ?? "-") (평생 소장)"
+            
+            buyButton.isEnabled = true
+           
         }
        
     }
