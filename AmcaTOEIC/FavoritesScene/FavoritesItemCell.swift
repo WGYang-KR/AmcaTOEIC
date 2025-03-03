@@ -10,12 +10,10 @@ import Combine
 class FavoritesItemCell: UITableViewCell {
 
     @IBOutlet weak var indexLabel: UILabel!
-    @IBOutlet weak var topLabel: UILabel!
+    @IBOutlet weak var levelLabel: UILabel!
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var firstLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
-    @IBOutlet weak var radicalLabel: UILabel!
-    @IBOutlet weak var strokeCountLabel: UILabel!
     @IBOutlet weak var speakButton: UIButton!
     @IBOutlet weak var searchButton: UIButton!
     
@@ -60,7 +58,7 @@ class FavoritesItemCell: UITableViewCell {
         
         indexLabel.text = String(index + 1)
         let cardItem = favoriteCardItem.cardItem
-        self.topLabel.text = "Day \(cardItem.level)"
+        self.levelLabel.text = "Day \(cardItem.level)"
         self.firstLabel.text = cardItem.frontWord
         self.secondLabel.text = cardItem.backWord.replacingOccurrences(of: "; ", with: "\n")
         self.isFavorite.send(favoriteCardItem.isFavorite)
