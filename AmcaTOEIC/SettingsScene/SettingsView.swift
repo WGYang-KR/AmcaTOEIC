@@ -137,16 +137,17 @@ struct SettingsView: View {
                             })
                         )
                     }
-                    .alert(isPresented: $showsRestoreAlertFailed) {
-                        Alert(
-                            title: Text("구매기록 복원에 실패했습니다."),
-                            dismissButton: .default(Text("확인"), action: {
-                                showsRestoreAlertFailed = false
-                            })
-                        )
-                    }
+                   
                     
                     Spacer()
+                        .alert(isPresented: $showsRestoreAlertFailed) {
+                            Alert(
+                                title: Text("구매기록 복원에 실패했습니다."),
+                                dismissButton: .default(Text("확인"), action: {
+                                    showsRestoreAlertFailed = false
+                                })
+                            )
+                        }
                     
                     Image(systemName: "chevron.right")
                         .foregroundColor(.textTertiary)

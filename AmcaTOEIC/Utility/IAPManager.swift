@@ -34,7 +34,7 @@ class IAPManager {
                     completion(product)
                     
                 case .failure(let error):
-                    shLog("Error: \(error.localizedDescription)")
+                    shLog("Error: \(error), description \(error.localizedDescription)")
                     completion(nil)
                 }
             }
