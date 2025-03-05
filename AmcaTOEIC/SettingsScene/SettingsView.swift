@@ -246,8 +246,10 @@ struct SettingsView: View {
     }
     
     func restorePurchase() {
+        LoadingIndicator.showLoadingView()
         IAPManager.shared.restorePurchases { result in
             isPurchased = IAPManager.shared.isProductPurchased()
+            LoadingIndicator.hideLoadingView()
             switch result {
             case .success:
                 showsRestoreAlert = true
