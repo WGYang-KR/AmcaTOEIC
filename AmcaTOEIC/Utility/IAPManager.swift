@@ -12,7 +12,7 @@ class IAPManager {
     
     static let shared = IAPManager()
    
-    let productIdentifier = "Sample_ID"
+    let productIdentifier = "com.theonelab.amcaToeic.unlockChapter"
 
     private init() {}
     

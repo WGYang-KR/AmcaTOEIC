@@ -16,6 +16,7 @@ struct SettingsView: View {
     @State private var showsGuideAlert: Bool = false
     @State private var showsPurchaseAlert: Bool = false
     @State private var showsRestoreAlert: Bool = false
+    @State private var showsRestoreAlertFailed: Bool = false
     
     ///진도 초기화를 실행할 클로저
     var resetProgressClosure: (()->Void)?
@@ -136,6 +137,14 @@ struct SettingsView: View {
                             })
                         )
                     }
+                    .alert(isPresented: $showsRestoreAlertFailed) {
+                        Alert(
+                            title: Text("구매기록 복원에 실패했습니다."),
+                            dismissButton: .default(Text("확인"), action: {
+                                showsRestoreAlertFailed = false
+                            })
+                        )
+                    }
                     
                     Spacer()
                     
@@ -234,9 +243,14 @@ struct SettingsView: View {
     }
     
     func restorePurchase() {
-        IAPManager.shared.restorePurchases { _ in
+        IAPManager.shared.restorePurchases { result in
             isPurchased = IAPManager.shared.isProductPurchased()
-            showsRestoreAlert = true
+            switch result {
+            case .success:
+                showsRestoreAlert = true
+            case .failure:
+                showsRestoreAlertFailed = true
+            }
         }
     }
 
