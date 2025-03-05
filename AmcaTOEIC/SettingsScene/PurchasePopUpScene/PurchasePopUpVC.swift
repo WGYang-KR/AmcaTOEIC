@@ -74,13 +74,24 @@ class PurchasePopUpVC: UIViewController {
     }
     
     @IBAction func goToBuySelected(_ sender: Any) {
-//        let appStoreURL = URL(string: "https://apps.apple.com/app/hashcamera/id6502834553")!
-//        if UIApplication.shared.canOpenURL(appStoreURL) {
-//            UIApplication.shared.open(appStoreURL)
-//        }
-//        dismiss(animated: false)
         
         //TODO: 인앱결제하기
+        IAPManager.shared.buyProduct { result in
+  
+            switch result {
+            case .success:
+                IAPManager.shared.restorePurchases { _ in
+                    //성공했다는 팝업
+                }
+            case .failure(let error):
+                IAPManager.shared.restorePurchases { _ in
+                    
+                    //실패했다는 팝업
+                }
+              
+            }
+        }
+        
     }
     
 }
