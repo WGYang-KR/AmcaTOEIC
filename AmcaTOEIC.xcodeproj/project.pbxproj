@@ -10,6 +10,7 @@
 		657BBD7D5310FB81527F8BE7 /* Pods_AmcaTOEIC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D3463EC31D6DC58DAE234A /* Pods_AmcaTOEIC.framework */; };
 		6A3D04DB2D7895310092ABB0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A3D04DA2D7895310092ABB0 /* GoogleService-Info.plist */; };
 		6A8705F52D6FADDD001FA41D /* TTSHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8705F42D6FADD8001FA41D /* TTSHelper.swift */; };
+		6A99C55A2D78EEF80090B3BD /* NotiName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99C5592D78EEE10090B3BD /* NotiName.swift */; };
 		6AA92AA82D6DE28400E8804E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92A9F2D6DE28400E8804E /* Assets.xcassets */; };
 		6AA92AAA2D6DE28400E8804E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AA22D6DE28400E8804E /* LaunchScreen.storyboard */; };
 		6AA92AAC2D6DE28400E8804E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92A9E2D6DE28400E8804E /* AppDelegate.swift */; };
@@ -91,6 +92,7 @@
 		2745229020A22BD0C90A6BFB /* Pods-AmcaTOEIC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmcaTOEIC.release.xcconfig"; path = "Target Support Files/Pods-AmcaTOEIC/Pods-AmcaTOEIC.release.xcconfig"; sourceTree = "<group>"; };
 		6A3D04DA2D7895310092ABB0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6A8705F42D6FADD8001FA41D /* TTSHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSHelper.swift; sourceTree = "<group>"; };
+		6A99C5592D78EEE10090B3BD /* NotiName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiName.swift; sourceTree = "<group>"; };
 		6AA92A662D6DE0CB00E8804E /* AmcaTOEIC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmcaTOEIC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA92A9E2D6DE28400E8804E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AA92A9F2D6DE28400E8804E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -390,6 +392,7 @@
 		6AA92AF72D6DE46C00E8804E /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				6A99C5592D78EEE10090B3BD /* NotiName.swift */,
 				6AB34C8F2D7470430015FDCA /* LoadingIndicator.swift */,
 				6ABA33EA2D727E0600CD052F /* IAPHelper.swift */,
 				6ABA33EC2D72811300CD052F /* IAPManager.swift */,
@@ -604,6 +607,7 @@
 				6AA92AAC2D6DE28400E8804E /* AppDelegate.swift in Sources */,
 				6AA92B152D6DE46C00E8804E /* SettingsView.swift in Sources */,
 				6AA92B162D6DE46C00E8804E /* KolodaCardStorage.swift in Sources */,
+				6A99C55A2D78EEF80090B3BD /* NotiName.swift in Sources */,
 				6AA92B172D6DE46C00E8804E /* CardSideType.swift in Sources */,
 				6AA92B182D6DE46C00E8804E /* AlertHelper.swift in Sources */,
 				6AA92B192D6DE46C00E8804E /* CardItemView.swift in Sources */,

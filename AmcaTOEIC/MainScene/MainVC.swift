@@ -20,6 +20,8 @@ class MainVC: UIViewController {
         initVM()
         initTableView()
         titleLabel.text = "암카 토익"
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(purchaseCompleted), name: NotiName.purchaseCompleted, object: nil)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -61,6 +63,9 @@ class MainVC: UIViewController {
         tableView.separatorStyle = .none
     }
     
+    @objc func purchaseCompleted() {
+        tableView.reloadData()
+    }
 
 }
 

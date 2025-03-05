@@ -74,24 +74,20 @@ class PurchasePopUpVC: UIViewController {
     }
     
     @IBAction func goToBuySelected(_ sender: Any) {
-        
-        //TODO: 인앱결제하기
-        IAPManager.shared.buyProduct { result in
-  
+        LoadingIndicator.showLoadingView()
+        IAPManager.shared.buyProduct { [weak self] result in
+            LoadingIndicator.hideLoadingView()
+            guard let self else { return }
             switch result {
             case .success:
-                IAPManager.shared.restorePurchases { _ in
-                    //성공했다는 팝업
-                }
+                NotificationCenter.default.post(name: NotiName.purchaseCompleted, object: nil)
+                closeSelected(Void())
             case .failure(let error):
-                IAPManager.shared.restorePurchases { _ in
-                    
-                    //실패했다는 팝업
-                }
-              
+                AlertHelper.alertInform(baseVC: self, title: "구매에 실패하였습니다.", message: "\(error.localizedDescription)", confirmCompletion: {
+                    self.closeSelected(Void())
+                })
             }
         }
-        
     }
     
 }

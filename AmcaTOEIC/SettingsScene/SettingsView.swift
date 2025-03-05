@@ -48,6 +48,9 @@ struct SettingsView: View {
                 }
             }
         )
+        .onReceive(NotificationCenter.default.publisher(for: NotiName.purchaseCompleted)) { _ in
+            checkPurchaseStatus()
+        }
     }
     
     
@@ -97,9 +100,9 @@ struct SettingsView: View {
                     Button(action: {
                         
                     }, label: {
-                        Text("정식 버전 이용중")
+                        Text("정식 버전 구매 완료")
                             .fontWeight(.regular)
-                            .foregroundStyle(Color.textSecondary)
+                            .foregroundStyle(Color.textTertiary)
                     })
                     .disabled(true)
                     Spacer()
@@ -240,7 +243,6 @@ struct SettingsView: View {
     
     func checkPurchaseStatus() {
         isPurchased = IAPManager.shared.isProductPurchased()
-//        isPurchased = true
     }
     
     func restorePurchase() {
