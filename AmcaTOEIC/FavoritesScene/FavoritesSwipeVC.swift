@@ -162,7 +162,7 @@ extension FavoritesSwipeVC: KolodaViewDelegate {
     }
     
     func kolodaSwipeThresholdRatioMargin(_ koloda: KolodaView) -> CGFloat? {
-        return 0.4
+        return 0.35
     }
     
     func koloda(_ koloda: KolodaView, didSwipeCardAt index: Int, in direction: SwipeResultDirection) {
