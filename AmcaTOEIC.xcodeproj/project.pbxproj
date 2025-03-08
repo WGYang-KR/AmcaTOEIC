@@ -11,6 +11,7 @@
 		6A3D04DB2D7895310092ABB0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A3D04DA2D7895310092ABB0 /* GoogleService-Info.plist */; };
 		6A8705F52D6FADDD001FA41D /* TTSHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8705F42D6FADD8001FA41D /* TTSHelper.swift */; };
 		6A99C55A2D78EEF80090B3BD /* NotiName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99C5592D78EEE10090B3BD /* NotiName.swift */; };
+		6A99C55E2D7BBEA70090B3BD /* TOEIC_CardDATA_20250308-085306.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A99C55D2D7BBEA70090B3BD /* TOEIC_CardDATA_20250308-085306.json */; };
 		6AA92AA82D6DE28400E8804E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92A9F2D6DE28400E8804E /* Assets.xcassets */; };
 		6AA92AAA2D6DE28400E8804E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AA22D6DE28400E8804E /* LaunchScreen.storyboard */; };
 		6AA92AAC2D6DE28400E8804E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92A9E2D6DE28400E8804E /* AppDelegate.swift */; };
@@ -79,7 +80,6 @@
 		6AB34C8C2D7430D90015FDCA /* GuidePopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB34C8A2D7430D90015FDCA /* GuidePopUpVC.swift */; };
 		6AB34C8D2D7430D90015FDCA /* GuidePopUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AB34C8B2D7430D90015FDCA /* GuidePopUpVC.xib */; };
 		6AB34C902D7470460015FDCA /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB34C8F2D7470430015FDCA /* LoadingIndicator.swift */; };
-		6AB34C942D747EC50015FDCA /* TOEIC_CardDATA_20250302-205444.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AB34C932D747EC50015FDCA /* TOEIC_CardDATA_20250302-205444.json */; };
 		6ABA33EB2D727E0C00CD052F /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABA33EA2D727E0600CD052F /* IAPHelper.swift */; };
 		6ABA33ED2D72811700CD052F /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABA33EC2D72811300CD052F /* IAPManager.swift */; };
 		6ABA33F82D729FB400CD052F /* DashBoardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ABA33F72D729FB400CD052F /* DashBoardCell.xib */; };
@@ -93,6 +93,7 @@
 		6A3D04DA2D7895310092ABB0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6A8705F42D6FADD8001FA41D /* TTSHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSHelper.swift; sourceTree = "<group>"; };
 		6A99C5592D78EEE10090B3BD /* NotiName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiName.swift; sourceTree = "<group>"; };
+		6A99C55D2D7BBEA70090B3BD /* TOEIC_CardDATA_20250308-085306.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "TOEIC_CardDATA_20250308-085306.json"; sourceTree = "<group>"; };
 		6AA92A662D6DE0CB00E8804E /* AmcaTOEIC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmcaTOEIC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA92A9E2D6DE28400E8804E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AA92A9F2D6DE28400E8804E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -163,7 +164,6 @@
 		6AB34C8A2D7430D90015FDCA /* GuidePopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidePopUpVC.swift; sourceTree = "<group>"; };
 		6AB34C8B2D7430D90015FDCA /* GuidePopUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuidePopUpVC.xib; sourceTree = "<group>"; };
 		6AB34C8F2D7470430015FDCA /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
-		6AB34C932D747EC50015FDCA /* TOEIC_CardDATA_20250302-205444.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "TOEIC_CardDATA_20250302-205444.json"; sourceTree = "<group>"; };
 		6ABA33EA2D727E0600CD052F /* IAPHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
 		6ABA33EC2D72811300CD052F /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
 		6ABA33F62D729FB400CD052F /* DashBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardCell.swift; sourceTree = "<group>"; };
@@ -409,7 +409,7 @@
 			isa = PBXGroup;
 			children = (
 				6AA92AF82D6DE46C00E8804E /* DBManager.swift */,
-				6AB34C932D747EC50015FDCA /* TOEIC_CardDATA_20250302-205444.json */,
+				6A99C55D2D7BBEA70090B3BD /* TOEIC_CardDATA_20250308-085306.json */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -504,6 +504,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ABA33F82D729FB400CD052F /* DashBoardCell.xib in Resources */,
+				6A99C55E2D7BBEA70090B3BD /* TOEIC_CardDATA_20250308-085306.json in Resources */,
 				6AA92AA82D6DE28400E8804E /* Assets.xcassets in Resources */,
 				6AA92AAA2D6DE28400E8804E /* LaunchScreen.storyboard in Resources */,
 				6AA92B002D6DE46C00E8804E /* PurchasePopUpVC.xib in Resources */,
@@ -523,7 +524,6 @@
 				6AA92B0C2D6DE46C00E8804E /* CardItemComponentView.xib in Resources */,
 				6AA92B0D2D6DE46C00E8804E /* WordListVC.xib in Resources */,
 				6AA92B0E2D6DE46C00E8804E /* CardItemBackContentView.xib in Resources */,
-				6AB34C942D747EC50015FDCA /* TOEIC_CardDATA_20250302-205444.json in Resources */,
 				6AA92B112D6DE46C00E8804E /* SHOverlayView.xib in Resources */,
 				6AA92B122D6DE46C00E8804E /* FavoritesItemCell.xib in Resources */,
 				6AA92B132D6DE46C00E8804E /* CardPackItemCell.xib in Resources */,

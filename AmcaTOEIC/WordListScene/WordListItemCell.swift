@@ -12,6 +12,7 @@ class WordListItemCell: UITableViewCell {
     @IBOutlet weak var indexLabel: UILabel!
     @IBOutlet weak var firstLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
+    @IBOutlet weak var meaing02Label: UILabel!
     @IBOutlet weak var radicalLabel: UILabel!
     @IBOutlet weak var strokeCountLabel: UILabel!
     @IBOutlet weak var checkMarkImageView: UIImageView!
@@ -32,6 +33,8 @@ class WordListItemCell: UITableViewCell {
         indexLabel.text = String(index)
         firstLabel.text = cardItem.frontWord
         secondLabel.text = cardItem.backWord.replacingOccurrences(of: "; ", with: "\n")
+        meaing02Label.text = cardItem.backWord02.replacingOccurrences(of: "; ", with: "\n")
+        
         checkMarkImageView.image  = cardItem.hasMemorized ? checkMarkImage : nil
         self.isFavorite.send(cardItem.isFavorite)
         

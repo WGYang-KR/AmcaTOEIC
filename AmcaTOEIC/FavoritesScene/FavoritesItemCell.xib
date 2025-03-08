@@ -108,16 +108,22 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="XQo-1u-p1R">
-                                        <rect key="frame" x="16" y="40" width="297" height="58.666666666666657"/>
+                                        <rect key="frame" x="16" y="40.000000000000007" width="297" height="88.666666666666686"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="漢" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSb-Er-y1R">
-                                                <rect key="frame" x="0.0" y="0.0" width="21" height="28.666666666666668"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="영어" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSb-Er-y1R">
+                                                <rect key="frame" x="0.0" y="0.0" width="41.666666666666664" height="28.666666666666668"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <color key="textColor" name="textPrimary"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="한나라 한" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0VQ-Aq-0xl">
-                                                <rect key="frame" x="0.0" y="34.666666666666671" width="74.333333333333329" height="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="뜻" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0VQ-Aq-0xl">
+                                                <rect key="frame" x="0.0" y="34.666666666666671" width="17.333333333333332" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" name="textPrimary"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="뜻" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2um-x7-nza">
+                                                <rect key="frame" x="0.0" y="64.666666666666671" width="17.333333333333329" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" name="textPrimary"/>
                                                 <nil key="highlightedColor"/>
@@ -162,6 +168,7 @@
                 <outlet property="firstLabel" destination="RSb-Er-y1R" id="bFD-fi-e50"/>
                 <outlet property="indexLabel" destination="ize-el-V1I" id="RTW-uS-5Mg"/>
                 <outlet property="levelLabel" destination="cDd-Mf-K7Z" id="xxL-6e-XWo"/>
+                <outlet property="meaing02Label" destination="2um-x7-nza" id="O1Y-mP-QXy"/>
                 <outlet property="searchButton" destination="Og5-pT-lTh" id="kka-en-gIs"/>
                 <outlet property="secondLabel" destination="0VQ-Aq-0xl" id="0uM-fF-fxA"/>
                 <outlet property="speakButton" destination="VMN-go-n3P" id="sHl-sx-0eT"/>

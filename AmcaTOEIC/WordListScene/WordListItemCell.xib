@@ -20,10 +20,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYd-Zi-QVh">
-                        <rect key="frame" x="0.0" y="0.0" width="456" height="126.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="456" height="154.5"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fxZ-0b-f8K">
-                                <rect key="frame" x="20" y="8" width="416" height="110.5"/>
+                                <rect key="frame" x="20" y="8" width="416" height="138.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="cX4-J5-Rv3">
                                         <rect key="frame" x="242" y="12" width="158" height="28"/>
@@ -106,22 +106,28 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="tnu-cv-8yM">
-                                        <rect key="frame" x="18" y="36" width="384" height="57"/>
+                                        <rect key="frame" x="18" y="36" width="384" height="85"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="752" text="漢" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EuV-js-1Sg">
-                                                <rect key="frame" x="0.0" y="0.0" width="21" height="29"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="752" text="영어" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EuV-js-1Sg">
+                                                <rect key="frame" x="0.0" y="0.0" width="42" height="29"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <color key="textColor" name="textPrimary"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="한나라 한" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMJ-JZ-CpB">
-                                                <rect key="frame" x="0.0" y="33" width="74.5" height="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="뜻" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMJ-JZ-CpB">
+                                                <rect key="frame" x="0.0" y="33" width="17.5" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" name="textPrimary"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="뜻" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWX-uT-J2R">
+                                                <rect key="frame" x="0.0" y="61" width="17.5" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" name="textPrimary"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7nc-si-0vQ">
-                                                <rect key="frame" x="0.0" y="57" width="226" height="14"/>
+                                                <rect key="frame" x="0.0" y="85" width="226" height="14"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ec7-n1-nRV">
                                                         <rect key="frame" x="0.0" y="0.0" width="129" height="14"/>
@@ -210,6 +216,7 @@
                 <outlet property="favoriteButton" destination="pu8-Op-6a6" id="8Bw-GE-aiu"/>
                 <outlet property="firstLabel" destination="EuV-js-1Sg" id="ocU-K9-MgT"/>
                 <outlet property="indexLabel" destination="FPQ-fQ-lMD" id="gVb-3b-t9V"/>
+                <outlet property="meaing02Label" destination="SWX-uT-J2R" id="ZqV-p1-QT2"/>
                 <outlet property="radicalLabel" destination="JU7-xj-cQG" id="7P1-hj-Mdn"/>
                 <outlet property="secondLabel" destination="zMJ-JZ-CpB" id="sF7-zg-iWP"/>
                 <outlet property="speakButton" destination="3Xy-j9-zIR" id="pQA-CM-lEx"/>
@@ -239,10 +246,10 @@
             <color red="0.074509803921568626" green="0.36470588235294116" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="textPrimary">
-            <color red="0.20784312490000001" green="0.23921570180000001" blue="0.2901961207" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.20784313725490197" green="0.23921568627450981" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="textSecondary">
-            <color red="0.31372550129999999" green="0.34901961679999999" blue="0.40392160420000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.31372549019607843" green="0.34901960784313724" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

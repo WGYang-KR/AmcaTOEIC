@@ -14,8 +14,12 @@ final class CardItem: Object, Decodable {
     @Persisted var index: Int
     @Persisted var level: Int
     @Persisted var frontWord: String
-    @Persisted var backWord: String
     @Persisted var pronunciation: String
+    @Persisted var backWord: String
+    @Persisted var backWord02: String
+    @Persisted var example01: String
+    @Persisted var example02: String
+    
     @Persisted var hasShown: Bool
     @Persisted var hasMemorized: Bool
     @Persisted var isFavorite: Bool = false
@@ -34,8 +38,12 @@ final class CardItem: Object, Decodable {
         case index
         case level
         case frontWord
-        case backWord
+        
         case pronunciation
+        case backWord
+        case backWord02
+        case example01
+        case example02
         
         case hasShown
         case hasMemorized
@@ -52,7 +60,9 @@ final class CardItem: Object, Decodable {
         frontWord = try container.decodeIfPresent(String.self, forKey: .frontWord) ?? ""
         pronunciation = try container.decodeIfPresent(String.self, forKey: .pronunciation) ?? ""
         backWord = try container.decodeIfPresent(String.self, forKey: .backWord) ?? ""
-    
+        backWord02 = try container.decodeIfPresent(String.self, forKey: .backWord02) ?? ""
+        example01 = try container.decodeIfPresent(String.self, forKey: .example01) ?? ""
+        example02 = try container.decodeIfPresent(String.self, forKey: .example02) ?? ""
         hasShown = try container.decodeIfPresent(Bool.self, forKey: .hasShown) ?? false
         hasMemorized = try container.decodeIfPresent(Bool.self, forKey: .hasMemorized) ?? false
         isFavorite = try container.decodeIfPresent(Bool.self, forKey: .isFavorite) ?? false

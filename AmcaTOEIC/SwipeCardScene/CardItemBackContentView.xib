@@ -13,8 +13,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardItemBackContentView" customModule="AmcaTOEIC" customModuleProvider="target">
             <connections>
                 <outlet property="containerView" destination="Trz-Ev-8Ra" id="77X-ze-PDw"/>
+                <outlet property="exam01Label" destination="v0s-iu-vU3" id="Enm-0d-e7q"/>
+                <outlet property="exam02Label" destination="zdK-ac-20J" id="t46-Y0-gBq"/>
                 <outlet property="favoriteButton" destination="NyZ-JD-8C9" id="cAR-S2-ipF"/>
                 <outlet property="label" destination="z5K-aW-ZWx" id="7wv-qE-vku"/>
+                <outlet property="meaing02Label" destination="G2q-Ri-OdS" id="3Y0-Ge-LlZ"/>
                 <outlet property="searchButton" destination="6qX-7w-hIH" id="bHF-AY-8b4"/>
             </connections>
         </placeholder>
@@ -27,18 +30,46 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="9Mj-xC-lhY">
-                            <rect key="frame" x="16" y="319" width="343" height="29"/>
+                            <rect key="frame" x="16" y="264.5" width="343" height="138"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="뜻" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="z5K-aW-ZWx">
-                                    <rect key="frame" x="161" y="0.0" width="21" height="29"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                    <color key="textColor" name="textPrimary"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nJo-Jb-mBs">
+                                    <rect key="frame" x="154" y="0.0" width="35" height="66"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="뜻" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="z5K-aW-ZWx">
+                                            <rect key="frame" x="7" y="0.0" width="21" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                            <color key="textColor" name="textPrimary"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="뜻2" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="G2q-Ri-OdS">
+                                            <rect key="frame" x="0.0" y="37" width="35" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                            <color key="textColor" name="textPrimary"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Qou-JK-qAD">
+                                    <rect key="frame" x="148.5" y="82" width="46.5" height="56"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="예문1" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="v0s-iu-vU3">
+                                            <rect key="frame" x="1.5" y="0.0" width="43.5" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" name="textPrimary"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="예문2" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zdK-ac-20J" userLabel="뜻2">
+                                            <rect key="frame" x="0.0" y="32" width="46.5" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" name="textPrimary"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
                             </subviews>
                         </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="zHU-G9-BmK">
-                            <rect key="frame" x="79" y="241" width="198" height="50"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="zHU-G9-BmK">
+                            <rect key="frame" x="88.5" y="186.5" width="198" height="50"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NyZ-JD-8C9">
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -95,6 +126,7 @@
                     <color key="backgroundColor" name="colorCardBack"/>
                     <constraints>
                         <constraint firstItem="zHU-G9-BmK" firstAttribute="centerX" secondItem="Trz-Ev-8Ra" secondAttribute="centerX" id="N5a-Yb-Ka3"/>
+                        <constraint firstItem="zHU-G9-BmK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Trz-Ev-8Ra" secondAttribute="top" constant="32" id="PJr-rr-F7W"/>
                         <constraint firstItem="9Mj-xC-lhY" firstAttribute="top" secondItem="zHU-G9-BmK" secondAttribute="bottom" constant="28" id="V8T-yf-wVG"/>
                         <constraint firstAttribute="trailing" secondItem="9Mj-xC-lhY" secondAttribute="trailing" constant="16" id="Z7a-EP-GM4"/>
                         <constraint firstItem="9Mj-xC-lhY" firstAttribute="centerX" secondItem="Trz-Ev-8Ra" secondAttribute="centerX" id="afa-ca-Gjl"/>
@@ -122,16 +154,16 @@
             <color red="0.99215686274509807" green="0.83137254901960789" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="colorCardBack">
-            <color red="0.90196079019999997" green="0.90980386729999996" blue="0.92156863209999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.90196078431372551" green="0.90980392156862744" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="colorTeal02">
             <color red="0.074509803921568626" green="0.36470588235294116" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="textPrimary">
-            <color red="0.20784312490000001" green="0.23921570180000001" blue="0.2901961207" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.20784313725490197" green="0.23921568627450981" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="textSecondary">
-            <color red="0.31372550129999999" green="0.34901961679999999" blue="0.40392160420000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.31372549019607843" green="0.34901960784313724" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

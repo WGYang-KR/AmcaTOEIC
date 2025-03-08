@@ -12,6 +12,11 @@ class CardItemBackContentView: NibUIView {
 
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var meaing02Label: UILabel!
+
+    @IBOutlet weak var exam01Label: UILabel!
+    @IBOutlet weak var exam02Label: UILabel!
+    
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var searchButton: UIButton!
     
@@ -26,7 +31,18 @@ class CardItemBackContentView: NibUIView {
     let searchBtnTapped = PassthroughSubject<Void,Never>()
     
     func configure(cardItem: CardItem, isFavorite: AnyPublisher<Bool,Never>) {
-        self.label.text = cardItem.backWord.replacingOccurrences(of: "; ", with: "\n")
+        label.isHidden = cardItem.backWord.isEmpty
+        label.text = cardItem.backWord.replacingOccurrences(of: "; ", with: "\n")
+        meaing02Label.isHidden = cardItem.backWord02.isEmpty
+        meaing02Label.text = cardItem.backWord02
+        
+        exam01Label.isHidden = true //cardItem.example01.isEmpty
+        exam01Label.text = cardItem.example01
+        
+        exam02Label.isHidden = true //cardItem.example02.isEmpty
+        exam02Label.text = cardItem.example02
+        
+      
         
         //isFavorite 변수 변경되면 UI 업데이트되도록 바인드
         isFavorite.sink { [weak self] isFavorite  in
