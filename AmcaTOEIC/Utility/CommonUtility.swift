@@ -104,19 +104,19 @@ extension UIViewController {
         if let viewController = UIApplication.shared.windows.first?.rootViewController {
             if let presentedViewController = viewController.presentedViewController {
                 // 현재 Modal로 표시되고 있는 뷰 컨트롤러
-                print("Presented view controller: \(presentedViewController)")
+                shLog("Presented view controller: \(presentedViewController)")
                 return presentedViewController
             } else if let navigationController = viewController as? UINavigationController {
                 // Navigation Controller의 현재 뷰 컨트롤러
-                print("Top view controller in navigation stack: \(String(describing: navigationController.topViewController))")
+                shLog("Top view controller in navigation stack: \(String(describing: navigationController.topViewController))")
                 return navigationController
             } else {
                 // 현재 화면에 표시되고 있는 뷰 컨트롤러
-                print("Visible view controller: \(viewController)")
+                shLog("Visible view controller: \(viewController)")
                 return viewController
             }
         } else {
-            print("No Visible view controller")
+            shLog("No Visible view controller")
             return nil
         }
     }

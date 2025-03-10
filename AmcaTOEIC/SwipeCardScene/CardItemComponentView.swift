@@ -7,13 +7,16 @@
 
 import UIKit
 import Combine
+import AVFoundation
 
 class CardItemComponentView: UIView {
     
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var pronunciationLabel: UILabel!
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var speakButton: UIButton!
     
     let linedStarImage: UIImage? = .init(systemName: "star")
     let filledStarImage: UIImage? = .init(systemName: "star.fill")
@@ -25,22 +28,22 @@ class CardItemComponentView: UIView {
     let favoriteBtnTapped = PassthroughSubject<Void,Never>()
     let searchBtnTapped = PassthroughSubject<Void,Never>()
     
-    func configure(text: String, isFavorite: AnyPublisher<Bool,Never>) {
-        self.label.text = text
+    var cardItem: CardItem?
+    
+    func configure(cardItem: CardItem, isFavorite: AnyPublisher<Bool,Never>) {
         
-        // "Songti TC" 폰트를 설정
-        if let songtiFont = UIFont(name: "STSongti-TC-Regular", size: 64) {
-            label.font = songtiFont
-        } else {
-            print("Songti TC 폰트를 찾을 수 없습니다.")
-        }
+        self.cardItem = cardItem
+        
+        self.label.text = cardItem.frontWord
+        self.pronunciationLabel.isHidden = cardItem.pronunciation == ""
+        self.pronunciationLabel.text = cardItem.pronunciation
         
         //isFavorite 변수 변경되면 UI 업데이트되도록 바인드
         isFavorite.sink { [weak self] isFavorite  in
             guard let self else { return }
             if !isFavorite {
                 favoriteButton.setImage(linedStarImage, for: .normal)
-                favoriteButton.tintColor = .colorTeal02
+                favoriteButton.tintColor = .textSecondary
             } else {
                 favoriteButton.setImage(filledStarImage, for: .normal)
                 favoriteButton.tintColor = .colorGold
@@ -67,8 +70,8 @@ class CardItemComponentView: UIView {
             addSubview(view)
         }
         
-        containerView.layer.borderWidth = 2
-        containerView.layer.borderColor = UIColor.colorGrey01.cgColor
+        containerView.layer.borderWidth = 1
+        containerView.layer.borderColor = UIColor.colorCardBorder.cgColor
 
     }
     
@@ -85,4 +88,14 @@ class CardItemComponentView: UIView {
         })
     
     }
+    
+    @IBAction func speakButtonTapped(_ sender: Any) {
+        if let word = cardItem?.frontWord {
+            speakButton.isEnabled = false
+            TTSHelper.shared.play(word) { [weak self] in
+                self?.speakButton.isEnabled = true
+            }
+        }
+    }
 }
+

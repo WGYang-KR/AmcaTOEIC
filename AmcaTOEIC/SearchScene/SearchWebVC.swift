@@ -27,24 +27,22 @@ class SearchWebVC: UIViewController {
         super.viewDidLoad()
         activityIndicator.hidesWhenStopped = true  // 로딩 스피너 설정
         
-        initWebView()
-        
-    }
-    
-    func initWebView() {
         webView.navigationDelegate = self
         webView.uiDelegate = self
+    
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
         let encodedSeachText = searchText.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
-        let urlString = AppSetting.naverHanjaSearchURL.replacingOccurrences(of: "{SEARCH_TEXT}", with: encodedSeachText)
+        let urlString = AppSetting.searchDictURL.replacingOccurrences(of: "{SEARCH_TEXT}", with: encodedSeachText)
         
         if let url = URL(string: urlString) {
             let request = URLRequest(url: url)
             webView.load(request)
         }
     }
-
-    
     
     @IBAction func previousVCBtnTapped(_ sender: Any) {
         self.moveBackVC()

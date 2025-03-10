@@ -25,7 +25,7 @@ class WordListVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .colorGrey04
+        self.view.backgroundColor = .backBase
         navigationController?.interactivePopGestureRecognizer?.delegate = nil
         initTableView()
     }

@@ -19,7 +19,9 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         initVM()
         initTableView()
-        titleLabel.text = AppStatus.isADVersionApp ? "Swipe! 상공한자 Lite" : "Swipe! 상공한자"
+        titleLabel.text = "암카 토익"
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(purchaseCompleted), name: NotiName.purchaseCompleted, object: nil)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -54,21 +56,51 @@ class MainVC: UIViewController {
     func initTableView() {
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.register(UINib(nibName: "\(DashBoardCell.self)", bundle: nil), forCellReuseIdentifier: "\(DashBoardCell.self)")
         tableView.register(UINib(nibName: "\(CardPackItemCell.self)", bundle: nil), forCellReuseIdentifier: "\(CardPackItemCell.self)")
         
         tableView.rowHeight = UITableView.automaticDimension
         tableView.separatorStyle = .none
     }
     
+    @objc func purchaseCompleted() {
+        tableView.reloadData()
+    }
 
 }
 
 extension MainVC: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return vm.cardPackList.count
+        if section == 0 {
+            return 1
+        } else {
+            return vm.cardPackList.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
+        if indexPath.section == 0 {
+            //DashBoard
+            guard let cell = tableView
+                .dequeueReusableCell(withIdentifier: "\(DashBoardCell.self)", for: indexPath) as? DashBoardCell
+            else { return UITableViewCell() }
+            
+            let completeCardCount = 1500 - vm.cardPackList.reduce(0){$0 + $1.remainCardCount}
+            cell.completeWordsLabel.text = "\(completeCardCount)"
+            cell.completeDaysLabel.text = String(format: "%d", vm.cardPackList.filter({ $0.learningStatus == .completed }).count)
+            
+            let rate = Int( Float(completeCardCount) / 1500.0 * 100 )
+            cell.completeRateLabel.text = "\(rate)%"
+            return cell
+        }
+        
+        
         guard let cell = tableView
             .dequeueReusableCell(withIdentifier: "\(CardPackItemCell.self)", for: indexPath) as? CardPackItemCell
         else { return UITableViewCell() }
@@ -78,22 +110,28 @@ extension MainVC: UITableViewDataSource {
         cell.remainCountLabel.text = String(item.remainCardCount)
         cell.totalCountLabel.text = String(item.totalCardCount)
         if item.remainCardCount == 0 {
-            cell.remainCountLabel.textColor = .colorTeal02
+            cell.remainCountLabel.textColor = .textSecondary
             cell.remainCountLabel.font = UIFont.systemFont(ofSize: 17.0, weight: .regular)
             cell.checkSealImageView.isHidden = false
             cell.chevronLeftImageView.isHidden = true
         } else if  item.remainCardCount < item.totalCardCount {
-            cell.remainCountLabel.textColor = .colorSwipeNo
+            cell.remainCountLabel.textColor = .systemRed
             cell.remainCountLabel.font = UIFont.systemFont(ofSize: 17.0, weight: .semibold)
             cell.checkSealImageView.isHidden = true
             cell.chevronLeftImageView.isHidden = false
         } else {
-            cell.remainCountLabel.textColor = .colorTeal02
+            cell.remainCountLabel.textColor = .textSecondary
             cell.remainCountLabel.font = UIFont.systemFont(ofSize: 17.0, weight: .semibold)
             cell.checkSealImageView.isHidden = true
             cell.chevronLeftImageView.isHidden = false
         }
 
+        if !IAPManager.shared.isProductPurchased(),
+           indexPath.row >= IAPManager.shared.freeChapterNumber {
+            cell.config(.locked)
+        } else {
+            cell.config(.normal)
+        }
         
         return cell
         
@@ -104,15 +142,21 @@ extension MainVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
+        if indexPath.section == 0 {
+            return 
+        }
         let item = vm.cardPackList[indexPath.row]
         
-        if AppStatus.isADVersionApp, item.level <= 6 {
-            presentOverFull(BuyPopUpVC(), animated: true)
+        if !IAPManager.shared.isProductPurchased(),
+           indexPath.row >= IAPManager.shared.freeChapterNumber {
+            presentOverFull(PurchasePopUpVC(), animated: true)
+            
         } else if item.learningStatus == .completed {
             AlertHelper.alertConfirm(baseVC: self, title: "학습이 완료된 챕터예요.\n학습을 다시 진행할까요?", message: "") {[weak self] in
                 self?.vm.resetLearningStatus(at: indexPath.row)
                 moveSwipeCardVC()
             }
+            
         } else {
             moveSwipeCardVC()
         }

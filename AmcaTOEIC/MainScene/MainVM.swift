@@ -58,7 +58,7 @@ class MainVM {
     ///DB를 JSON에서 불러와서 저장한다.
     private func initCardPackDBFromJson() {
         do {
-            let cardPackList = try JSONSerialization.loadJSONFromFile(filename: "CardPacks_20241231", type: [CardPack].self)
+            let cardPackList = try JSONSerialization.loadJSONFromFile(filename: DBManager.dataJSONFileName, type: [CardPack].self)
             let realm = try Realm()
             try realm.write {
                 realm.add(cardPackList)

@@ -15,8 +15,8 @@ def base
   pod 'FirebaseRemoteConfig'
   pod 'SwiftEntryKit', '2.0.0'
   pod 'SnapKit', '~> 5.7.0'
-  pod 'RxSwift', '~> 6.7.1'
-  pod 'RxCocoa', '~> 6.7.1'
+  pod 'RxSwift'
+  pod 'RxCocoa'
   pod "RxGesture"
 end
 

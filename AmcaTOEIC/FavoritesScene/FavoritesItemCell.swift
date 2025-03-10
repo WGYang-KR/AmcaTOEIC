@@ -10,12 +10,12 @@ import Combine
 class FavoritesItemCell: UITableViewCell {
 
     @IBOutlet weak var indexLabel: UILabel!
-    @IBOutlet weak var topLabel: UILabel!
+    @IBOutlet weak var levelLabel: UILabel!
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var firstLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
-    @IBOutlet weak var radicalLabel: UILabel!
-    @IBOutlet weak var strokeCountLabel: UILabel!
+    @IBOutlet weak var meaing02Label: UILabel!
+    @IBOutlet weak var speakButton: UIButton!
     @IBOutlet weak var searchButton: UIButton!
     
     let linedStarImage: UIImage? = .init(systemName: "star")
@@ -37,19 +37,8 @@ class FavoritesItemCell: UITableViewCell {
             self?.setFavoriteButtonUI(value)
         }.store(in: &cancellables)
         
-        // "Songti TC" 폰트를 설정
-        if let songtiFont = UIFont(name: "STSongti-TC-Regular", size: 40) {
-            firstLabel.font = songtiFont
-        } else {
-            print("Songti TC 폰트를 찾을 수 없습니다.")
-        }
-        
-        if let songtiFont = UIFont(name: "STSongti-TC-Regular", size: 17) {
-            radicalLabel.font = songtiFont
-        } else {
-            print("Songti TC 폰트를 찾을 수 없습니다.")
-        }
-        
+  
+   
     }
     override func prepareForReuse() {
         self.reusableCancellables = Set<AnyCancellable>()
@@ -70,11 +59,13 @@ class FavoritesItemCell: UITableViewCell {
         
         indexLabel.text = String(index + 1)
         let cardItem = favoriteCardItem.cardItem
-        self.topLabel.text = "\(cardItem.level)급"
+        self.levelLabel.text = "Day \(cardItem.level)"
         self.firstLabel.text = cardItem.frontWord
-        self.secondLabel.text = cardItem.backWord
-        self.radicalLabel.text = "\(cardItem.radical)(\(cardItem.radicalMeaning))"
-        self.strokeCountLabel.text = "\(cardItem.strokeCount)획"
+        self.secondLabel.text = cardItem.backWord.replacingOccurrences(of: "; ", with: "\n")
+        
+        meaing02Label.isHidden = cardItem.backWord02.isEmpty
+        meaing02Label.text = cardItem.backWord02
+        
         self.isFavorite.send(favoriteCardItem.isFavorite)
     }
 
@@ -82,12 +73,24 @@ class FavoritesItemCell: UITableViewCell {
     func setFavoriteButtonUI(_ isFavorite: Bool) {
         if !isFavorite {
             favoriteButton.setImage(linedStarImage, for: .normal)
-            favoriteButton.tintColor = .colorTeal02
+            favoriteButton.tintColor = .textSecondary
         } else {
             favoriteButton.setImage(filledStarImage, for: .normal)
             favoriteButton.tintColor = .colorGold
         }
     }
+    
+    @IBAction func speakButtonTapped(_ sender: Any) {
+        
+        if let word = firstLabel.text {
+            speakButton.isEnabled = false
+            TTSHelper.shared.play(word) { [weak self] in
+                self?.speakButton.isEnabled = true
+            }
+        }
+    }
+    
+    
     @IBAction func searchButtonTapped(_ sender: Any) {
         searchBtnTapped.send(Void())
     }

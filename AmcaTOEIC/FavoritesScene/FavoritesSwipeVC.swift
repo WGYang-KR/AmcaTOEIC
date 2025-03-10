@@ -119,7 +119,7 @@ class FavoritesSwipeVC: UIViewController {
         cardDefaultSide = side
         AppSetting.cardDefaultSide = side
         
-        let cardSideDesc = cardDefaultSide == .front ? "'한자'로" : "'뜻'으로"
+        let cardSideDesc = cardDefaultSide == .front ? "'영어'로" : "'뜻'으로"
         AlertHelper.notesInform(message: "기본 카드 방향이 \(cardSideDesc) 변경됨")
         
         kolodaView.reconfigureCards()
@@ -154,9 +154,6 @@ extension FavoritesSwipeVC: KolodaViewDelegate {
             presentOverFull(vc, animated: false)
         } else {
             //광고 표시
-            if AppStatus.isADVersionApp {
-                doAdProcess()
-            }
         }
     }
     
@@ -165,7 +162,7 @@ extension FavoritesSwipeVC: KolodaViewDelegate {
     }
     
     func kolodaSwipeThresholdRatioMargin(_ koloda: KolodaView) -> CGFloat? {
-        return 0.5
+        return 0.35
     }
     
     func koloda(_ koloda: KolodaView, didSwipeCardAt index: Int, in direction: SwipeResultDirection) {

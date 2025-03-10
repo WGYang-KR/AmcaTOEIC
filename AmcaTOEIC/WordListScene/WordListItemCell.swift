@@ -12,10 +12,12 @@ class WordListItemCell: UITableViewCell {
     @IBOutlet weak var indexLabel: UILabel!
     @IBOutlet weak var firstLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
+    @IBOutlet weak var meaing02Label: UILabel!
     @IBOutlet weak var radicalLabel: UILabel!
     @IBOutlet weak var strokeCountLabel: UILabel!
     @IBOutlet weak var checkMarkImageView: UIImageView!
     
+    @IBOutlet weak var speakButton: UIButton!
     @IBOutlet weak var favoriteButton: UIButton!
     
     let linedStarImage: UIImage? = .init(systemName: "star")
@@ -30,9 +32,9 @@ class WordListItemCell: UITableViewCell {
     func configure(index: Int, cardItem: CardItem) {
         indexLabel.text = String(index)
         firstLabel.text = cardItem.frontWord
-        secondLabel.text = cardItem.backWord
-        self.radicalLabel.text = "\(cardItem.radical)(\(cardItem.radicalMeaning))"
-        self.strokeCountLabel.text = "\(cardItem.strokeCount)획"
+        secondLabel.text = cardItem.backWord.replacingOccurrences(of: "; ", with: "\n")
+        meaing02Label.text = cardItem.backWord02.replacingOccurrences(of: "; ", with: "\n")
+        
         checkMarkImageView.image  = cardItem.hasMemorized ? checkMarkImage : nil
         self.isFavorite.send(cardItem.isFavorite)
         
@@ -42,7 +44,7 @@ class WordListItemCell: UITableViewCell {
             shLog("Favorite UI 변경: \(isFavorite)")
             if !isFavorite {
                 favoriteButton.setImage(linedStarImage, for: .normal)
-                favoriteButton.tintColor = .colorTeal02
+                favoriteButton.tintColor = .textSecondary
             } else {
                 favoriteButton.setImage(filledStarImage, for: .normal)
                 favoriteButton.tintColor = .colorGold
@@ -57,18 +59,6 @@ class WordListItemCell: UITableViewCell {
         selectionStyle = .none
         self.backgroundColor = .clear
         
-        // "Songti TC" 폰트를 설정
-        if let songtiFont = UIFont(name: "STSongti-TC-Regular", size: 40) {
-            firstLabel.font = songtiFont
-        } else {
-            print("Songti TC 폰트를 찾을 수 없습니다.")
-        }
-        
-        if let songtiFont = UIFont(name: "STSongti-TC-Regular", size: 17) {
-            radicalLabel.font = songtiFont
-        } else {
-            print("Songti TC 폰트를 찾을 수 없습니다.")
-        }
         
     }
 
@@ -83,6 +73,16 @@ class WordListItemCell: UITableViewCell {
     
     @IBAction func searchButtonTapped(_ sender: Any) {
         selectBtnTapped.send(Void())
+    }
+    
+    @IBAction func speakButtonTapped(_ sender: Any) {
+        
+        if let word = firstLabel.text {
+            speakButton.isEnabled = false
+            TTSHelper.shared.play(word) { [weak self] in
+                self?.speakButton.isEnabled = true
+            }
+        }
     }
     
     @IBAction func favoriteButtonTapped(_ sender: Any) {

@@ -10,21 +10,16 @@ import RealmSwift
 
 final class CardItem: Object, Decodable {
     
-   
-    ///한자ID
     @Persisted(primaryKey: true) var _id: ObjectId
     @Persisted var index: Int
     @Persisted var level: Int
     @Persisted var frontWord: String
+    @Persisted var pronunciation: String
     @Persisted var backWord: String
-    /// 부수
-    @Persisted var radical: String
-    /// 부수 뜻, 음
-    @Persisted var radicalMeaning: String
-    /// 총획수
-    @Persisted var strokeCount: Int
-    ///한자 뜻 추가 설명
-    @Persisted var backDesc: String
+    @Persisted var backWord02: String
+    @Persisted var example01: String
+    @Persisted var example02: String
+    
     @Persisted var hasShown: Bool
     @Persisted var hasMemorized: Bool
     @Persisted var isFavorite: Bool = false
@@ -35,8 +30,7 @@ final class CardItem: Object, Decodable {
         super.init()
     }
     
-    deinit {
-    }
+    deinit { }
     
     //MARK: - Decodable
     enum CodingKeys: String, CodingKey {
@@ -44,11 +38,13 @@ final class CardItem: Object, Decodable {
         case index
         case level
         case frontWord
+        
+        case pronunciation
         case backWord
-        case radical
-        case radicalMeaning
-        case strokeCount
-        case backDesc
+        case backWord02
+        case example01
+        case example02
+        
         case hasShown
         case hasMemorized
         case isFavorite
@@ -62,11 +58,11 @@ final class CardItem: Object, Decodable {
         index = try container.decodeIfPresent(Int.self, forKey: .index) ?? 0
         level = try container.decodeIfPresent(Int.self, forKey: .level) ?? 0
         frontWord = try container.decodeIfPresent(String.self, forKey: .frontWord) ?? ""
+        pronunciation = try container.decodeIfPresent(String.self, forKey: .pronunciation) ?? ""
         backWord = try container.decodeIfPresent(String.self, forKey: .backWord) ?? ""
-        radical = try container.decodeIfPresent(String.self, forKey: .radical) ?? ""
-        radicalMeaning = try container.decodeIfPresent(String.self, forKey: .radicalMeaning) ?? ""
-        strokeCount = try container.decodeIfPresent(Int.self, forKey: .strokeCount) ?? 0
-        backDesc = try container.decodeIfPresent(String.self, forKey: .backDesc) ?? ""
+        backWord02 = try container.decodeIfPresent(String.self, forKey: .backWord02) ?? ""
+        example01 = try container.decodeIfPresent(String.self, forKey: .example01) ?? ""
+        example02 = try container.decodeIfPresent(String.self, forKey: .example02) ?? ""
         hasShown = try container.decodeIfPresent(Bool.self, forKey: .hasShown) ?? false
         hasMemorized = try container.decodeIfPresent(Bool.self, forKey: .hasMemorized) ?? false
         isFavorite = try container.decodeIfPresent(Bool.self, forKey: .isFavorite) ?? false

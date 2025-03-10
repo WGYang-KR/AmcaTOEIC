@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SwipeCardVC" customModule="SwipeHanja" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SwipeCardVC" customModule="AmcaTOEIC" customModuleProvider="target">
             <connections>
                 <outlet property="countLeftLabel" destination="uQu-4b-hVD" id="kqG-Ds-9Cb"/>
                 <outlet property="countRightLabel" destination="dty-tD-a7w" id="nHk-Q1-0Pf"/>
@@ -50,10 +50,10 @@
                                                                 <constraint firstAttribute="height" constant="32" id="JsI-FK-NIq"/>
                                                                 <constraint firstAttribute="width" constant="32" id="RwF-Dd-yqv"/>
                                                             </constraints>
-                                                            <color key="tintColor" name="colorTeal02"/>
+                                                            <color key="tintColor" name="textSecondary"/>
                                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                             <state key="normal" image="xmark" catalog="system">
-                                                                <color key="titleColor" name="colorTeal02"/>
+                                                                <color key="titleColor" name="textSecondary"/>
                                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24"/>
                                                             </state>
                                                             <connections>
@@ -78,7 +78,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="챕터" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hef-CG-ayM">
                                                     <rect key="frame" x="72" y="0.0" width="199" height="32"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                    <color key="textColor" name="colorTeal02"/>
+                                                    <color key="textColor" name="textSecondary"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="l5g-0h-s9F">
@@ -91,10 +91,10 @@
                                                                 <constraint firstAttribute="width" constant="32" id="EmF-XM-63c"/>
                                                                 <constraint firstAttribute="height" constant="32" id="oh8-Vo-WRx"/>
                                                             </constraints>
-                                                            <color key="tintColor" name="colorTeal02"/>
+                                                            <color key="tintColor" name="textSecondary"/>
                                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                             <state key="normal" image="arrow.counterclockwise" catalog="system">
-                                                                <color key="titleColor" name="colorTeal02"/>
+                                                                <color key="titleColor" name="textSecondary"/>
                                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                                                             </state>
                                                             <connections>
@@ -108,10 +108,10 @@
                                                                 <constraint firstAttribute="height" constant="32" id="Ylg-of-nFI"/>
                                                                 <constraint firstAttribute="width" constant="32" id="qLH-Kj-8TM"/>
                                                             </constraints>
-                                                            <color key="tintColor" name="colorTeal02"/>
+                                                            <color key="tintColor" name="textSecondary"/>
                                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                             <state key="normal" image="list.bullet" catalog="system">
-                                                                <color key="titleColor" name="colorTeal02"/>
+                                                                <color key="titleColor" name="textSecondary"/>
                                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22"/>
                                                             </state>
                                                             <connections>
@@ -132,7 +132,7 @@
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nZG-g9-O9L">
                                     <rect key="frame" x="0.0" y="48" width="375" height="2"/>
-                                    <color key="backgroundColor" name="colorGrey01"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="2" id="4b8-XE-dCV"/>
                                     </constraints>
@@ -140,7 +140,7 @@
                                 <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ySg-ti-uNv">
                                     <rect key="frame" x="0.0" y="50" width="375" height="4"/>
                                     <color key="progressTintColor" name="ColorSatCyan"/>
-                                    <color key="trackTintColor" name="colorGrey02"/>
+                                    <color key="trackTintColor" name="backTop"/>
                                 </progressView>
                             </subviews>
                         </stackView>
@@ -159,7 +159,7 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQu-4b-hVD">
                                                             <rect key="frame" x="22.333333333333332" y="7.9999999999999982" width="11.333333333333332" height="20.333333333333329"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                            <color key="textColor" name="colorTeal01"/>
+                                                            <color key="textColor" name="textPrimary"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -188,7 +188,7 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dty-tD-a7w">
                                                             <rect key="frame" x="11.333333333333314" y="7.9999999999999982" width="33.666666666666664" height="20.333333333333329"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                            <color key="textColor" name="colorTeal01"/>
+                                                            <color key="textColor" name="textPrimary"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -214,19 +214,19 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MD1-DB-Wmw">
                                                     <rect key="frame" x="0.0" y="0.0" width="30" height="20.333333333333332"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                    <color key="textColor" name="colorTeal01"/>
+                                                    <color key="textColor" name="textPrimary"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="/" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mj-Kb-FlV">
                                                     <rect key="frame" x="30" y="0.0" width="5" height="20.333333333333332"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" name="colorTeal02"/>
+                                                    <color key="textColor" name="textSecondary"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBc-VM-mVK">
                                                     <rect key="frame" x="35" y="0.0" width="28.333333333333329" height="20.333333333333332"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" name="colorTeal02"/>
+                                                    <color key="textColor" name="textSecondary"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -249,10 +249,6 @@
                                         <constraint firstItem="sHJ-Iy-Xmr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uCA-o2-Wps" secondAttribute="trailing" id="krr-gG-TUp"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vYa-7L-kQD" customClass="KolodaView" customModule="SwipeHanja" customModuleProvider="target">
-                                    <rect key="frame" x="32" y="84" width="311" height="464"/>
-                                    <color key="backgroundColor" name="colorGrey02"/>
-                                </view>
                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udO-6l-wn2">
                                     <rect key="frame" x="50" y="584" width="275" height="40"/>
                                     <subviews>
@@ -263,10 +259,10 @@
                                                 <constraint firstAttribute="width" constant="40" id="2JU-gj-vwf"/>
                                                 <constraint firstAttribute="height" constant="40" id="fXj-hc-XfC"/>
                                             </constraints>
-                                            <color key="tintColor" name="colorTeal02"/>
+                                            <color key="tintColor" name="textSecondary"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" image="arrow.uturn.backward" catalog="system">
-                                                <color key="titleColor" name="colorTeal02"/>
+                                                <color key="titleColor" name="textSecondary"/>
                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                                             </state>
                                             <connections>
@@ -305,10 +301,10 @@
                                                 <constraint firstAttribute="height" constant="40" id="CHN-e5-KSJ"/>
                                                 <constraint firstAttribute="width" constant="40" id="uN8-Kg-RAV"/>
                                             </constraints>
-                                            <color key="tintColor" name="colorTeal02"/>
+                                            <color key="tintColor" name="textSecondary"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" image="shuffle" catalog="system">
-                                                <color key="titleColor" name="colorTeal02"/>
+                                                <color key="titleColor" name="textSecondary"/>
                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                                             </state>
                                             <connections>
@@ -326,10 +322,10 @@
                                                 <constraint firstAttribute="height" constant="40" id="D8K-8W-MQq"/>
                                                 <constraint firstAttribute="width" constant="40" id="TaR-jM-FfE"/>
                                             </constraints>
-                                            <color key="tintColor" name="colorTeal02"/>
+                                            <color key="tintColor" name="textSecondary"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" image="rectangle.portrait.righthalf.filled" catalog="system">
-                                                <color key="titleColor" name="colorTeal02"/>
+                                                <color key="titleColor" name="textSecondary"/>
                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                                             </state>
                                             <connections>
@@ -342,6 +338,10 @@
                                         <constraint firstItem="0yU-4h-y8i" firstAttribute="width" secondItem="Saa-T3-iPo" secondAttribute="width" id="UDo-Wq-dgx"/>
                                     </constraints>
                                 </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vYa-7L-kQD" customClass="KolodaView" customModule="AmcaTOEIC" customModuleProvider="target">
+                                    <rect key="frame" x="32" y="84" width="311" height="464"/>
+                                    <color key="backgroundColor" name="colorCardBack"/>
+                                </view>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
@@ -371,7 +371,7 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" name="colorGrey04"/>
+            <color key="backgroundColor" name="backBase"/>
             <constraints>
                 <constraint firstItem="7PL-9U-puu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ADb-kI-Vg2"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7PL-9U-puu" secondAttribute="trailing" id="HAl-Xp-Znu"/>
@@ -391,14 +391,14 @@
         <namedColor name="ColorSatCyan">
             <color red="0.0" green="0.73725490196078436" blue="0.83137254901960789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="colorGrey01">
-            <color red="0.7686274509803922" green="0.87450980392156863" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="backBase">
+            <color red="0.94901967050000002" green="0.95686274770000002" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <namedColor name="colorGrey02">
-            <color red="0.82352941176470584" green="0.9137254901960784" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="backTop">
+            <color red="0.90196079019999997" green="0.90980386729999996" blue="0.92156863209999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <namedColor name="colorGrey04">
-            <color red="0.97254901960784312" green="0.96470588235294119" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="colorCardBack">
+            <color red="0.90196079019999997" green="0.90980386729999996" blue="0.92156863209999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="colorSwipeNo">
             <color red="0.94117647058823528" green="0.2627450980392157" blue="0.32156862745098042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -406,11 +406,14 @@
         <namedColor name="colorSwipeYes">
             <color red="0.18823529411764706" green="0.50588235294117645" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="colorTeal01">
-            <color red="0.0" green="0.23529411764705882" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="colorTeal02">
             <color red="0.074509803921568626" green="0.36470588235294116" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textPrimary">
+            <color red="0.20784312490000001" green="0.23921570180000001" blue="0.2901961207" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="textSecondary">
+            <color red="0.31372550129999999" green="0.34901961679999999" blue="0.40392160420000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

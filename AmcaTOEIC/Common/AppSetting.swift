@@ -15,7 +15,7 @@ class AppSetting {
     }
     
     enum RemoteConfigKey: String {
-        case NaverHanjaSearchURL
+        case SearchDictURL
     }
     
     static let remoteConfig = RemoteConfig.remoteConfig()
@@ -34,9 +34,9 @@ class AppSetting {
         }
     }
     
-    static var naverHanjaSearchURL: String {
+    static var searchDictURL: String {
         get {
-            remoteConfig.configValue(forKey: RemoteConfigKey.NaverHanjaSearchURL.rawValue).stringValue ?? ""
+            remoteConfig.configValue(forKey: RemoteConfigKey.SearchDictURL.rawValue).stringValue
         }
     }
     

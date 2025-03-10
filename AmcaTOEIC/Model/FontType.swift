@@ -9,5 +9,4 @@ import Foundation
 
 enum FontType: String {
     case system
-    case KanjiStrokeOrders
 }

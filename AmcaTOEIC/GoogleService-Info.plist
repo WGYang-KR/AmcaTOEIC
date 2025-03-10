@@ -9,7 +9,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.wgyang.AmcaTOEIC</string>
+	<string>com.theonelab.amcaToeic</string>
 	<key>PROJECT_ID</key>
 	<string>amcatoeic</string>
 	<key>STORAGE_BUCKET</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:80484835586:ios:9688142a6a0375be2e221b</string>
+	<string>1:80484835586:ios:76b488ad504fc0942e221b</string>
 </dict>
 </plist>
