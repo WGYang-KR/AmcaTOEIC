@@ -9,8 +9,8 @@ import Foundation
 import RealmSwift
 
 class DBManager {
-    static let dataJSONFileName = "TOEIC_CardDATA_20250308-085306"
-    static let schemaVersion: UInt64 = 3
+    static let dataJSONFileName = "TOEIC_CardDATA_20250317-003905"
+    static let schemaVersion: UInt64 = 5
     
     static let shared = DBManager()
     private init() { }
