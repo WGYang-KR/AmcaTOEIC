@@ -17,13 +17,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        
-        
-        guard let windowScene = (scene as? UIWindowScene) else { return }
             
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = MainTabBarController()
-        window?.makeKeyAndVisible()
+ 
+        if let launchScreenVC = UIStoryboard(name: "LaunchScreen", bundle: nil).instantiateInitialViewController() {
+            window?.rootViewController = launchScreenVC
+            window?.makeKeyAndVisible()
+        }
+        
+        // Realm 초기화
+        DBManager.shared.initRealm {
+            // Realm 초기화가 끝나면, 메인 VC로 전환
+            DispatchQueue.main.async {
+                self.window?.rootViewController = MainTabBarController()
+                self.window?.makeKeyAndVisible()
+            }
+        }
         
     }
 

@@ -43,9 +43,7 @@ class MainVC: UIViewController {
     }
     
     func initVM() {
-        
-        DBManager.shared.initRealm()
-        
+
         vm = MainVM()
         
 //        vm.deleteAllDataFromRealm() //테스트용으로 항상 지우고 시작.
