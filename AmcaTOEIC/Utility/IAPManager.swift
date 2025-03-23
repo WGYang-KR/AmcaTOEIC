@@ -17,7 +17,7 @@ class IAPManager {
     private init() {}
     
     ///몇번째 챕터까지 무료인지
-    var freeChapterNumber: Int = 1
+    var freeChapterNumber: Int = 2
     
     //MARK: - 상품 가격
     func getProductPrice(completion: @escaping (SKProduct?)-> Void ){
