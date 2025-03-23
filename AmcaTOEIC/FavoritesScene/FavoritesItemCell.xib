@@ -107,47 +107,68 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="XQo-1u-p1R">
-                                        <rect key="frame" x="16" y="40" width="297" height="133.33333333333334"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="XQo-1u-p1R">
+                                        <rect key="frame" x="16" y="40" width="297" height="155"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="영어" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSb-Er-y1R">
-                                                <rect key="frame" x="0.0" y="0.0" width="41.666666666666664" height="28.666666666666668"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <color key="textColor" name="textPrimary"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="뜻" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0VQ-Aq-0xl">
-                                                <rect key="frame" x="0.0" y="32.666666666666671" width="17.333333333333332" height="24"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" name="textPrimary"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="예문1" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUz-vM-Rgr">
-                                                <rect key="frame" x="0.0" y="60.666666666666679" width="37" height="20.333333333333336"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" name="textPrimary"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="뜻" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2um-x7-nza">
-                                                <rect key="frame" x="0.0" y="85" width="17.333333333333332" height="24"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" name="textPrimary"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="예문2" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3k-mv-5WT">
-                                                <rect key="frame" x="0.0" y="113" width="39.333333333333336" height="20.333333333333343"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" name="textPrimary"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="nTV-sj-reZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="41.666666666666664" height="51"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" ambiguous="YES" text="영어" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSb-Er-y1R">
+                                                        <rect key="frame" x="0.0" y="0.0" width="41.666666666666664" height="28.666666666666668"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <color key="textColor" name="textPrimary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="발음" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqv-IH-TxX">
+                                                        <rect key="frame" x="0.0" y="30.666666666666671" width="41.666666666666664" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="textPrimary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="sLl-zb-VmG">
+                                                <rect key="frame" x="0.0" y="57" width="37" height="46.333333333333343"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="뜻" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0VQ-Aq-0xl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="37" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="textColor" name="textPrimary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="예문1" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUz-vM-Rgr">
+                                                        <rect key="frame" x="0.0" y="26" width="37" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="textPrimary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="XmX-qu-nPF">
+                                                <rect key="frame" x="0.0" y="109.33333333333336" width="39.333333333333336" height="45.666666666666671"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="뜻" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2um-x7-nza">
+                                                        <rect key="frame" x="0.0" y="0.0" width="39.333333333333336" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="textColor" name="textPrimary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="예문2" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3k-mv-5WT">
+                                                        <rect key="frame" x="0.0" y="26" width="39.333333333333336" height="19.666666666666671"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="textPrimary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" name="backMiddle"/>
                                 <constraints>
                                     <constraint firstItem="XQo-1u-p1R" firstAttribute="top" secondItem="Afz-9S-F6O" secondAttribute="bottom" id="BjA-hA-n4y"/>
+                                    <constraint firstItem="sRr-1r-IVd" firstAttribute="leading" secondItem="yfW-v0-3Lp" secondAttribute="leading" constant="16" id="KAa-7g-b8B"/>
                                     <constraint firstItem="Afz-9S-F6O" firstAttribute="top" secondItem="yfW-v0-3Lp" secondAttribute="top" constant="12" id="KlR-ge-9K6"/>
-                                    <constraint firstItem="sRr-1r-IVd" firstAttribute="leading" secondItem="RSb-Er-y1R" secondAttribute="leading" id="NZA-AG-Jqr"/>
                                     <constraint firstAttribute="trailing" secondItem="Afz-9S-F6O" secondAttribute="trailing" constant="16" id="gaZ-YQ-dBY"/>
                                     <constraint firstItem="sRr-1r-IVd" firstAttribute="top" secondItem="yfW-v0-3Lp" secondAttribute="top" constant="16" id="moI-oe-yQv"/>
                                     <constraint firstAttribute="trailing" secondItem="XQo-1u-p1R" secondAttribute="trailing" constant="16" id="nOb-WD-Pmt"/>
@@ -183,6 +204,7 @@
                 <outlet property="indexLabel" destination="ize-el-V1I" id="RTW-uS-5Mg"/>
                 <outlet property="levelLabel" destination="cDd-Mf-K7Z" id="xxL-6e-XWo"/>
                 <outlet property="meaing02Label" destination="2um-x7-nza" id="O1Y-mP-QXy"/>
+                <outlet property="pronunciationLabel" destination="eqv-IH-TxX" id="phr-gi-qp8"/>
                 <outlet property="searchButton" destination="Og5-pT-lTh" id="kka-en-gIs"/>
                 <outlet property="secondLabel" destination="0VQ-Aq-0xl" id="0uM-fF-fxA"/>
                 <outlet property="speakButton" destination="VMN-go-n3P" id="sHl-sx-0eT"/>

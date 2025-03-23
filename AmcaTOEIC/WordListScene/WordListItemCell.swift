@@ -11,6 +11,7 @@ import Combine
 class WordListItemCell: UITableViewCell {
     @IBOutlet weak var indexLabel: UILabel!
     @IBOutlet weak var firstLabel: UILabel!
+    @IBOutlet weak var pronunciationLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
     @IBOutlet weak var meaing02Label: UILabel!
     
@@ -36,6 +37,10 @@ class WordListItemCell: UITableViewCell {
     func configure(index: Int, cardItem: CardItem) {
         indexLabel.text = String(index)
         firstLabel.text = cardItem.frontWord
+        
+        pronunciationLabel.isHidden = cardItem.pronunciation.isEmpty
+        pronunciationLabel.text = cardItem.pronunciation
+        
         secondLabel.text = cardItem.backWord.replacingOccurrences(of: "; ", with: "\n")
         meaing02Label.text = cardItem.backWord02.replacingOccurrences(of: "; ", with: "\n")
         
