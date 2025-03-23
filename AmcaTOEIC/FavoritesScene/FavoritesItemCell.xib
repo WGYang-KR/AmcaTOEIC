@@ -107,8 +107,8 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="XQo-1u-p1R">
-                                        <rect key="frame" x="16" y="40.000000000000007" width="297" height="88.666666666666686"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="XQo-1u-p1R">
+                                        <rect key="frame" x="16" y="40" width="297" height="133.33333333333334"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="영어" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSb-Er-y1R">
                                                 <rect key="frame" x="0.0" y="0.0" width="41.666666666666664" height="28.666666666666668"/>
@@ -117,14 +117,26 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="뜻" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0VQ-Aq-0xl">
-                                                <rect key="frame" x="0.0" y="34.666666666666671" width="17.333333333333332" height="24"/>
+                                                <rect key="frame" x="0.0" y="32.666666666666671" width="17.333333333333332" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" name="textPrimary"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="예문1" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUz-vM-Rgr">
+                                                <rect key="frame" x="0.0" y="60.666666666666679" width="37" height="20.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="textPrimary"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="뜻" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2um-x7-nza">
-                                                <rect key="frame" x="0.0" y="64.666666666666671" width="17.333333333333329" height="24"/>
+                                                <rect key="frame" x="0.0" y="85" width="17.333333333333332" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" name="textPrimary"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="예문2" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3k-mv-5WT">
+                                                <rect key="frame" x="0.0" y="113" width="39.333333333333336" height="20.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" name="textPrimary"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -164,6 +176,8 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
+                <outlet property="exam01Label" destination="BUz-vM-Rgr" id="x2k-eK-y9W"/>
+                <outlet property="exam02Label" destination="j3k-mv-5WT" id="oma-en-iCX"/>
                 <outlet property="favoriteButton" destination="Ygg-U9-Wkt" id="dAS-ud-hL2"/>
                 <outlet property="firstLabel" destination="RSb-Er-y1R" id="bFD-fi-e50"/>
                 <outlet property="indexLabel" destination="ize-el-V1I" id="RTW-uS-5Mg"/>

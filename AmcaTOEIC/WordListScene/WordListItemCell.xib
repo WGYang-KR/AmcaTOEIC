@@ -12,18 +12,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="174" id="KGk-i7-Jjw" customClass="WordListItemCell" customModule="AmcaTOEIC" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="456" height="174"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="274" id="KGk-i7-Jjw" customClass="WordListItemCell" customModule="AmcaTOEIC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="456" height="274"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="456" height="174"/>
+                <rect key="frame" x="0.0" y="0.0" width="456" height="274"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYd-Zi-QVh">
-                        <rect key="frame" x="0.0" y="0.0" width="456" height="154.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="456" height="203.5"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fxZ-0b-f8K">
-                                <rect key="frame" x="20" y="8" width="416" height="138.5"/>
+                                <rect key="frame" x="20" y="8" width="416" height="187.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="cX4-J5-Rv3">
                                         <rect key="frame" x="242" y="12" width="158" height="28"/>
@@ -106,7 +106,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="tnu-cv-8yM">
-                                        <rect key="frame" x="18" y="36" width="384" height="85"/>
+                                        <rect key="frame" x="18" y="36" width="384" height="134"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="752" text="영어" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EuV-js-1Sg">
                                                 <rect key="frame" x="0.0" y="0.0" width="42" height="29"/>
@@ -120,14 +120,26 @@
                                                 <color key="textColor" name="textPrimary"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="예문1" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0B-tl-3q1">
+                                                <rect key="frame" x="0.0" y="61" width="37" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="textPrimary"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="뜻" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWX-uT-J2R">
-                                                <rect key="frame" x="0.0" y="61" width="17.5" height="24"/>
+                                                <rect key="frame" x="0.0" y="85.5" width="17.5" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" name="textPrimary"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="예문2" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h85-Ub-QDE">
+                                                <rect key="frame" x="0.0" y="113.5" width="39.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="textPrimary"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7nc-si-0vQ">
-                                                <rect key="frame" x="0.0" y="85" width="226" height="14"/>
+                                                <rect key="frame" x="0.0" y="134" width="226" height="14"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ec7-n1-nRV">
                                                         <rect key="frame" x="0.0" y="0.0" width="129" height="14"/>
@@ -213,6 +225,8 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="checkMarkImageView" destination="TKQ-6a-hhq" id="mlg-wu-qFJ"/>
+                <outlet property="exam01Label" destination="F0B-tl-3q1" id="eWE-qh-8u2"/>
+                <outlet property="exam02Label" destination="h85-Ub-QDE" id="v7b-4b-faA"/>
                 <outlet property="favoriteButton" destination="pu8-Op-6a6" id="8Bw-GE-aiu"/>
                 <outlet property="firstLabel" destination="EuV-js-1Sg" id="ocU-K9-MgT"/>
                 <outlet property="indexLabel" destination="FPQ-fQ-lMD" id="gVb-3b-t9V"/>
@@ -222,7 +236,7 @@
                 <outlet property="speakButton" destination="3Xy-j9-zIR" id="pQA-CM-lEx"/>
                 <outlet property="strokeCountLabel" destination="Jk7-LU-XGd" id="tq5-MI-a2Y"/>
             </connections>
-            <point key="canvasLocation" x="163.19999999999999" y="34.182908545727138"/>
+            <point key="canvasLocation" x="163.19999999999999" y="79.160419790104953"/>
         </tableViewCell>
     </objects>
     <resources>

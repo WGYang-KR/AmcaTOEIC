@@ -15,6 +15,11 @@ class FavoritesItemCell: UITableViewCell {
     @IBOutlet weak var firstLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
     @IBOutlet weak var meaing02Label: UILabel!
+    
+    @IBOutlet weak var exam01Label: UILabel!
+    @IBOutlet weak var exam02Label: UILabel!
+    
+    
     @IBOutlet weak var speakButton: UIButton!
     @IBOutlet weak var searchButton: UIButton!
     
@@ -65,6 +70,13 @@ class FavoritesItemCell: UITableViewCell {
         
         meaing02Label.isHidden = cardItem.backWord02.isEmpty
         meaing02Label.text = cardItem.backWord02
+        
+        
+        exam01Label.isHidden = cardItem.example01.isEmpty
+        exam01Label.text = cardItem.example01.replacingOccurrences(of: "**", with: "")
+        
+        exam02Label.isHidden = cardItem.example02.isEmpty
+        exam02Label.text = cardItem.example02.replacingOccurrences(of: "**", with: "")
         
         self.isFavorite.send(favoriteCardItem.isFavorite)
     }

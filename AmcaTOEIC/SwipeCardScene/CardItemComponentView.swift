@@ -14,9 +14,15 @@ class CardItemComponentView: UIView {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var pronunciationLabel: UILabel!
+    
+    @IBOutlet weak var exam01Label: UILabel!
+    @IBOutlet weak var exam02Label: UILabel!
+    
+    
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var speakButton: UIButton!
+    
     
     let linedStarImage: UIImage? = .init(systemName: "star")
     let filledStarImage: UIImage? = .init(systemName: "star.fill")
@@ -37,6 +43,14 @@ class CardItemComponentView: UIView {
         self.label.text = cardItem.frontWord
         self.pronunciationLabel.isHidden = cardItem.pronunciation == ""
         self.pronunciationLabel.text = cardItem.pronunciation
+        
+        
+        exam01Label.isHidden = cardItem.example01.isEmpty
+        exam01Label.text = "- " + cardItem.example01.replacingOccurrences(of: "**", with: "")
+        
+        exam02Label.isHidden = cardItem.example02.isEmpty
+        exam02Label.text = "- " + cardItem.example02.replacingOccurrences(of: "**", with: "")
+        
         
         //isFavorite 변수 변경되면 UI 업데이트되도록 바인드
         isFavorite.sink { [weak self] isFavorite  in
