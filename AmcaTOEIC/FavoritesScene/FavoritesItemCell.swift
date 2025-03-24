@@ -13,6 +13,7 @@ class FavoritesItemCell: UITableViewCell {
     @IBOutlet weak var levelLabel: UILabel!
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var firstLabel: UILabel!
+    @IBOutlet weak var pronunciationLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
     @IBOutlet weak var meaing02Label: UILabel!
     
@@ -66,6 +67,8 @@ class FavoritesItemCell: UITableViewCell {
         let cardItem = favoriteCardItem.cardItem
         self.levelLabel.text = "Day \(cardItem.level)"
         self.firstLabel.text = cardItem.frontWord
+        pronunciationLabel.isHidden = cardItem.pronunciation.isEmpty
+        pronunciationLabel.text = cardItem.pronunciation
         self.secondLabel.text = cardItem.backWord.replacingOccurrences(of: "; ", with: "\n")
         
         meaing02Label.isHidden = cardItem.backWord02.isEmpty

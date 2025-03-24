@@ -85,6 +85,7 @@
 		6ABA33F82D729FB400CD052F /* DashBoardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ABA33F72D729FB400CD052F /* DashBoardCell.xib */; };
 		6ABA33F92D729FB400CD052F /* DashBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABA33F62D729FB400CD052F /* DashBoardCell.swift */; };
 		6ADA807D2D8EC5BB00B4A790 /* TOEIC_CardDATA_20250322-191521.json in Resources */ = {isa = PBXBuildFile; fileRef = 6ADA807C2D8EC5BB00B4A790 /* TOEIC_CardDATA_20250322-191521.json */; };
+		6ADA80832D909F0F00B4A790 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA80822D909F0B00B4A790 /* CustomLabel.swift */; };
 		6AE8D5042D788EA0003EC955 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE8D5032D788EA0003EC955 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -170,6 +171,7 @@
 		6ABA33F62D729FB400CD052F /* DashBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardCell.swift; sourceTree = "<group>"; };
 		6ABA33F72D729FB400CD052F /* DashBoardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashBoardCell.xib; sourceTree = "<group>"; };
 		6ADA807C2D8EC5BB00B4A790 /* TOEIC_CardDATA_20250322-191521.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "TOEIC_CardDATA_20250322-191521.json"; sourceTree = "<group>"; };
+		6ADA80822D909F0B00B4A790 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		6AE8D5032D788EA0003EC955 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		96916ED89851F61E1AC54B68 /* Pods-AmcaTOEIC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmcaTOEIC.debug.xcconfig"; path = "Target Support Files/Pods-AmcaTOEIC/Pods-AmcaTOEIC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -395,6 +397,7 @@
 		6AA92AF72D6DE46C00E8804E /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				6ADA80822D909F0B00B4A790 /* CustomLabel.swift */,
 				6A99C5592D78EEE10090B3BD /* NotiName.swift */,
 				6AB34C8F2D7470430015FDCA /* LoadingIndicator.swift */,
 				6ABA33EA2D727E0600CD052F /* IAPHelper.swift */,
@@ -650,6 +653,7 @@
 				6AA92B362D6DE46C00E8804E /* FavoriteItem.swift in Sources */,
 				6AA92B372D6DE46C00E8804E /* CardItem.swift in Sources */,
 				6AA92B382D6DE46C00E8804E /* SwipeResultDirection.swift in Sources */,
+				6ADA80832D909F0F00B4A790 /* CustomLabel.swift in Sources */,
 				6AA92B392D6DE46C00E8804E /* FavoritesSwipeVM.swift in Sources */,
 				6AA92B3A2D6DE46C00E8804E /* FavoriteData.swift in Sources */,
 				6AA92B3B2D6DE46C00E8804E /* DraggableCardView.swift in Sources */,
@@ -698,7 +702,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 1.0.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.theonelab.amcaToeic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -734,7 +738,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 1.0.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.theonelab.amcaToeic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
