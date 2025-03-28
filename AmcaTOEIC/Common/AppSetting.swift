@@ -39,6 +39,10 @@ class AppSetting {
     ///예문표시 여부
     static var showsExample: Bool {
         get {
+            if UserDefaults.standard.value(forKey: Keys.showsExample.rawValue) == nil {
+                return true
+            }
+            
             let value = UserDefaults.standard.bool(forKey: Keys.showsExample.rawValue)
             shLog("showsExample value: \(String(describing: value))")
             return value

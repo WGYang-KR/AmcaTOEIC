@@ -142,6 +142,7 @@ class SwipeCardVC: UIViewController {
         }
        
         kolodaView.reconfigureCards()
+        AlertHelper.notesAlertShowsExam()
     }
     
     //MARK: Bind ViewModel

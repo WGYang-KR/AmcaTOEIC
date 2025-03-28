@@ -103,6 +103,7 @@ class WordListVC: UIViewController {
         AppSetting.showsExample.toggle()
         showsExamBtn.setImage(AppSetting.curExampleSettingIcon, for: .normal)
         tableView.reloadData()
+        AlertHelper.notesAlertShowsExam()
     }
     
 }

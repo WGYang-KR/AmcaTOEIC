@@ -113,6 +113,7 @@ class FavoritesSwipeVC: UIViewController {
         }
         
         kolodaView.reconfigureCards()
+        AlertHelper.notesAlertShowsExam()
     }
     
     

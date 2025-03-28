@@ -97,4 +97,8 @@ class AlertHelper {
         let contentView = EKNoteMessageView(with: labelContent)
         SwiftEntryKit.display(entry: contentView, using: attributes)
     }
+    
+    static func notesAlertShowsExam() {
+        AlertHelper.notesInform(message: "예문 \(AppSetting.showsExample ? "표시" : "숨김")")
+    }
 }
