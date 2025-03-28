@@ -13,7 +13,6 @@
             <connections>
                 <outlet property="backBoxView" destination="N9I-wb-MQ1" id="y8b-0K-JJL"/>
                 <outlet property="buyButton" destination="L8d-5I-KGh" id="NuQ-Va-3bb"/>
-                <outlet property="priceLabel" destination="01N-PQ-7aq" id="Cr2-kQ-nJG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,48 +25,36 @@
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N9I-wb-MQ1">
-                            <rect key="frame" x="24" y="179" width="327" height="289"/>
+                            <rect key="frame" x="24" y="216.5" width="327" height="214.5"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="5n2-CT-6cP">
-                                    <rect key="frame" x="24" y="24" width="279" height="241"/>
+                                    <rect key="frame" x="24" y="24" width="279" height="166.5"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="‘암카 토익’의 암기 카드로 효율적인 단어 학습을 하고 계신가요?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laB-cq-iM3">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="‘암카 토익’로 효율적인 학습을 하고 계신가요?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laB-cq-iM3">
                                             <rect key="frame" x="0.0" y="0.0" width="279" height="43"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                             <color key="textColor" name="textPrimary"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AtZ-U4-pIZ">
-                                            <rect key="frame" x="0.0" y="59" width="279" height="47"/>
+                                            <rect key="frame" x="0.0" y="59" width="279" height="46.5"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Day 3부터 Day 60은 유료로 제공됩니다." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvc-ai-KLo">
-                                                    <rect key="frame" x="0.0" y="0.0" width="279" height="19.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Day 3부터 Day 60은 유료버전에서 제공됩니다." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvc-ai-KLo">
+                                                    <rect key="frame" x="0.0" y="0.0" width="279" height="38.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" name="textPrimary"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="단 한번의 결제로 모든 콘텐츠가 해제됩니다." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lag-Gu-4mM">
-                                                    <rect key="frame" x="0.0" y="27.5" width="279" height="19.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lag-Gu-4mM">
+                                                    <rect key="frame" x="0.0" y="46.5" width="279" height="0.0"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" name="textPrimary"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </stackView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="결제 가격: - (평생 소장)" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01N-PQ-7aq">
-                                            <rect key="frame" x="0.0" y="122" width="279" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" name="textPrimary"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="지금 바로 결제하고 학습을 계속하세요!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJg-ft-4N5">
-                                            <rect key="frame" x="0.0" y="158.5" width="279" height="21.5"/>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                            <color key="textColor" name="textPrimary"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MHG-u5-TDg">
-                                            <rect key="frame" x="0.0" y="196" width="279" height="45"/>
+                                            <rect key="frame" x="0.0" y="121.5" width="279" height="45"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdS-Eg-Alg">
                                                     <rect key="frame" x="0.0" y="0.0" width="135.5" height="45"/>
@@ -83,7 +70,7 @@
                                                     <color key="tintColor" name="ColorTossBlue"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" title="구매하기"/>
-                                                    <buttonConfiguration key="configuration" style="tinted" title="구매하기"/>
+                                                    <buttonConfiguration key="configuration" style="tinted" title="구매하러 가기"/>
                                                     <connections>
                                                         <action selector="goToBuySelected:" destination="-1" eventType="touchUpInside" id="K6O-1U-GIL"/>
                                                     </connections>

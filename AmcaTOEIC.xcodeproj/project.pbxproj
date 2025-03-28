@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		657BBD7D5310FB81527F8BE7 /* Pods_AmcaTOEIC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D3463EC31D6DC58DAE234A /* Pods_AmcaTOEIC.framework */; };
-		6A3D04DB2D7895310092ABB0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A3D04DA2D7895310092ABB0 /* GoogleService-Info.plist */; };
+		09842D803C17CEE4A4CD61B3 /* Pods_AmcaTOEICLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2808D58FC3D8FB43E0379EE /* Pods_AmcaTOEICLite.framework */; };
+		15FFA90638CE54156B2D614C /* Pods_AmcaTOEIC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F7F98838D8E49087CE4DB9 /* Pods_AmcaTOEIC.framework */; };
 		6A8705F52D6FADDD001FA41D /* TTSHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8705F42D6FADD8001FA41D /* TTSHelper.swift */; };
 		6A99C55A2D78EEF80090B3BD /* NotiName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99C5592D78EEE10090B3BD /* NotiName.swift */; };
 		6AA92AA82D6DE28400E8804E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92A9F2D6DE28400E8804E /* Assets.xcassets */; };
@@ -86,13 +86,89 @@
 		6ABA33F92D729FB400CD052F /* DashBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABA33F62D729FB400CD052F /* DashBoardCell.swift */; };
 		6ADA80832D909F0F00B4A790 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA80822D909F0B00B4A790 /* CustomLabel.swift */; };
 		6ADA808A2D96CF9000B4A790 /* TOEIC_CardDATA_20250328-213629.json in Resources */ = {isa = PBXBuildFile; fileRef = 6ADA80892D96CF9000B4A790 /* TOEIC_CardDATA_20250328-213629.json */; };
+		6ADA80922D9760D300B4A790 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABA33EC2D72811300CD052F /* IAPManager.swift */; };
+		6ADA80932D9760D300B4A790 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92A9E2D6DE28400E8804E /* AppDelegate.swift */; };
+		6ADA80942D9760D300B4A790 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AEE2D6DE46C00E8804E /* SettingsView.swift */; };
+		6ADA80952D9760D300B4A790 /* KolodaCardStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AD32D6DE46C00E8804E /* KolodaCardStorage.swift */; };
+		6ADA80962D9760D300B4A790 /* NotiName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99C5592D78EEE10090B3BD /* NotiName.swift */; };
+		6ADA80972D9760D300B4A790 /* CardSideType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AB32D6DE46C00E8804E /* CardSideType.swift */; };
+		6ADA80982D9760D300B4A790 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AF62D6DE46C00E8804E /* AlertHelper.swift */; };
+		6ADA80992D9760D300B4A790 /* CardItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92ADF2D6DE46C00E8804E /* CardItemView.swift */; };
+		6ADA809A2D9760D300B4A790 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AF82D6DE46C00E8804E /* DBManager.swift */; };
+		6ADA809B2D9760D300B4A790 /* FavoritesItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AC82D6DE46C00E8804E /* FavoritesItemCell.swift */; };
+		6ADA809C2D9760D300B4A790 /* SHOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AE12D6DE46C00E8804E /* SHOverlayView.swift */; };
+		6ADA809D2D9760D300B4A790 /* GuidePopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB34C8A2D7430D90015FDCA /* GuidePopUpVC.swift */; };
+		6ADA809E2D9760D300B4A790 /* SwipeCardCompletionPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AE32D6DE46C00E8804E /* SwipeCardCompletionPopUpVC.swift */; };
+		6ADA809F2D9760D300B4A790 /* NibUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AF32D6DE46C00E8804E /* NibUIView.swift */; };
+		6ADA80A02D9760D300B4A790 /* WordListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AE82D6DE46C00E8804E /* WordListItemCell.swift */; };
+		6ADA80A12D9760D300B4A790 /* LearningStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AB22D6DE46C00E8804E /* LearningStatus.swift */; };
+		6ADA80A22D9760D300B4A790 /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92ABD2D6DE46C00E8804E /* MainVM.swift */; };
+		6ADA80A32D9760D300B4A790 /* KolodaAnimationSemaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AD22D6DE46C00E8804E /* KolodaAnimationSemaphore.swift */; };
+		6ADA80A42D9760D300B4A790 /* SwipeCardVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AD82D6DE46C00E8804E /* SwipeCardVM.swift */; };
+		6ADA80A52D9760D300B4A790 /* CommonUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AF42D6DE46C00E8804E /* CommonUtility.swift */; };
+		6ADA80A62D9760D300B4A790 /* KolodaViewAnimatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AD52D6DE46C00E8804E /* KolodaViewAnimatior.swift */; };
+		6ADA80A72D9760D300B4A790 /* PurchasePopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AF02D6DE46C00E8804E /* PurchasePopUpVC.swift */; };
+		6ADA80A82D9760D300B4A790 /* CardItemComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92ADB2D6DE46C00E8804E /* CardItemComponentView.swift */; };
+		6ADA80A92D9760D300B4A790 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92ABB2D6DE46C00E8804E /* MainVC.swift */; };
+		6ADA80AA2D9760D300B4A790 /* FavoritesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AC32D6DE46C00E8804E /* FavoritesVM.swift */; };
+		6ADA80AB2D9760D300B4A790 /* WordListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AE62D6DE46C00E8804E /* WordListVC.swift */; };
+		6ADA80AC2D9760D300B4A790 /* KolodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AD42D6DE46C00E8804E /* KolodaView.swift */; };
+		6ADA80AD2D9760D300B4A790 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABA33EA2D727E0600CD052F /* IAPHelper.swift */; };
+		6ADA80AE2D9760D300B4A790 /* FavoritesSwipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92ACB2D6DE46C00E8804E /* FavoritesSwipeVC.swift */; };
+		6ADA80AF2D9760D300B4A790 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AB92D6DE46C00E8804E /* MainTabBarController.swift */; };
+		6ADA80B02D9760D300B4A790 /* FavoritesStartLearningCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AC62D6DE46C00E8804E /* FavoritesStartLearningCell.swift */; };
+		6ADA80B12D9760D300B4A790 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AD02D6DE46C00E8804E /* OverlayView.swift */; };
+		6ADA80B22D9760D300B4A790 /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AC42D6DE46C00E8804E /* FavoritesVC.swift */; };
+		6ADA80B32D9760D300B4A790 /* CardItemBackContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92ADD2D6DE46C00E8804E /* CardItemBackContentView.swift */; };
+		6ADA80B42D9760D300B4A790 /* SearchWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AEB2D6DE46C00E8804E /* SearchWebVC.swift */; };
+		6ADA80B52D9760D300B4A790 /* TTSHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8705F42D6FADD8001FA41D /* TTSHelper.swift */; };
+		6ADA80B62D9760D300B4A790 /* CardPackItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92ABE2D6DE46C00E8804E /* CardPackItemCell.swift */; };
+		6ADA80B72D9760D300B4A790 /* CardPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AB12D6DE46C00E8804E /* CardPack.swift */; };
+		6ADA80B82D9760D300B4A790 /* FontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AB42D6DE46C00E8804E /* FontType.swift */; };
+		6ADA80B92D9760D300B4A790 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB34C8F2D7470430015FDCA /* LoadingIndicator.swift */; };
+		6ADA80BA2D9760D300B4A790 /* FavoriteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AC12D6DE46C00E8804E /* FavoriteItem.swift */; };
+		6ADA80BB2D9760D300B4A790 /* CardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AAF2D6DE46C00E8804E /* CardItem.swift */; };
+		6ADA80BC2D9760D300B4A790 /* SwipeResultDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AD62D6DE46C00E8804E /* SwipeResultDirection.swift */; };
+		6ADA80BD2D9760D300B4A790 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA80822D909F0B00B4A790 /* CustomLabel.swift */; };
+		6ADA80BE2D9760D300B4A790 /* FavoritesSwipeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92ACA2D6DE46C00E8804E /* FavoritesSwipeVM.swift */; };
+		6ADA80BF2D9760D300B4A790 /* FavoriteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AB02D6DE46C00E8804E /* FavoriteData.swift */; };
+		6ADA80C02D9760D300B4A790 /* DraggableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92ACE2D6DE46C00E8804E /* DraggableCardView.swift */; };
+		6ADA80C12D9760D300B4A790 /* DashBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABA33F62D729FB400CD052F /* DashBoardCell.swift */; };
+		6ADA80C22D9760D300B4A790 /* AppStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AB72D6DE46C00E8804E /* AppStatus.swift */; };
+		6ADA80C32D9760D300B4A790 /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AB62D6DE46C00E8804E /* AppSetting.swift */; };
+		6ADA80C42D9760D300B4A790 /* EmailHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AF52D6DE46C00E8804E /* EmailHelper.swift */; };
+		6ADA80C52D9760D300B4A790 /* SwipeCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AD92D6DE46C00E8804E /* SwipeCardVC.swift */; };
+		6ADA80C62D9760D300B4A790 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AA52D6DE28400E8804E /* SceneDelegate.swift */; };
+		6ADA80C92D9760D300B4A790 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE8D5032D788EA0003EC955 /* StoreKit.framework */; };
+		6ADA80CB2D9760D300B4A790 /* DashBoardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ABA33F72D729FB400CD052F /* DashBoardCell.xib */; };
+		6ADA80CC2D9760D300B4A790 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92A9F2D6DE28400E8804E /* Assets.xcassets */; };
+		6ADA80CD2D9760D300B4A790 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AA22D6DE28400E8804E /* LaunchScreen.storyboard */; };
+		6ADA80CE2D9760D300B4A790 /* PurchasePopUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AF12D6DE46C00E8804E /* PurchasePopUpVC.xib */; };
+		6ADA80CF2D9760D300B4A790 /* CardItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AE02D6DE46C00E8804E /* CardItemView.xib */; };
+		6ADA80D02D9760D300B4A790 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92B442D6DE5C100E8804E /* remote_config_defaults.plist */; };
+		6ADA80D12D9760D300B4A790 /* SwipeCardCompletionPopUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AE42D6DE46C00E8804E /* SwipeCardCompletionPopUpVC.xib */; };
+		6ADA80D22D9760D300B4A790 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92ABC2D6DE46C00E8804E /* MainVC.xib */; };
+		6ADA80D32D9760D300B4A790 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92B402D6DE4B000E8804E /* PrivacyInfo.xcprivacy */; };
+		6ADA80D42D9760D300B4A790 /* FavoritesStartLearningCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AC72D6DE46C00E8804E /* FavoritesStartLearningCell.xib */; };
+		6ADA80D52D9760D300B4A790 /* WordListItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AE92D6DE46C00E8804E /* WordListItemCell.xib */; };
+		6ADA80D62D9760D300B4A790 /* GuidePopUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AB34C8B2D7430D90015FDCA /* GuidePopUpVC.xib */; };
+		6ADA80D82D9760D300B4A790 /* SearchWebVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AEC2D6DE46C00E8804E /* SearchWebVC.xib */; };
+		6ADA80D92D9760D300B4A790 /* FavoritesSwipeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92ACC2D6DE46C00E8804E /* FavoritesSwipeVC.xib */; };
+		6ADA80DA2D9760D300B4A790 /* SwipeCardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92ADA2D6DE46C00E8804E /* SwipeCardVC.xib */; };
+		6ADA80DB2D9760D300B4A790 /* TOEIC_CardDATA_20250328-213629.json in Resources */ = {isa = PBXBuildFile; fileRef = 6ADA80892D96CF9000B4A790 /* TOEIC_CardDATA_20250328-213629.json */; };
+		6ADA80DC2D9760D300B4A790 /* FavoritesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AC52D6DE46C00E8804E /* FavoritesVC.xib */; };
+		6ADA80DD2D9760D300B4A790 /* CardItemComponentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92ADC2D6DE46C00E8804E /* CardItemComponentView.xib */; };
+		6ADA80DF2D9760D300B4A790 /* WordListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AE72D6DE46C00E8804E /* WordListVC.xib */; };
+		6ADA80E02D9760D300B4A790 /* CardItemBackContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92ADE2D6DE46C00E8804E /* CardItemBackContentView.xib */; };
+		6ADA80E12D9760D300B4A790 /* SHOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AE22D6DE46C00E8804E /* SHOverlayView.xib */; };
+		6ADA80E22D9760D300B4A790 /* FavoritesItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92AC92D6DE46C00E8804E /* FavoritesItemCell.xib */; };
+		6ADA80E32D9760D300B4A790 /* CardPackItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92ABF2D6DE46C00E8804E /* CardPackItemCell.xib */; };
+		6ADA80ED2D97626A00B4A790 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6ADA80EC2D97626A00B4A790 /* GoogleService-Info.plist */; };
 		6AE8D5042D788EA0003EC955 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE8D5032D788EA0003EC955 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18D3463EC31D6DC58DAE234A /* Pods_AmcaTOEIC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmcaTOEIC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2745229020A22BD0C90A6BFB /* Pods-AmcaTOEIC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmcaTOEIC.release.xcconfig"; path = "Target Support Files/Pods-AmcaTOEIC/Pods-AmcaTOEIC.release.xcconfig"; sourceTree = "<group>"; };
-		6A3D04DA2D7895310092ABB0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0324CF6B50587DC4BA81C3D1 /* Pods-AmcaTOEIC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmcaTOEIC.release.xcconfig"; path = "Target Support Files/Pods-AmcaTOEIC/Pods-AmcaTOEIC.release.xcconfig"; sourceTree = "<group>"; };
 		6A8705F42D6FADD8001FA41D /* TTSHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSHelper.swift; sourceTree = "<group>"; };
 		6A99C5592D78EEE10090B3BD /* NotiName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiName.swift; sourceTree = "<group>"; };
 		6AA92A662D6DE0CB00E8804E /* AmcaTOEIC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmcaTOEIC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,8 +248,15 @@
 		6ABA33F72D729FB400CD052F /* DashBoardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashBoardCell.xib; sourceTree = "<group>"; };
 		6ADA80822D909F0B00B4A790 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		6ADA80892D96CF9000B4A790 /* TOEIC_CardDATA_20250328-213629.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "TOEIC_CardDATA_20250328-213629.json"; sourceTree = "<group>"; };
+		6ADA80E92D9760D300B4A790 /* AmcaTOEICLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmcaTOEICLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ADA80EA2D9760D300B4A790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = /Users/wgyang/Github/AmcaTOEIC/AmcaTOEIC/AmcaTOEICLite/Info.plist; sourceTree = "<absolute>"; };
+		6ADA80EC2D97626A00B4A790 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6AE8D5032D788EA0003EC955 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		96916ED89851F61E1AC54B68 /* Pods-AmcaTOEIC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmcaTOEIC.debug.xcconfig"; path = "Target Support Files/Pods-AmcaTOEIC/Pods-AmcaTOEIC.debug.xcconfig"; sourceTree = "<group>"; };
+		6E8F6C8CB0D6151282E8A8D5 /* Pods-AmcaTOEICLite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmcaTOEICLite.release.xcconfig"; path = "Target Support Files/Pods-AmcaTOEICLite/Pods-AmcaTOEICLite.release.xcconfig"; sourceTree = "<group>"; };
+		AEB297C2EAEE2DD657B0B2A5 /* Pods-AmcaTOEIC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmcaTOEIC.debug.xcconfig"; path = "Target Support Files/Pods-AmcaTOEIC/Pods-AmcaTOEIC.debug.xcconfig"; sourceTree = "<group>"; };
+		D5F7F98838D8E49087CE4DB9 /* Pods_AmcaTOEIC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmcaTOEIC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2808D58FC3D8FB43E0379EE /* Pods_AmcaTOEICLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmcaTOEICLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F94787554C532CED962DE918 /* Pods-AmcaTOEICLite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmcaTOEICLite.debug.xcconfig"; path = "Target Support Files/Pods-AmcaTOEICLite/Pods-AmcaTOEICLite.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,8 +264,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				657BBD7D5310FB81527F8BE7 /* Pods_AmcaTOEIC.framework in Frameworks */,
 				6AE8D5042D788EA0003EC955 /* StoreKit.framework in Frameworks */,
+				15FFA90638CE54156B2D614C /* Pods_AmcaTOEIC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ADA80C72D9760D300B4A790 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ADA80C92D9760D300B4A790 /* StoreKit.framework in Frameworks */,
+				09842D803C17CEE4A4CD61B3 /* Pods_AmcaTOEICLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				6AA92A662D6DE0CB00E8804E /* AmcaTOEIC.app */,
+				6ADA80E92D9760D300B4A790 /* AmcaTOEICLite.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -228,8 +321,8 @@
 				6AA92AA02D6DE28400E8804E /* Info.plist */,
 				6AB054C32D871D6E003B14B6 /* GoogleService-Info.plist */,
 				6AA92B442D6DE5C100E8804E /* remote_config_defaults.plist */,
-				6A3D04DA2D7895310092ABB0 /* GoogleService-Info.plist */,
 				6AA92B402D6DE4B000E8804E /* PrivacyInfo.xcprivacy */,
+				6ADA80EB2D97614400B4A790 /* AmcaTOEICLite */,
 			);
 			path = AmcaTOEIC;
 			sourceTree = "<group>";
@@ -429,11 +522,22 @@
 			path = GuidePopUpScene;
 			sourceTree = "<group>";
 		};
+		6ADA80EB2D97614400B4A790 /* AmcaTOEICLite */ = {
+			isa = PBXGroup;
+			children = (
+				6ADA80EA2D9760D300B4A790 /* Info.plist */,
+				6ADA80EC2D97626A00B4A790 /* GoogleService-Info.plist */,
+			);
+			path = AmcaTOEICLite;
+			sourceTree = "<group>";
+		};
 		951CB9975B4DF793884657F4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				96916ED89851F61E1AC54B68 /* Pods-AmcaTOEIC.debug.xcconfig */,
-				2745229020A22BD0C90A6BFB /* Pods-AmcaTOEIC.release.xcconfig */,
+				AEB297C2EAEE2DD657B0B2A5 /* Pods-AmcaTOEIC.debug.xcconfig */,
+				0324CF6B50587DC4BA81C3D1 /* Pods-AmcaTOEIC.release.xcconfig */,
+				F94787554C532CED962DE918 /* Pods-AmcaTOEICLite.debug.xcconfig */,
+				6E8F6C8CB0D6151282E8A8D5 /* Pods-AmcaTOEICLite.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -442,7 +546,8 @@
 			isa = PBXGroup;
 			children = (
 				6AE8D5032D788EA0003EC955 /* StoreKit.framework */,
-				18D3463EC31D6DC58DAE234A /* Pods_AmcaTOEIC.framework */,
+				D5F7F98838D8E49087CE4DB9 /* Pods_AmcaTOEIC.framework */,
+				E2808D58FC3D8FB43E0379EE /* Pods_AmcaTOEICLite.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -454,12 +559,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AA92A792D6DE0CC00E8804E /* Build configuration list for PBXNativeTarget "AmcaTOEIC" */;
 			buildPhases = (
-				BFC2AD7EBF6653E5FC73A123 /* [CP] Check Pods Manifest.lock */,
+				DEE81E65BD3CEE602C2C6DE5 /* [CP] Check Pods Manifest.lock */,
 				6AA92A622D6DE0CB00E8804E /* Sources */,
 				6AA92A632D6DE0CB00E8804E /* Frameworks */,
 				6AA92A642D6DE0CB00E8804E /* Resources */,
-				1C75255DA47EA3C680BE908D /* [CP] Embed Pods Frameworks */,
 				6AA92B472D6DE70100E8804E /* Firebase crashlytics */,
+				5AF3E0C4D946F516EA008664 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -468,6 +573,26 @@
 			name = AmcaTOEIC;
 			productName = AmcaTOEIC;
 			productReference = 6AA92A662D6DE0CB00E8804E /* AmcaTOEIC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6ADA808F2D9760D300B4A790 /* AmcaTOEICLite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ADA80E62D9760D300B4A790 /* Build configuration list for PBXNativeTarget "AmcaTOEICLite" */;
+			buildPhases = (
+				6F35F7A05C9139CE7B0A1115 /* [CP] Check Pods Manifest.lock */,
+				6ADA80912D9760D300B4A790 /* Sources */,
+				6ADA80C72D9760D300B4A790 /* Frameworks */,
+				6ADA80CA2D9760D300B4A790 /* Resources */,
+				59E0B1F02C6C6CCDC85383C5 /* [CP] Embed Pods Frameworks */,
+				6ADA80E52D9760D300B4A790 /* Firebase crashlytics */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmcaTOEICLite;
+			productName = AmcaTOEIC;
+			productReference = 6ADA80E92D9760D300B4A790 /* AmcaTOEICLite.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -500,6 +625,7 @@
 			projectRoot = "";
 			targets = (
 				6AA92A652D6DE0CB00E8804E /* AmcaTOEIC */,
+				6ADA808F2D9760D300B4A790 /* AmcaTOEICLite */,
 			);
 		};
 /* End PBXProject section */
@@ -521,7 +647,6 @@
 				6AA92B042D6DE46C00E8804E /* FavoritesStartLearningCell.xib in Resources */,
 				6AA92B052D6DE46C00E8804E /* WordListItemCell.xib in Resources */,
 				6AB34C8D2D7430D90015FDCA /* GuidePopUpVC.xib in Resources */,
-				6A3D04DB2D7895310092ABB0 /* GoogleService-Info.plist in Resources */,
 				6AA92B062D6DE46C00E8804E /* SearchWebVC.xib in Resources */,
 				6AA92B082D6DE46C00E8804E /* FavoritesSwipeVC.xib in Resources */,
 				6AA92B0A2D6DE46C00E8804E /* SwipeCardVC.xib in Resources */,
@@ -537,10 +662,58 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6ADA80CA2D9760D300B4A790 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ADA80CB2D9760D300B4A790 /* DashBoardCell.xib in Resources */,
+				6ADA80CC2D9760D300B4A790 /* Assets.xcassets in Resources */,
+				6ADA80CD2D9760D300B4A790 /* LaunchScreen.storyboard in Resources */,
+				6ADA80CE2D9760D300B4A790 /* PurchasePopUpVC.xib in Resources */,
+				6ADA80CF2D9760D300B4A790 /* CardItemView.xib in Resources */,
+				6ADA80D02D9760D300B4A790 /* remote_config_defaults.plist in Resources */,
+				6ADA80D12D9760D300B4A790 /* SwipeCardCompletionPopUpVC.xib in Resources */,
+				6ADA80D22D9760D300B4A790 /* MainVC.xib in Resources */,
+				6ADA80D32D9760D300B4A790 /* PrivacyInfo.xcprivacy in Resources */,
+				6ADA80D42D9760D300B4A790 /* FavoritesStartLearningCell.xib in Resources */,
+				6ADA80D52D9760D300B4A790 /* WordListItemCell.xib in Resources */,
+				6ADA80D62D9760D300B4A790 /* GuidePopUpVC.xib in Resources */,
+				6ADA80D82D9760D300B4A790 /* SearchWebVC.xib in Resources */,
+				6ADA80D92D9760D300B4A790 /* FavoritesSwipeVC.xib in Resources */,
+				6ADA80DA2D9760D300B4A790 /* SwipeCardVC.xib in Resources */,
+				6ADA80DB2D9760D300B4A790 /* TOEIC_CardDATA_20250328-213629.json in Resources */,
+				6ADA80DC2D9760D300B4A790 /* FavoritesVC.xib in Resources */,
+				6ADA80DD2D9760D300B4A790 /* CardItemComponentView.xib in Resources */,
+				6ADA80DF2D9760D300B4A790 /* WordListVC.xib in Resources */,
+				6ADA80E02D9760D300B4A790 /* CardItemBackContentView.xib in Resources */,
+				6ADA80E12D9760D300B4A790 /* SHOverlayView.xib in Resources */,
+				6ADA80E22D9760D300B4A790 /* FavoritesItemCell.xib in Resources */,
+				6ADA80E32D9760D300B4A790 /* CardPackItemCell.xib in Resources */,
+				6ADA80ED2D97626A00B4A790 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1C75255DA47EA3C680BE908D /* [CP] Embed Pods Frameworks */ = {
+		59E0B1F02C6C6CCDC85383C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmcaTOEICLite/Pods-AmcaTOEICLite-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmcaTOEICLite/Pods-AmcaTOEICLite-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmcaTOEICLite/Pods-AmcaTOEICLite-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AF3E0C4D946F516EA008664 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -581,7 +754,53 @@
 			shellPath = /bin/sh;
 			shellScript = "if [ \"${CONFIGURATION}\" != \"Debug\" ]; then\n    \"${PODS_ROOT}/FirebaseCrashlytics/run\"\nfi\n";
 		};
-		BFC2AD7EBF6653E5FC73A123 /* [CP] Check Pods Manifest.lock */ = {
+		6ADA80E52D9760D300B4A790 /* Firebase crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
+			);
+			name = "Firebase crashlytics";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" != \"Debug\" ]; then\n    \"${PODS_ROOT}/FirebaseCrashlytics/run\"\nfi\n";
+		};
+		6F35F7A05C9139CE7B0A1115 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmcaTOEICLite-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEE81E65BD3CEE602C2C6DE5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -666,6 +885,66 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6ADA80912D9760D300B4A790 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ADA80922D9760D300B4A790 /* IAPManager.swift in Sources */,
+				6ADA80932D9760D300B4A790 /* AppDelegate.swift in Sources */,
+				6ADA80942D9760D300B4A790 /* SettingsView.swift in Sources */,
+				6ADA80952D9760D300B4A790 /* KolodaCardStorage.swift in Sources */,
+				6ADA80962D9760D300B4A790 /* NotiName.swift in Sources */,
+				6ADA80972D9760D300B4A790 /* CardSideType.swift in Sources */,
+				6ADA80982D9760D300B4A790 /* AlertHelper.swift in Sources */,
+				6ADA80992D9760D300B4A790 /* CardItemView.swift in Sources */,
+				6ADA809A2D9760D300B4A790 /* DBManager.swift in Sources */,
+				6ADA809B2D9760D300B4A790 /* FavoritesItemCell.swift in Sources */,
+				6ADA809C2D9760D300B4A790 /* SHOverlayView.swift in Sources */,
+				6ADA809D2D9760D300B4A790 /* GuidePopUpVC.swift in Sources */,
+				6ADA809E2D9760D300B4A790 /* SwipeCardCompletionPopUpVC.swift in Sources */,
+				6ADA809F2D9760D300B4A790 /* NibUIView.swift in Sources */,
+				6ADA80A02D9760D300B4A790 /* WordListItemCell.swift in Sources */,
+				6ADA80A12D9760D300B4A790 /* LearningStatus.swift in Sources */,
+				6ADA80A22D9760D300B4A790 /* MainVM.swift in Sources */,
+				6ADA80A32D9760D300B4A790 /* KolodaAnimationSemaphore.swift in Sources */,
+				6ADA80A42D9760D300B4A790 /* SwipeCardVM.swift in Sources */,
+				6ADA80A52D9760D300B4A790 /* CommonUtility.swift in Sources */,
+				6ADA80A62D9760D300B4A790 /* KolodaViewAnimatior.swift in Sources */,
+				6ADA80A72D9760D300B4A790 /* PurchasePopUpVC.swift in Sources */,
+				6ADA80A82D9760D300B4A790 /* CardItemComponentView.swift in Sources */,
+				6ADA80A92D9760D300B4A790 /* MainVC.swift in Sources */,
+				6ADA80AA2D9760D300B4A790 /* FavoritesVM.swift in Sources */,
+				6ADA80AB2D9760D300B4A790 /* WordListVC.swift in Sources */,
+				6ADA80AC2D9760D300B4A790 /* KolodaView.swift in Sources */,
+				6ADA80AD2D9760D300B4A790 /* IAPHelper.swift in Sources */,
+				6ADA80AE2D9760D300B4A790 /* FavoritesSwipeVC.swift in Sources */,
+				6ADA80AF2D9760D300B4A790 /* MainTabBarController.swift in Sources */,
+				6ADA80B02D9760D300B4A790 /* FavoritesStartLearningCell.swift in Sources */,
+				6ADA80B12D9760D300B4A790 /* OverlayView.swift in Sources */,
+				6ADA80B22D9760D300B4A790 /* FavoritesVC.swift in Sources */,
+				6ADA80B32D9760D300B4A790 /* CardItemBackContentView.swift in Sources */,
+				6ADA80B42D9760D300B4A790 /* SearchWebVC.swift in Sources */,
+				6ADA80B52D9760D300B4A790 /* TTSHelper.swift in Sources */,
+				6ADA80B62D9760D300B4A790 /* CardPackItemCell.swift in Sources */,
+				6ADA80B72D9760D300B4A790 /* CardPack.swift in Sources */,
+				6ADA80B82D9760D300B4A790 /* FontType.swift in Sources */,
+				6ADA80B92D9760D300B4A790 /* LoadingIndicator.swift in Sources */,
+				6ADA80BA2D9760D300B4A790 /* FavoriteItem.swift in Sources */,
+				6ADA80BB2D9760D300B4A790 /* CardItem.swift in Sources */,
+				6ADA80BC2D9760D300B4A790 /* SwipeResultDirection.swift in Sources */,
+				6ADA80BD2D9760D300B4A790 /* CustomLabel.swift in Sources */,
+				6ADA80BE2D9760D300B4A790 /* FavoritesSwipeVM.swift in Sources */,
+				6ADA80BF2D9760D300B4A790 /* FavoriteData.swift in Sources */,
+				6ADA80C02D9760D300B4A790 /* DraggableCardView.swift in Sources */,
+				6ADA80C12D9760D300B4A790 /* DashBoardCell.swift in Sources */,
+				6ADA80C22D9760D300B4A790 /* AppStatus.swift in Sources */,
+				6ADA80C32D9760D300B4A790 /* AppSetting.swift in Sources */,
+				6ADA80C42D9760D300B4A790 /* EmailHelper.swift in Sources */,
+				6ADA80C52D9760D300B4A790 /* SwipeCardVC.swift in Sources */,
+				6ADA80C62D9760D300B4A790 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -682,7 +961,7 @@
 /* Begin XCBuildConfiguration section */
 		6AA92A7A2D6DE0CC00E8804E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96916ED89851F61E1AC54B68 /* Pods-AmcaTOEIC.debug.xcconfig */;
+			baseConfigurationReference = AEB297C2EAEE2DD657B0B2A5 /* Pods-AmcaTOEIC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -692,7 +971,7 @@
 				DEVELOPMENT_TEAM = WRMZ68J9BN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AmcaTOEIC/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "암카 토익";
+				INFOPLIST_KEY_CFBundleDisplayName = "암카 토익단어";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -702,7 +981,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.theonelab.amcaToeic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -718,7 +997,7 @@
 		};
 		6AA92A7B2D6DE0CC00E8804E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2745229020A22BD0C90A6BFB /* Pods-AmcaTOEIC.release.xcconfig */;
+			baseConfigurationReference = 0324CF6B50587DC4BA81C3D1 /* Pods-AmcaTOEIC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -728,7 +1007,7 @@
 				DEVELOPMENT_TEAM = WRMZ68J9BN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AmcaTOEIC/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "암카 토익";
+				INFOPLIST_KEY_CFBundleDisplayName = "암카 토익단어";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -738,7 +1017,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.theonelab.amcaToeic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -871,6 +1150,80 @@
 			};
 			name = Release;
 		};
+		6ADA80E72D9760D300B4A790 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F94787554C532CED962DE918 /* Pods-AmcaTOEICLite.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconLite;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WRMZ68J9BN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AmcaTOEIC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "암카 토익단어 LT";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.theonelab.amcaToeicLite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = "AmcaTOEICLite $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6ADA80E82D9760D300B4A790 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E8F6C8CB0D6151282E8A8D5 /* Pods-AmcaTOEICLite.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconLite;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WRMZ68J9BN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AmcaTOEIC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "암카 토익단어 LT";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.theonelab.amcaToeicLite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = AmcaTOEICLite;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -888,6 +1241,15 @@
 			buildConfigurations = (
 				6AA92A7A2D6DE0CC00E8804E /* Debug */,
 				6AA92A7B2D6DE0CC00E8804E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ADA80E62D9760D300B4A790 /* Build configuration list for PBXNativeTarget "AmcaTOEICLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ADA80E72D9760D300B4A790 /* Debug */,
+				6ADA80E82D9760D300B4A790 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
