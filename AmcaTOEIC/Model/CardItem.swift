@@ -18,7 +18,10 @@ final class CardItem: Object, Decodable {
     @Persisted var backWord: String
     @Persisted var backWord02: String
     @Persisted var example01: String
+    @Persisted var examTrans01: String
     @Persisted var example02: String
+    @Persisted var examTrans02: String
+    
     
     @Persisted var hasShown: Bool
     @Persisted var hasMemorized: Bool
@@ -43,7 +46,9 @@ final class CardItem: Object, Decodable {
         case backWord
         case backWord02
         case example01
+        case examTrans01
         case example02
+        case examTrans02
         
         case hasShown
         case hasMemorized
@@ -62,7 +67,9 @@ final class CardItem: Object, Decodable {
         backWord = try container.decodeIfPresent(String.self, forKey: .backWord) ?? ""
         backWord02 = try container.decodeIfPresent(String.self, forKey: .backWord02) ?? ""
         example01 = try container.decodeIfPresent(String.self, forKey: .example01) ?? ""
+        examTrans01 = try container.decodeIfPresent(String.self, forKey: .examTrans01) ?? ""
         example02 = try container.decodeIfPresent(String.self, forKey: .example02) ?? ""
+        examTrans02 = try container.decodeIfPresent(String.self, forKey: .examTrans02) ?? ""
         hasShown = try container.decodeIfPresent(Bool.self, forKey: .hasShown) ?? false
         hasMemorized = try container.decodeIfPresent(Bool.self, forKey: .hasMemorized) ?? false
         isFavorite = try container.decodeIfPresent(Bool.self, forKey: .isFavorite) ?? false

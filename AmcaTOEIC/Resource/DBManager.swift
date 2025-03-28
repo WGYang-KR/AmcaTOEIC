@@ -9,8 +9,8 @@ import Foundation
 import RealmSwift
 
 class DBManager {
-    static let dataJSONFileName = "TOEIC_CardDATA_20250322-191521"
-    static let schemaVersion: UInt64 = 6
+    static let dataJSONFileName = "TOEIC_CardDATA_20250328-213629"
+    static let schemaVersion: UInt64 = 7
     
     static let shared = DBManager()
     private init() { }
@@ -43,7 +43,9 @@ class DBManager {
                         newCardItem["backWord"] = newData.backWord
                         newCardItem["backWord02"] = newData.backWord02
                         newCardItem["example01"] = newData.example01
+                        newCardItem["examTrans01"] = newData.examTrans01
                         newCardItem["example02"] = newData.example02
+                        newCardItem["examTrans02"] = newData.examTrans02
                         successCount += 1
                     } else {
                         shLog("업데이트 오류: oldCardItem: \(String(describing: oldCardItem)), newCardItem: \(String(describing: newCardItem)), character: \(String(describing: oldCardItem["frontWord"]) )")

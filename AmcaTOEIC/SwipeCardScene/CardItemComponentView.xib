@@ -134,7 +134,6 @@
                         <constraint firstAttribute="trailing" secondItem="1gd-FD-NGs" secondAttribute="trailing" constant="16" id="3e0-5V-sYB"/>
                         <constraint firstItem="1gd-FD-NGs" firstAttribute="centerY" secondItem="s5X-Op-AVE" secondAttribute="centerY" id="JIB-6F-MKF"/>
                         <constraint firstItem="1gd-FD-NGs" firstAttribute="top" secondItem="H3W-oa-AZv" secondAttribute="bottom" constant="28" id="PjU-HP-yea"/>
-                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1gd-FD-NGs" secondAttribute="bottom" constant="16" id="nNb-T7-y4R"/>
                         <constraint firstItem="1gd-FD-NGs" firstAttribute="centerX" secondItem="s5X-Op-AVE" secondAttribute="centerX" id="uHj-YK-2TD"/>
                     </constraints>
                 </view>

@@ -46,10 +46,10 @@ class CardItemComponentView: UIView {
         
         
         exam01Label.isHidden = cardItem.example01.isEmpty
-        exam01Label.text = "- " + cardItem.example01.replacingOccurrences(of: "**", with: "")
+        exam01Label.text = ("- " + cardItem.example01).replacingOccurrences(of: "**", with: "")
         
         exam02Label.isHidden = cardItem.example02.isEmpty
-        exam02Label.text = "- " + cardItem.example02.replacingOccurrences(of: "**", with: "")
+        exam02Label.text = ("- " + cardItem.example02).replacingOccurrences(of: "**", with: "")
         
         
         //isFavorite 변수 변경되면 UI 업데이트되도록 바인드

@@ -13,7 +13,9 @@ class CardItemBackContentView: NibUIView {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var meaing02Label: UILabel!
-
+    @IBOutlet weak var examTrans01Label: CustomLabel!
+    @IBOutlet weak var examTrans02Label: CustomLabel!
+    
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var searchButton: UIButton!
     
@@ -33,6 +35,12 @@ class CardItemBackContentView: NibUIView {
         meaing02Label.isHidden = cardItem.backWord02.isEmpty
         meaing02Label.text = cardItem.backWord02
       
+        examTrans01Label.isHidden = cardItem.examTrans01.isEmpty
+        examTrans01Label.text = ("- " + cardItem.examTrans01).replacingOccurrences(of: "**", with: "")
+        
+        examTrans02Label.isHidden = cardItem.examTrans02.isEmpty
+        examTrans02Label.text = ("- " + cardItem.examTrans02).replacingOccurrences(of: "**", with: "")//.attributedWithBold(fontSize: 16.0)
+        
         
         //isFavorite 변수 변경되면 UI 업데이트되도록 바인드
         isFavorite.sink { [weak self] isFavorite  in
