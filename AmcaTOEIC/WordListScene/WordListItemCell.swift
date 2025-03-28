@@ -17,6 +17,8 @@ class WordListItemCell: UITableViewCell {
     
     @IBOutlet weak var exam01Label: UILabel!
     @IBOutlet weak var exam02Label: UILabel!
+    @IBOutlet weak var examTrans01Label: UILabel!
+    @IBOutlet weak var examTrans02Label: UILabel!
     
     @IBOutlet weak var radicalLabel: UILabel!
     @IBOutlet weak var strokeCountLabel: UILabel!
@@ -44,11 +46,19 @@ class WordListItemCell: UITableViewCell {
         secondLabel.text = cardItem.backWord.replacingOccurrences(of: "; ", with: "\n")
         meaing02Label.text = cardItem.backWord02.replacingOccurrences(of: "; ", with: "\n")
         
-        exam01Label.isHidden = cardItem.example01.isEmpty
+        exam01Label.isHidden = cardItem.example01.isEmpty || !AppSetting.showsExample
         exam01Label.text = cardItem.example01.replacingOccurrences(of: "**", with: "")
         
-        exam02Label.isHidden = cardItem.example02.isEmpty
+        exam02Label.isHidden = cardItem.example02.isEmpty || !AppSetting.showsExample
         exam02Label.text = cardItem.example02.replacingOccurrences(of: "**", with: "")
+        
+        
+        examTrans01Label.isHidden = cardItem.examTrans01.isEmpty || !AppSetting.showsExample
+        examTrans01Label.text = ( cardItem.examTrans01).replacingOccurrences(of: "**", with: "")
+        
+        examTrans02Label.isHidden = cardItem.examTrans02.isEmpty || !AppSetting.showsExample
+        examTrans02Label.text = ( cardItem.examTrans02).replacingOccurrences(of: "**", with: "")//.attributedWithBold(fontSize: 16.0)
+        
         
         checkMarkImageView.image  = cardItem.hasMemorized ? checkMarkImage : nil
         self.isFavorite.send(cardItem.isFavorite)

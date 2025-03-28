@@ -37,10 +37,10 @@ class CardItemBackContentView: NibUIView {
         meaing02Label.isHidden = cardItem.backWord02.isEmpty
         meaing02Label.text = cardItem.backWord02
       
-        examTrans01Label.isHidden = cardItem.examTrans01.isEmpty
+        examTrans01Label.isHidden = cardItem.examTrans01.isEmpty || !AppSetting.showsExample
         examTrans01Label.text = ("- " + cardItem.examTrans01).replacingOccurrences(of: "**", with: "")
         
-        examTrans02Label.isHidden = cardItem.examTrans02.isEmpty
+        examTrans02Label.isHidden = cardItem.examTrans02.isEmpty || !AppSetting.showsExample
         examTrans02Label.text = ("- " + cardItem.examTrans02).replacingOccurrences(of: "**", with: "")//.attributedWithBold(fontSize: 16.0)
         
         

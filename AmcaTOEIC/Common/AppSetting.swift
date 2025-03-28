@@ -12,6 +12,7 @@ class AppSetting {
     
     enum Keys: String {
         case cardDefaultSide
+        case showsExample
     }
     
     enum RemoteConfigKey: String {
@@ -32,6 +33,24 @@ class AppSetting {
             shLog("cardDefaultSide didSet: \(newValue)")
             UserDefaults.standard.setValue(newValue.rawValue, forKey: Keys.cardDefaultSide.rawValue)
         }
+    }
+    
+    
+    ///예문표시 여부
+    static var showsExample: Bool {
+        get {
+            let value = UserDefaults.standard.bool(forKey: Keys.showsExample.rawValue)
+            shLog("showsExample value: \(String(describing: value))")
+            return value
+        }
+        set {
+            shLog("showsExample didSet: \(newValue)")
+            UserDefaults.standard.set(newValue, forKey: Keys.showsExample.rawValue)
+        }
+    }
+    
+    static var curExampleSettingIcon: UIImage {
+        return AppSetting.showsExample ? UIImage(resource: .textPage) : UIImage(resource: .textPageSlash)
     }
     
     static var searchDictURL: String {

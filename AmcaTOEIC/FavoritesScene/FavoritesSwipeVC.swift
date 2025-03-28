@@ -21,7 +21,8 @@ class FavoritesSwipeVC: UIViewController {
     @IBOutlet weak var countRightLabel: UILabel!
     @IBOutlet weak var remainCountLabel: UILabel!
     @IBOutlet weak var totalCountLabel: UILabel!
-
+    @IBOutlet weak var showsExamBtn: UIButton!
+    
     var cardDefaultSide: CardSideType = .front
     var cardFontType: FontType = .system
     
@@ -30,6 +31,7 @@ class FavoritesSwipeVC: UIViewController {
         
         self.modalTransitionStyle = UIModalTransitionStyle.coverVertical
         navigationController?.interactivePopGestureRecognizer?.delegate = nil
+        showsExamBtn.setImage(AppSetting.curExampleSettingIcon, for: .normal)
         
         initCardDefaultSide()
        
@@ -93,6 +95,13 @@ class FavoritesSwipeVC: UIViewController {
     
     @IBAction func toggleCardDefaultSideBtnTapped(_ sender: Any) {
         setCardDefaultSide(cardDefaultSide.reversed)
+    }
+    
+    
+    @IBAction func showsExamBtnTapped(_ sender: Any) {
+        AppSetting.showsExample.toggle()
+        showsExamBtn.setImage(AppSetting.curExampleSettingIcon, for: .normal)
+        kolodaView.reconfigureCards()
     }
     
     

@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WordListVC" customModule="AmcaTOEIC" customModuleProvider="target">
             <connections>
+                <outlet property="showsExamBtn" destination="jPK-tf-oLY" id="B2I-cN-pWL"/>
                 <outlet property="tableView" destination="oQP-Yc-dTx" id="FNX-sC-3lg"/>
                 <outlet property="titleLabel" destination="Hdk-Pg-iKS" id="iMw-Ij-RaD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -38,7 +39,7 @@
                                                 <constraint firstAttribute="height" constant="32" id="Yfb-bB-yGw"/>
                                                 <constraint firstAttribute="width" constant="32" id="eog-cG-bG1"/>
                                             </constraints>
-                                            <color key="tintColor" name="colorTeal02"/>
+                                            <color key="tintColor" name="textSecondary"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" image="chevron.left" catalog="system">
                                                 <color key="titleColor" name="textSecondary"/>
@@ -54,18 +55,22 @@
                                             <color key="textColor" name="textSecondary"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGN-9n-0Hn">
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPK-tf-oLY">
                                             <rect key="frame" x="329" y="0.0" width="32" height="32"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="32" id="35i-h7-bxr"/>
-                                                <constraint firstAttribute="width" constant="32" id="bEC-bw-Q43"/>
+                                                <constraint firstAttribute="width" constant="32" id="Z5o-5j-Heq"/>
+                                                <constraint firstAttribute="height" constant="32" id="hyy-2x-yBu"/>
                                             </constraints>
-                                            <color key="tintColor" name="colorTeal02"/>
-                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                            <state key="normal">
-                                                <color key="titleColor" name="colorTeal02"/>
+                                            <color key="tintColor" name="textSecondary"/>
+                                            <inset key="imageEdgeInsets" minX="5" minY="4" maxX="5" maxY="4"/>
+                                            <state key="normal" image="textPage">
+                                                <color key="titleColor" name="textSecondary"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24"/>
                                             </state>
+                                            <connections>
+                                                <action selector="showsExamBtnTapped:" destination="-1" eventType="touchUpInside" id="ipK-ke-drP"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </stackView>
@@ -107,11 +112,9 @@
     </objects>
     <resources>
         <image name="chevron.left" catalog="system" width="97" height="128"/>
-        <namedColor name="colorTeal02">
-            <color red="0.074509803921568626" green="0.36470588235294116" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
+        <image name="textPage" width="65.333335876464844" height="82.666664123535156"/>
         <namedColor name="textSecondary">
-            <color red="0.31372550129999999" green="0.34901961679999999" blue="0.40392160420000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.31372549019607843" green="0.34901960784313724" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

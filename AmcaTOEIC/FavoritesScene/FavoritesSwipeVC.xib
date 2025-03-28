@@ -16,6 +16,7 @@
                 <outlet property="countRightLabel" destination="L7U-Sx-sti" id="1IW-fy-Qcw"/>
                 <outlet property="kolodaView" destination="kwg-H7-GWL" id="TBl-2H-rt3"/>
                 <outlet property="remainCountLabel" destination="Vdv-5i-Ceu" id="KSc-HI-EmE"/>
+                <outlet property="showsExamBtn" destination="uU3-XD-xmo" id="v9q-8b-3m8"/>
                 <outlet property="titleLabel" destination="TRe-zG-SNM" id="wdt-bB-emq"/>
                 <outlet property="totalCountLabel" destination="tdi-Mt-VZN" id="Z5T-r4-8dR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -230,18 +231,22 @@
                                             <rect key="frame" x="40" y="0.0" width="44.333333333333343" height="40"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
-                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySS-4G-u4m">
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uU3-XD-xmo">
                                             <rect key="frame" x="84.333333333333343" y="0.0" width="40" height="40"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="40" id="4Nz-0e-Pj8"/>
-                                                <constraint firstAttribute="width" constant="40" id="vgm-CD-0mG"/>
+                                                <constraint firstAttribute="width" constant="40" id="ff1-zM-4cP"/>
+                                                <constraint firstAttribute="height" constant="40" id="t1U-pO-l4j"/>
                                             </constraints>
-                                            <color key="tintColor" name="colorTeal02"/>
-                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                            <state key="normal">
-                                                <color key="titleColor" name="colorTeal02"/>
+                                            <color key="tintColor" name="textSecondary"/>
+                                            <inset key="imageEdgeInsets" minX="9" minY="9" maxX="9" maxY="9"/>
+                                            <state key="normal" image="textPageSlash">
+                                                <color key="titleColor" name="textSecondary"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                                             </state>
+                                            <connections>
+                                                <action selector="showsExamBtnTapped:" destination="-1" eventType="touchUpInside" id="6hJ-lw-QLt"/>
+                                            </connections>
                                         </button>
                                         <view contentMode="scaleToFill" horizontalHuggingPriority="248" translatesAutoresizingMaskIntoConstraints="NO" id="4Py-bA-cHl">
                                             <rect key="frame" x="124.33333333333333" y="0.0" width="44.333333333333329" height="40"/>
@@ -335,15 +340,16 @@
         <image name="arrow.uturn.backward" catalog="system" width="128" height="113"/>
         <image name="rectangle.portrait.righthalf.filled" catalog="system" width="115" height="128"/>
         <image name="shuffle" catalog="system" width="128" height="95"/>
+        <image name="textPageSlash" width="78.666664123535156" height="82.666664123535156"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="backBase">
-            <color red="0.94901967050000002" green="0.95686274770000002" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.94901960784313721" green="0.95686274509803926" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="backTop">
-            <color red="0.90196079019999997" green="0.90980386729999996" blue="0.92156863209999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.90196078431372551" green="0.90980392156862744" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="colorCardBack">
-            <color red="0.90196079019999997" green="0.90980386729999996" blue="0.92156863209999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.90196078431372551" green="0.90980392156862744" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="colorSwipeNo">
             <color red="0.94117647058823528" green="0.2627450980392157" blue="0.32156862745098042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -354,14 +360,11 @@
         <namedColor name="colorTeal01">
             <color red="0.0" green="0.23529411764705882" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="colorTeal02">
-            <color red="0.074509803921568626" green="0.36470588235294116" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="textPrimary">
-            <color red="0.20784312490000001" green="0.23921570180000001" blue="0.2901961207" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.20784313725490197" green="0.23921568627450981" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="textSecondary">
-            <color red="0.31372550129999999" green="0.34901961679999999" blue="0.40392160420000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.31372549019607843" green="0.34901960784313724" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

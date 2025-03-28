@@ -15,6 +15,7 @@ class FavoritesVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var showsExamBtn: UIButton!
     
     let vm = FavoritesVM()
     
@@ -28,6 +29,7 @@ class FavoritesVC: UIViewController {
         super.viewDidLoad()
         initTableView()
         navigationController?.interactivePopGestureRecognizer?.delegate = nil
+        showsExamBtn.setImage(AppSetting.curExampleSettingIcon, for: .normal)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -58,6 +60,12 @@ class FavoritesVC: UIViewController {
         vc.hidesBottomBarWhenPushed = true
         vc.configuration(searchText: item.cardItem.frontWord)
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func showsExamBtnTapped(_ sender: Any) {
+        AppSetting.showsExample.toggle()
+        showsExamBtn.setImage(AppSetting.curExampleSettingIcon, for: .normal)
+        tableView.reloadData()
     }
     
 }

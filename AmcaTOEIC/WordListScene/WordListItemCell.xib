@@ -20,10 +20,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYd-Zi-QVh">
-                        <rect key="frame" x="0.0" y="0.0" width="456" height="226"/>
+                        <rect key="frame" x="0.0" y="0.0" width="456" height="269"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fxZ-0b-f8K">
-                                <rect key="frame" x="20" y="8" width="416" height="210"/>
+                                <rect key="frame" x="20" y="8" width="416" height="253"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="cX4-J5-Rv3">
                                         <rect key="frame" x="242" y="12" width="158" height="28"/>
@@ -105,11 +105,11 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="tnu-cv-8yM">
-                                        <rect key="frame" x="16" y="37.5" width="384" height="156.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tnu-cv-8yM">
+                                        <rect key="frame" x="16" y="37.5" width="384" height="199.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Gob-Cq-WL4">
-                                                <rect key="frame" x="0.0" y="0.0" width="42" height="51.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="42" height="50.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="752" text="영어" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EuV-js-1Sg" customClass="CustomLabel" customModule="AmcaTOEIC" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="42" height="29"/>
@@ -118,49 +118,61 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="발음" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RW6-Xm-db9">
-                                                        <rect key="frame" x="0.0" y="31" width="42" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="0.0" y="31" width="42" height="19.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <color key="textColor" name="textPrimary"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="uIi-ms-3Cn">
-                                                <rect key="frame" x="0.0" y="57.5" width="37" height="46.5"/>
+                                                <rect key="frame" x="0.0" y="58.5" width="33" height="66.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="뜻" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMJ-JZ-CpB">
-                                                        <rect key="frame" x="0.0" y="0.0" width="37" height="24"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="33" height="26.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                         <color key="textColor" name="textPrimary"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="예문1" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0B-tl-3q1" customClass="CustomLabel" customModule="AmcaTOEIC" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="26" width="37" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="0.0" y="28.5" width="33" height="18"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" name="textPrimary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="해석1" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLY-cb-lj5">
+                                                        <rect key="frame" x="0.0" y="48.5" width="33" height="18"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" name="textPrimary"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="EOL-KV-kl5">
-                                                <rect key="frame" x="0.0" y="110" width="39.5" height="46.5"/>
+                                                <rect key="frame" x="0.0" y="133" width="35" height="66.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="뜻" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWX-uT-J2R">
-                                                        <rect key="frame" x="0.0" y="0.0" width="39.5" height="24"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="35" height="26.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                         <color key="textColor" name="textPrimary"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="예문2" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h85-Ub-QDE" customClass="CustomLabel" customModule="AmcaTOEIC" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="26" width="39.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="0.0" y="28.5" width="35" height="18"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" name="textPrimary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="해석2" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Otd-Ir-tPF">
+                                                        <rect key="frame" x="0.0" y="48.5" width="35" height="18"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" name="textPrimary"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
                                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7nc-si-0vQ">
-                                                <rect key="frame" x="0.0" y="156.5" width="226" height="14"/>
+                                                <rect key="frame" x="0.0" y="199.5" width="226" height="14"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ec7-n1-nRV">
                                                         <rect key="frame" x="0.0" y="0.0" width="129" height="14"/>
@@ -248,6 +260,8 @@
                 <outlet property="checkMarkImageView" destination="TKQ-6a-hhq" id="mlg-wu-qFJ"/>
                 <outlet property="exam01Label" destination="F0B-tl-3q1" id="eWE-qh-8u2"/>
                 <outlet property="exam02Label" destination="h85-Ub-QDE" id="v7b-4b-faA"/>
+                <outlet property="examTrans01Label" destination="sLY-cb-lj5" id="amv-Zr-eKw"/>
+                <outlet property="examTrans02Label" destination="Otd-Ir-tPF" id="Vub-K9-Wvl"/>
                 <outlet property="favoriteButton" destination="pu8-Op-6a6" id="8Bw-GE-aiu"/>
                 <outlet property="firstLabel" destination="EuV-js-1Sg" id="ocU-K9-MgT"/>
                 <outlet property="indexLabel" destination="FPQ-fQ-lMD" id="gVb-3b-t9V"/>

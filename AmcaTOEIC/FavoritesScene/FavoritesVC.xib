@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoritesVC" customModule="AmcaTOEIC" customModuleProvider="target">
             <connections>
+                <outlet property="showsExamBtn" destination="hyC-yz-Nb1" id="1Sk-9l-sHw"/>
                 <outlet property="tableView" destination="djT-bj-yxV" id="A1d-4O-jfJ"/>
                 <outlet property="titleLabel" destination="ksx-xd-K4O" id="dte-RO-bcj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -44,13 +45,22 @@
                                             <color key="textColor" name="textSecondary"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BK1-Nb-U9a">
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyC-yz-Nb1">
                                             <rect key="frame" x="329" y="0.0" width="32" height="32"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="32" id="0S2-ha-zsy"/>
-                                                <constraint firstAttribute="height" constant="32" id="Xge-1e-lt9"/>
+                                                <constraint firstAttribute="width" constant="32" id="54p-Np-4be"/>
+                                                <constraint firstAttribute="height" constant="32" id="Pdc-Jo-3eo"/>
                                             </constraints>
-                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <color key="tintColor" name="textSecondary"/>
+                                            <inset key="imageEdgeInsets" minX="5" minY="4" maxX="5" maxY="4"/>
+                                            <state key="normal" image="textPage">
+                                                <color key="titleColor" name="textPrimary"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="showsExamBtnTapped:" destination="-1" eventType="touchUpInside" id="dae-eg-kFq"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </stackView>
@@ -92,11 +102,15 @@
         </view>
     </objects>
     <resources>
+        <image name="textPage" width="65.333335876464844" height="82.666664123535156"/>
         <namedColor name="backBase">
-            <color red="0.94901967050000002" green="0.95686274770000002" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.94901960784313721" green="0.95686274509803926" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="textPrimary">
+            <color red="0.20784313725490197" green="0.23921568627450981" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="textSecondary">
-            <color red="0.31372550129999999" green="0.34901961679999999" blue="0.40392160420000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.31372549019607843" green="0.34901960784313724" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

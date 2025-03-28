@@ -23,7 +23,7 @@ class SwipeCardVC: UIViewController {
     @IBOutlet weak var countRightLabel: UILabel!
     @IBOutlet weak var remainCountLabel: UILabel!
     @IBOutlet weak var totalCountLabel: UILabel!
-    @IBOutlet weak var fontBtn: UIButton!
+    @IBOutlet weak var showsExamBtn: UIButton!
     
     var cardDefaultSide: CardSideType = .front
     var cardFontType: FontType = .system
@@ -36,6 +36,8 @@ class SwipeCardVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.interactivePopGestureRecognizer?.delegate = nil
+       
+        showsExamBtn.setImage(AppSetting.curExampleSettingIcon, for: .normal)
         
         initCardDefaultSide()
        
@@ -125,7 +127,11 @@ class SwipeCardVC: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
-    
+    @IBAction func showsExamBtnTapped(_ sender: Any) {
+        AppSetting.showsExample.toggle()
+        showsExamBtn.setImage(AppSetting.curExampleSettingIcon, for: .normal)
+        kolodaView.reconfigureCards()
+    }
     
     //MARK: Bind ViewModel
     func bindVM() {

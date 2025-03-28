@@ -13,6 +13,7 @@ class WordListVC: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var showsExamBtn: UIButton!
     
     var cardList: [CardItem] = []
     weak var swipeCardVC: SwipeCardVC?
@@ -28,6 +29,8 @@ class WordListVC: UIViewController {
         self.view.backgroundColor = .backBase
         navigationController?.interactivePopGestureRecognizer?.delegate = nil
         initTableView()
+        showsExamBtn.setImage(AppSetting.curExampleSettingIcon, for: .normal)
+        
     }
     func initTableView() {
         tableView.dataSource = self
@@ -96,7 +99,12 @@ class WordListVC: UIViewController {
         self.moveBackVC(animated: true)
     }
     
- 
+    @IBAction func showsExamBtnTapped(_ sender: Any) {
+        AppSetting.showsExample.toggle()
+        showsExamBtn.setImage(AppSetting.curExampleSettingIcon, for: .normal)
+        tableView.reloadData()
+    }
+    
 }
 
 extension WordListVC: UITableViewDataSource {

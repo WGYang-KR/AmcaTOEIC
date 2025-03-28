@@ -46,10 +46,10 @@ class CardItemComponentView: UIView {
         self.pronunciationLabel.text = cardItem.pronunciation
         
         
-        exam01Label.isHidden = cardItem.example01.isEmpty
+        exam01Label.isHidden = cardItem.example01.isEmpty || !AppSetting.showsExample
         exam01Label.text = ("- " + cardItem.example01).replacingOccurrences(of: "**", with: "")
         
-        exam02Label.isHidden = cardItem.example02.isEmpty
+        exam02Label.isHidden = cardItem.example02.isEmpty || !AppSetting.showsExample
         exam02Label.text = ("- " + cardItem.example02).replacingOccurrences(of: "**", with: "")
         
         
