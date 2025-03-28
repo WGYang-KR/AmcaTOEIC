@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		657BBD7D5310FB81527F8BE7 /* Pods_AmcaTOEIC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D3463EC31D6DC58DAE234A /* Pods_AmcaTOEIC.framework */; };
+		09842D803C17CEE4A4CD61B3 /* Pods_AmcaTOEICLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2808D58FC3D8FB43E0379EE /* Pods_AmcaTOEICLite.framework */; };
+		15FFA90638CE54156B2D614C /* Pods_AmcaTOEIC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F7F98838D8E49087CE4DB9 /* Pods_AmcaTOEIC.framework */; };
 		6A8705F52D6FADDD001FA41D /* TTSHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8705F42D6FADD8001FA41D /* TTSHelper.swift */; };
 		6A99C55A2D78EEF80090B3BD /* NotiName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A99C5592D78EEE10090B3BD /* NotiName.swift */; };
 		6AA92AA82D6DE28400E8804E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92A9F2D6DE28400E8804E /* Assets.xcassets */; };
@@ -138,7 +139,6 @@
 		6ADA80C42D9760D300B4A790 /* EmailHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AF52D6DE46C00E8804E /* EmailHelper.swift */; };
 		6ADA80C52D9760D300B4A790 /* SwipeCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AD92D6DE46C00E8804E /* SwipeCardVC.swift */; };
 		6ADA80C62D9760D300B4A790 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA92AA52D6DE28400E8804E /* SceneDelegate.swift */; };
-		6ADA80C82D9760D300B4A790 /* Pods_AmcaTOEIC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D3463EC31D6DC58DAE234A /* Pods_AmcaTOEIC.framework */; };
 		6ADA80C92D9760D300B4A790 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE8D5032D788EA0003EC955 /* StoreKit.framework */; };
 		6ADA80CB2D9760D300B4A790 /* DashBoardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ABA33F72D729FB400CD052F /* DashBoardCell.xib */; };
 		6ADA80CC2D9760D300B4A790 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA92A9F2D6DE28400E8804E /* Assets.xcassets */; };
@@ -168,8 +168,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18D3463EC31D6DC58DAE234A /* Pods_AmcaTOEIC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmcaTOEIC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2745229020A22BD0C90A6BFB /* Pods-AmcaTOEIC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmcaTOEIC.release.xcconfig"; path = "Target Support Files/Pods-AmcaTOEIC/Pods-AmcaTOEIC.release.xcconfig"; sourceTree = "<group>"; };
+		0324CF6B50587DC4BA81C3D1 /* Pods-AmcaTOEIC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmcaTOEIC.release.xcconfig"; path = "Target Support Files/Pods-AmcaTOEIC/Pods-AmcaTOEIC.release.xcconfig"; sourceTree = "<group>"; };
 		6A8705F42D6FADD8001FA41D /* TTSHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSHelper.swift; sourceTree = "<group>"; };
 		6A99C5592D78EEE10090B3BD /* NotiName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiName.swift; sourceTree = "<group>"; };
 		6AA92A662D6DE0CB00E8804E /* AmcaTOEIC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmcaTOEIC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -253,7 +252,11 @@
 		6ADA80EA2D9760D300B4A790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = /Users/wgyang/Github/AmcaTOEIC/AmcaTOEIC/AmcaTOEICLite/Info.plist; sourceTree = "<absolute>"; };
 		6ADA80EC2D97626A00B4A790 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6AE8D5032D788EA0003EC955 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		96916ED89851F61E1AC54B68 /* Pods-AmcaTOEIC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmcaTOEIC.debug.xcconfig"; path = "Target Support Files/Pods-AmcaTOEIC/Pods-AmcaTOEIC.debug.xcconfig"; sourceTree = "<group>"; };
+		6E8F6C8CB0D6151282E8A8D5 /* Pods-AmcaTOEICLite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmcaTOEICLite.release.xcconfig"; path = "Target Support Files/Pods-AmcaTOEICLite/Pods-AmcaTOEICLite.release.xcconfig"; sourceTree = "<group>"; };
+		AEB297C2EAEE2DD657B0B2A5 /* Pods-AmcaTOEIC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmcaTOEIC.debug.xcconfig"; path = "Target Support Files/Pods-AmcaTOEIC/Pods-AmcaTOEIC.debug.xcconfig"; sourceTree = "<group>"; };
+		D5F7F98838D8E49087CE4DB9 /* Pods_AmcaTOEIC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmcaTOEIC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2808D58FC3D8FB43E0379EE /* Pods_AmcaTOEICLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmcaTOEICLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F94787554C532CED962DE918 /* Pods-AmcaTOEICLite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmcaTOEICLite.debug.xcconfig"; path = "Target Support Files/Pods-AmcaTOEICLite/Pods-AmcaTOEICLite.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,8 +264,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				657BBD7D5310FB81527F8BE7 /* Pods_AmcaTOEIC.framework in Frameworks */,
 				6AE8D5042D788EA0003EC955 /* StoreKit.framework in Frameworks */,
+				15FFA90638CE54156B2D614C /* Pods_AmcaTOEIC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,8 +273,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6ADA80C82D9760D300B4A790 /* Pods_AmcaTOEIC.framework in Frameworks */,
 				6ADA80C92D9760D300B4A790 /* StoreKit.framework in Frameworks */,
+				09842D803C17CEE4A4CD61B3 /* Pods_AmcaTOEICLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,8 +534,10 @@
 		951CB9975B4DF793884657F4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				96916ED89851F61E1AC54B68 /* Pods-AmcaTOEIC.debug.xcconfig */,
-				2745229020A22BD0C90A6BFB /* Pods-AmcaTOEIC.release.xcconfig */,
+				AEB297C2EAEE2DD657B0B2A5 /* Pods-AmcaTOEIC.debug.xcconfig */,
+				0324CF6B50587DC4BA81C3D1 /* Pods-AmcaTOEIC.release.xcconfig */,
+				F94787554C532CED962DE918 /* Pods-AmcaTOEICLite.debug.xcconfig */,
+				6E8F6C8CB0D6151282E8A8D5 /* Pods-AmcaTOEICLite.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -541,7 +546,8 @@
 			isa = PBXGroup;
 			children = (
 				6AE8D5032D788EA0003EC955 /* StoreKit.framework */,
-				18D3463EC31D6DC58DAE234A /* Pods_AmcaTOEIC.framework */,
+				D5F7F98838D8E49087CE4DB9 /* Pods_AmcaTOEIC.framework */,
+				E2808D58FC3D8FB43E0379EE /* Pods_AmcaTOEICLite.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -553,12 +559,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AA92A792D6DE0CC00E8804E /* Build configuration list for PBXNativeTarget "AmcaTOEIC" */;
 			buildPhases = (
-				BFC2AD7EBF6653E5FC73A123 /* [CP] Check Pods Manifest.lock */,
+				DEE81E65BD3CEE602C2C6DE5 /* [CP] Check Pods Manifest.lock */,
 				6AA92A622D6DE0CB00E8804E /* Sources */,
 				6AA92A632D6DE0CB00E8804E /* Frameworks */,
 				6AA92A642D6DE0CB00E8804E /* Resources */,
-				1C75255DA47EA3C680BE908D /* [CP] Embed Pods Frameworks */,
 				6AA92B472D6DE70100E8804E /* Firebase crashlytics */,
+				5AF3E0C4D946F516EA008664 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -573,11 +579,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6ADA80E62D9760D300B4A790 /* Build configuration list for PBXNativeTarget "AmcaTOEICLite" */;
 			buildPhases = (
-				6ADA80902D9760D300B4A790 /* [CP] Check Pods Manifest.lock */,
+				6F35F7A05C9139CE7B0A1115 /* [CP] Check Pods Manifest.lock */,
 				6ADA80912D9760D300B4A790 /* Sources */,
 				6ADA80C72D9760D300B4A790 /* Frameworks */,
 				6ADA80CA2D9760D300B4A790 /* Resources */,
-				6ADA80E42D9760D300B4A790 /* [CP] Embed Pods Frameworks */,
+				59E0B1F02C6C6CCDC85383C5 /* [CP] Embed Pods Frameworks */,
 				6ADA80E52D9760D300B4A790 /* Firebase crashlytics */,
 			);
 			buildRules = (
@@ -690,7 +696,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1C75255DA47EA3C680BE908D /* [CP] Embed Pods Frameworks */ = {
+		59E0B1F02C6C6CCDC85383C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmcaTOEICLite/Pods-AmcaTOEICLite-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmcaTOEICLite/Pods-AmcaTOEICLite-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmcaTOEICLite/Pods-AmcaTOEICLite-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AF3E0C4D946F516EA008664 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -731,45 +754,6 @@
 			shellPath = /bin/sh;
 			shellScript = "if [ \"${CONFIGURATION}\" != \"Debug\" ]; then\n    \"${PODS_ROOT}/FirebaseCrashlytics/run\"\nfi\n";
 		};
-		6ADA80902D9760D300B4A790 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AmcaTOEIC-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6ADA80E42D9760D300B4A790 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AmcaTOEIC/Pods-AmcaTOEIC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AmcaTOEIC/Pods-AmcaTOEIC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmcaTOEIC/Pods-AmcaTOEIC-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6ADA80E52D9760D300B4A790 /* Firebase crashlytics */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -794,7 +778,29 @@
 			shellPath = /bin/sh;
 			shellScript = "if [ \"${CONFIGURATION}\" != \"Debug\" ]; then\n    \"${PODS_ROOT}/FirebaseCrashlytics/run\"\nfi\n";
 		};
-		BFC2AD7EBF6653E5FC73A123 /* [CP] Check Pods Manifest.lock */ = {
+		6F35F7A05C9139CE7B0A1115 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmcaTOEICLite-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEE81E65BD3CEE602C2C6DE5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -955,7 +961,7 @@
 /* Begin XCBuildConfiguration section */
 		6AA92A7A2D6DE0CC00E8804E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96916ED89851F61E1AC54B68 /* Pods-AmcaTOEIC.debug.xcconfig */;
+			baseConfigurationReference = AEB297C2EAEE2DD657B0B2A5 /* Pods-AmcaTOEIC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -991,7 +997,7 @@
 		};
 		6AA92A7B2D6DE0CC00E8804E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2745229020A22BD0C90A6BFB /* Pods-AmcaTOEIC.release.xcconfig */;
+			baseConfigurationReference = 0324CF6B50587DC4BA81C3D1 /* Pods-AmcaTOEIC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1146,7 +1152,7 @@
 		};
 		6ADA80E72D9760D300B4A790 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96916ED89851F61E1AC54B68 /* Pods-AmcaTOEIC.debug.xcconfig */;
+			baseConfigurationReference = F94787554C532CED962DE918 /* Pods-AmcaTOEICLite.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconLite;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1174,6 +1180,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = "AmcaTOEICLite $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1182,7 +1189,7 @@
 		};
 		6ADA80E82D9760D300B4A790 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2745229020A22BD0C90A6BFB /* Pods-AmcaTOEIC.release.xcconfig */;
+			baseConfigurationReference = 6E8F6C8CB0D6151282E8A8D5 /* Pods-AmcaTOEICLite.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconLite;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1210,6 +1217,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = AmcaTOEICLite;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

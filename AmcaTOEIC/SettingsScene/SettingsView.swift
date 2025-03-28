@@ -73,7 +73,6 @@ struct SettingsView: View {
     private var settingsList: some View {
         List {
             resetProgressSection
-            purchaseUpgradeSection
             contactSection
         }
     }
@@ -92,76 +91,6 @@ struct SettingsView: View {
         .frame(width: 32, height: 32) // 버튼의 크기를 32x32로 조정
     }
     
-    private var purchaseUpgradeSection: some View {
-        Section("결제 정보") {
-            if isPurchased {
-                HStack {
-                    Spacer()
-                    Button(action: {
-                        
-                    }, label: {
-                        Text("정식 버전 구매 완료")
-                            .fontWeight(.regular)
-                            .foregroundStyle(Color.textTertiary)
-                    })
-                    .disabled(true)
-                    Spacer()
-                }
-           
-            } else {
-                HStack {
-                    Button(action: {
-                        self.showsPurchaseAlert = true
-                    }, label: {
-                        Text("정식 버전 구매하기")
-                            .fontWeight(.regular)
-                            .foregroundStyle(Color.textSecondary)
-                    })
-                    
-                    Spacer()
-                    
-                    Image(systemName: "chevron.right")
-                        .foregroundColor(.textTertiary)
-                }
-                
-                HStack {
-                    Button(action: {
-                        restorePurchase()
-                    }, label: {
-                        Text("구매기록 복원하기")
-                            .fontWeight(.regular)
-                            .foregroundStyle(Color.textSecondary)
-                    })
-                    .alert(isPresented: $showsRestoreAlert) {
-                        Alert(
-                            title: Text("구매기록이 복원되었습니다."),
-                            dismissButton: .default(Text("확인"), action: {
-                                showsRestoreAlert = false
-                            })
-                        )
-                    }
-                   
-                    
-                    Spacer()
-                        .alert(isPresented: $showsRestoreAlertFailed) {
-                            Alert(
-                                title: Text("구매기록 복원에 실패했습니다."),
-                                dismissButton: .default(Text("확인"), action: {
-                                    showsRestoreAlertFailed = false
-                                })
-                            )
-                        }
-                    
-                    Image(systemName: "chevron.right")
-                        .foregroundColor(.textTertiary)
-                }
-            }
-            
-        }
-        .onAppear {
-            checkPurchaseStatus()
-        }
-    }
     
     private var resetProgressSection: some View {
         Section("학습") {
@@ -211,8 +140,14 @@ struct SettingsView: View {
         Section {
             HStack {
                 Button(action: {
+                    #if AmcaTOEICLite
+                    let title = "[암카 토익 Lite] 문의 & 피드백"
+                    #else
+                    let title = "[암카 토익] 문의 & 피드백"
+                    #endif
+                    
                     EmailHelper.shared
-                        .sendEmail(subject: "[암카 토익] 문의 & 피드백",
+                        .sendEmail(subject: title,
                                    body: """
                                     Version: \(AppStatus.fullVersion)
                                     Device: \(AppStatus.getModelName())
