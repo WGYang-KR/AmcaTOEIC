@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardItemBackContentView" customModule="AmcaTOEIC" customModuleProvider="target">
             <connections>
                 <outlet property="containerView" destination="Trz-Ev-8Ra" id="77X-ze-PDw"/>
+                <outlet property="examStackView" destination="htf-XE-jFi" id="lBh-ck-9N5"/>
                 <outlet property="examTrans01Label" destination="oOp-AM-Fyx" id="tW8-CI-ShD"/>
                 <outlet property="examTrans02Label" destination="yjM-yR-3Ti" id="txj-Ss-pSy"/>
                 <outlet property="favoriteButton" destination="NyZ-JD-8C9" id="cAR-S2-ipF"/>
@@ -30,7 +31,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="zHU-G9-BmK">
-                            <rect key="frame" x="88.5" y="190" width="198" height="50"/>
+                            <rect key="frame" x="88.5" y="222.5" width="198" height="50"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NyZ-JD-8C9">
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -84,7 +85,7 @@
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="9Mj-xC-lhY">
-                            <rect key="frame" x="16" y="268" width="343" height="131"/>
+                            <rect key="frame" x="16" y="300.5" width="343" height="66"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nJo-Jb-mBs">
                                     <rect key="frame" x="154" y="0.0" width="35" height="66"/>
@@ -103,32 +104,36 @@
                                         </label>
                                     </subviews>
                                 </stackView>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="htf-XE-jFi">
-                                    <rect key="frame" x="152" y="82" width="39.5" height="49"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="예문1" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oOp-AM-Fyx" customClass="CustomLabel" customModule="AmcaTOEIC" customModuleProvider="target">
-                                            <rect key="frame" x="1" y="0.0" width="37" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" name="textPrimary"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="예문2" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yjM-yR-3Ti" userLabel="뜻2" customClass="CustomLabel" customModule="AmcaTOEIC" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="28.5" width="39.5" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" name="textPrimary"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="htf-XE-jFi">
+                            <rect key="frame" x="16" y="586" width="343" height="49"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="예문1" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oOp-AM-Fyx" customClass="CustomLabel" customModule="AmcaTOEIC" customModuleProvider="target">
+                                    <rect key="frame" x="153" y="0.0" width="37" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" name="textPrimary"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="예문2" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yjM-yR-3Ti" customClass="CustomLabel" customModule="AmcaTOEIC" customModuleProvider="target">
+                                    <rect key="frame" x="152" y="28.5" width="39.5" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" name="textPrimary"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                         </stackView>
                     </subviews>
                     <color key="backgroundColor" name="colorCardBack"/>
                     <constraints>
+                        <constraint firstAttribute="bottom" secondItem="htf-XE-jFi" secondAttribute="bottom" constant="32" id="3Pf-MH-EoB"/>
                         <constraint firstItem="zHU-G9-BmK" firstAttribute="centerX" secondItem="Trz-Ev-8Ra" secondAttribute="centerX" id="N5a-Yb-Ka3"/>
+                        <constraint firstItem="htf-XE-jFi" firstAttribute="leading" secondItem="Trz-Ev-8Ra" secondAttribute="leading" constant="16" id="PBg-dw-wwf"/>
                         <constraint firstItem="9Mj-xC-lhY" firstAttribute="top" secondItem="zHU-G9-BmK" secondAttribute="bottom" constant="28" id="V8T-yf-wVG"/>
+                        <constraint firstItem="htf-XE-jFi" firstAttribute="centerX" secondItem="Trz-Ev-8Ra" secondAttribute="centerX" id="YBz-X9-Mhl"/>
                         <constraint firstAttribute="trailing" secondItem="9Mj-xC-lhY" secondAttribute="trailing" constant="16" id="Z7a-EP-GM4"/>
                         <constraint firstItem="9Mj-xC-lhY" firstAttribute="centerX" secondItem="Trz-Ev-8Ra" secondAttribute="centerX" id="afa-ca-Gjl"/>
+                        <constraint firstAttribute="trailing" secondItem="htf-XE-jFi" secondAttribute="trailing" constant="16" id="jVQ-0g-OgM"/>
                         <constraint firstItem="9Mj-xC-lhY" firstAttribute="leading" secondItem="Trz-Ev-8Ra" secondAttribute="leading" constant="16" id="khh-zg-Mmg"/>
                         <constraint firstItem="9Mj-xC-lhY" firstAttribute="centerY" secondItem="Trz-Ev-8Ra" secondAttribute="centerY" id="paJ-U3-njb"/>
                     </constraints>

@@ -13,6 +13,8 @@ class CardItemBackContentView: NibUIView {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var meaing02Label: UILabel!
+    
+    @IBOutlet weak var examStackView: UIStackView!
     @IBOutlet weak var examTrans01Label: CustomLabel!
     @IBOutlet weak var examTrans02Label: CustomLabel!
     

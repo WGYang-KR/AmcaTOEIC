@@ -15,6 +15,7 @@ class CardItemComponentView: UIView {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var pronunciationLabel: UILabel!
     
+    @IBOutlet weak var examStackView: UIStackView!
     @IBOutlet weak var exam01Label: UILabel!
     @IBOutlet weak var exam02Label: UILabel!
     
