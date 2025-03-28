@@ -102,7 +102,7 @@
         </view>
     </objects>
     <resources>
-        <image name="textPage" width="65.333335876464844" height="82.666664123535156"/>
+        <image name="textPage" width="78.333335876464844" height="82.333335876464844"/>
         <namedColor name="backBase">
             <color red="0.94901960784313721" green="0.95686274509803926" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

@@ -25,6 +25,13 @@ class SwipeCardVC: UIViewController {
     @IBOutlet weak var totalCountLabel: UILabel!
     @IBOutlet weak var showsExamBtn: UIButton!
     
+    ///카드가 reload될때 해당 index의 side는 유지한다. 예문 on/off 할 때 필요.
+    var keepsCardSideAtIndex: KeepCardSideData?
+    struct KeepCardSideData {
+        let index: Int
+        let side: CardSideType
+    }
+    
     var cardDefaultSide: CardSideType = .front
     var cardFontType: FontType = .system
     
@@ -130,6 +137,10 @@ class SwipeCardVC: UIViewController {
     @IBAction func showsExamBtnTapped(_ sender: Any) {
         AppSetting.showsExample.toggle()
         showsExamBtn.setImage(AppSetting.curExampleSettingIcon, for: .normal)
+        if let curCardView = kolodaView.viewForCard(at: kolodaView.currentCardIndex) as? CardItemView {
+            keepsCardSideAtIndex = .init(index: kolodaView.currentCardIndex, side: curCardView.cardSideType)
+        }
+       
         kolodaView.reconfigureCards()
     }
     
@@ -248,11 +259,20 @@ extension SwipeCardVC: KolodaViewDataSource {
         let item = dataSource[index]
         let cardItemView = CardItemView()
 
-        cardItemView.configure(index: index,
-                               cardItem: item,
-                               isFavorite: item.isFavorite,
-                               delegate: self,
-                               cardSideType: cardDefaultSide)
+        if let keepsCardSideAtIndex, index == keepsCardSideAtIndex.index {
+            cardItemView.configure(index: index,
+                                   cardItem: item,
+                                   isFavorite: item.isFavorite,
+                                   delegate: self,
+                                   cardSideType: keepsCardSideAtIndex.side)
+            self.keepsCardSideAtIndex = nil
+        } else {
+            cardItemView.configure(index: index,
+                                   cardItem: item,
+                                   isFavorite: item.isFavorite,
+                                   delegate: self,
+                                   cardSideType: cardDefaultSide)
+        }
         
         return cardItemView
     }

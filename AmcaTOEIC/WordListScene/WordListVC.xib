@@ -112,7 +112,7 @@
     </objects>
     <resources>
         <image name="chevron.left" catalog="system" width="97" height="128"/>
-        <image name="textPage" width="65.333335876464844" height="82.666664123535156"/>
+        <image name="textPage" width="78.333335876464844" height="82.333335876464844"/>
         <namedColor name="textSecondary">
             <color red="0.31372549019607843" green="0.34901960784313724" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

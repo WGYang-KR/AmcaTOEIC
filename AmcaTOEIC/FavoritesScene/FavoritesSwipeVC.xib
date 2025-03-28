@@ -340,7 +340,7 @@
         <image name="arrow.uturn.backward" catalog="system" width="128" height="113"/>
         <image name="rectangle.portrait.righthalf.filled" catalog="system" width="115" height="128"/>
         <image name="shuffle" catalog="system" width="128" height="95"/>
-        <image name="textPageSlash" width="78.666664123535156" height="82.666664123535156"/>
+        <image name="textPageSlash" width="78.333335876464844" height="82.333335876464844"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="backBase">
             <color red="0.94901960784313721" green="0.95686274509803926" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
